@@ -8,4 +8,10 @@
   &__content {
     justify-content: space-between;
   }
+
+  &__logo {
+    img {
+      width: 100px;
+    }
+  }
 }
