@@ -12,6 +12,8 @@
   &__logo {
     img {
       width: 100px;
+      position: relative;
+      z-index: 1000;
     }
   }
 }

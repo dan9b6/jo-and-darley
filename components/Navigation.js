@@ -58,6 +58,10 @@ const Navigation = () => {
             </Container>
             <Container className="nav-primary__social ps-2 ps-sm-3">
               <p>Socials here:</p>
+              <a
+                href="/"
+                className="nav-primary__social-icon nav-primary__social-icon--ig"
+              ></a>
             </Container>
           </Col>
           <Col xs="6" md="3" className="nav-toggle">
