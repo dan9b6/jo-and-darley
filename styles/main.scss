@@ -1,8 +1,13 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
 // Abstract
 @import "../styles/abstract/mixins";
 @import "../styles/abstract/variables";
+@import "../styles/abstract/typography";
 
 // Components
+@import "../styles/components/banner";
+@import "../styles/components/button";
 @import "../styles/components/header";
 @import "../styles/components/primary-nav";
 
@@ -11,4 +16,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+main {
+  padding-top: 90px;
+
+  @include media-breakpoint-up(md) {
+    padding-top: 105px;
+  }
 }

@@ -1,10 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Poppins:wght@300;400;700&display=swap");
 
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+
 // Colours
 $c-dark-green: #144941;
-$c-blue-green: #0d5d56;
-$c-pink: #f0c5a2;
-$c-light-pink: #efe4dc;
+$c-blue-green: #157359;
+$c-gold: #bd8e36;
+$c-salmon: #f7d6c7;
+$c-light-pink: #fcccca;
 
 // Fonts
 $c-font-heading: "Poppins", sans-serif;

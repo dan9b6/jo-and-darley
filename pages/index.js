@@ -1,5 +1,9 @@
-import Button from "react-bootstrap/Button";
+import HomeBanner from "../components/home-banner";
 
 export default function Home() {
-  return <div>Home</div>;
+  return (
+    <main>
+      <HomeBanner />
+    </main>
+  );
 }

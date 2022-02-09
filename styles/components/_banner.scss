@@ -1,0 +1,28 @@
+.banner {
+  height: 70vh;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__content {
+    position: relative;
+    z-index: 2;
+
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: -25px;
+      height: 30px;
+      width: 500px;
+      background-color: $c-dark-green;
+      z-index: -1;
+    }
+
+    img {
+      width: 300px;
+    }
+  }
+}

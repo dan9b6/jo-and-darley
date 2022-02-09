@@ -1,0 +1,39 @@
+.btn {
+  padding: 10px 30px;
+  border-radius: 0;
+  text-transform: uppercase;
+
+  &-outline {
+    &-primary {
+      border-color: $c-dark-green;
+      color: $c-dark-green;
+    }
+
+    &-secondary {
+      border-color: $c-light-pink;
+      color: $c-light-pink;
+    }
+
+    &-tertiary {
+      border-color: #fff;
+      color: #fff;
+    }
+  }
+
+  &-primary {
+    background-color: $c-dark-green;
+    border-color: $c-dark-green;
+  }
+
+  &-secondary {
+    background-color: $c-light-pink;
+    border-color: $c-light-pink;
+    color: $c-dark-green !important;
+  }
+
+  &-tertiary {
+    background-color: #fff;
+    border-color: #fff;
+    color: $c-dark-green !important;
+  }
+}
