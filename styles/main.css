@@ -11968,9 +11968,9 @@ a {
   font-family: "Poppins", sans-serif;
 }
 
-a {
-  font-weight: bold;
-  color: #bd8e36;
+ul {
+  list-style: none;
+  padding-left: 0;
 }
 
 .banner {
@@ -12094,6 +12094,12 @@ a {
   .header__logo img {
     width: 125px;
   }
+}
+
+.footer {
+  border-top: 20px solid #fcccca;
+  background-color: #144941;
+  padding: 30px 0;
 }
 
 .nav-primary {
