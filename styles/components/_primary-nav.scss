@@ -39,10 +39,15 @@
         padding: 20px 0;
         position: relative;
 
-        @include media-breakpoint-up(md) {
+        @include media-breakpoint-up(sm) {
           margin-left: 25px;
           padding: 0;
           overflow: hidden;
+          font-size: 12px;
+        }
+
+        @include media-breakpoint-up(lg) {
+          font-size: 16px;
         }
 
         &:before {

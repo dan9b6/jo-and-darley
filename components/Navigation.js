@@ -57,7 +57,7 @@ const Navigation = () => {
                     <a>Contact</a>
                   </Link>
                 </li>
-                <li className="d-none d-lg-block">
+                <li className="d-none d-md-block">
                   <Link href="/contact">
                     <a className="btn btn-secondary">Book</a>
                   </Link>

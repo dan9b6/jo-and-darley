@@ -5,6 +5,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  border-bottom: 20px solid $c-dark-green;
+
+  &--home {
+    background-image: url("/images/home-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 
   &__content {
     position: relative;
