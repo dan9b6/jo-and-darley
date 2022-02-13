@@ -12245,7 +12245,7 @@ ul {
   top: 0;
   padding-top: 90px;
   left: -100%;
-  min-height: 110vh;
+  min-height: 100vh;
   width: 100%;
   background-color: #144941;
   -webkit-transition: 0.5s;
@@ -12268,7 +12268,7 @@ ul {
     position: relative;
     top: unset;
     left: unset;
-    height: unset;
+    min-height: unset;
     display: block;
     max-width: unset;
     width: unset;
