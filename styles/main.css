@@ -12266,7 +12266,7 @@ ul {
 @media (min-width: 768px) {
   .nav-primary {
     position: relative;
-    bottom: unset;
+    top: unset;
     left: unset;
     height: unset;
     display: block;
@@ -12286,6 +12286,7 @@ ul {
     margin-left: 25px;
     padding: 0;
     font-size: 12px;
+    overflow: hidden;
   }
 }
 
