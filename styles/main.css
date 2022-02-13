@@ -12088,9 +12088,13 @@ ul {
   left: -100%;
   height: 100%;
   width: 100%;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   z-index: 0;
+}
+
+.btn-book:hover {
+  border-color: #bd8e36;
 }
 
 .btn-book:hover:before {
