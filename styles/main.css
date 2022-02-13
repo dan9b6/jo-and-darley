@@ -4,7 +4,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Poppins:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Roboto+Mono:wght@300;400;500&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -11965,7 +11965,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 p,
 li,
 a {
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto Mono", monospace;
 }
 
 ul {
@@ -12102,6 +12102,82 @@ ul {
   padding: 30px 0;
 }
 
+.footer__col {
+  margin-bottom: 30px;
+}
+
+.footer__col h4, .footer__col .h4,
+.footer__col a,
+.footer__col ul,
+.footer__col li {
+  color: #fff;
+}
+
+@media (min-width: 576px) {
+  .footer__col li {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer__col li {
+    font-size: 16px;
+  }
+}
+
+.footer__col a {
+  text-decoration: none;
+}
+
+.footer__col a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #fff;
+}
+
+.footer__col a:focus, .footer__col a:active {
+  color: #fff;
+}
+
+.footer__col h4, .footer__col .h4 {
+  margin-bottom: 25px;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #bd8e36;
+          text-decoration-color: #bd8e36;
+}
+
+.footer__col svg {
+  margin-right: 10px;
+  margin-bottom: -5px;
+  width: 20px;
+  height: 100%;
+  color: #fcccca;
+}
+
+.footer__col img {
+  width: 100%;
+}
+
+.footer__social-icon {
+  width: 21px;
+}
+
+.footer__social li {
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .footer__social li {
+    font-size: 12px;
+  }
+}
+
+.footer__privacy {
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+}
+
 .nav-primary {
   position: fixed;
   top: 0;
@@ -12122,7 +12198,7 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto Mono", monospace;
 }
 
 @media (min-width: 768px) {

@@ -2,4 +2,78 @@
   border-top: 20px solid $c-light-pink;
   background-color: $c-dark-green;
   padding: 30px 0;
+
+  &__col {
+    margin-bottom: 30px;
+
+    h4,
+    a,
+    ul,
+    li {
+      color: $c-white;
+    }
+
+    li {
+      @include media-breakpoint-up(sm) {
+        font-size: 12px;
+      }
+
+      @include media-breakpoint-up(lg) {
+        font-size: 16px;
+      }
+    }
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        color: $c-white;
+      }
+
+      &:focus,
+      &:active {
+        color: $c-white;
+      }
+    }
+
+    h4 {
+      margin-bottom: 25px;
+      text-decoration: underline;
+      text-decoration-color: $c-gold;
+    }
+
+    svg {
+      margin-right: 10px;
+      margin-bottom: -5px;
+      width: 20px;
+      height: 100%;
+      color: $c-light-pink;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__social {
+    &-icon {
+      width: 21px;
+    }
+
+    li {
+      margin-bottom: 10px;
+
+      @include media-breakpoint-up(md) {
+        font-size: 12px;
+      }
+    }
+  }
+
+  &__privacy {
+    text-align: center;
+    color: $c-white;
+    font-size: 12px;
+  }
 }
