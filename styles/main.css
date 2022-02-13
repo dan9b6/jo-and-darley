@@ -12245,7 +12245,8 @@ ul {
   bottom: 0;
   padding-top: 90px;
   left: -100%;
-  min-height: 100%;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
   width: 100%;
   background-color: #144941;
   -webkit-transition: 0.5s;
@@ -12481,6 +12482,10 @@ ul {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+html {
+  height: -webkit-fill-available;
 }
 
 main {
