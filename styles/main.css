@@ -12242,10 +12242,10 @@ ul {
 
 .nav-primary {
   position: fixed;
-  top: 0;
+  bottom: 0;
   padding-top: 90px;
   left: -100%;
-  height: 100vh;
+  min-height: 100%;
   width: 100%;
   background-color: #144941;
   -webkit-transition: 0.5s;
@@ -12266,7 +12266,7 @@ ul {
 @media (min-width: 768px) {
   .nav-primary {
     position: relative;
-    top: unset;
+    bottom: unset;
     left: unset;
     height: unset;
     display: block;
@@ -12281,11 +12281,10 @@ ul {
   position: relative;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .nav-primary__link {
     margin-left: 25px;
     padding: 0;
-    overflow: hidden;
     font-size: 12px;
   }
 }
