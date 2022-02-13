@@ -2,6 +2,8 @@
   padding: 10px 30px;
   border-radius: 0;
   text-transform: uppercase;
+  box-shadow: none;
+  outline: none;
 
   &-outline {
     &-primary {
@@ -35,5 +37,43 @@
     background-color: #fff;
     border-color: #fff;
     color: $c-dark-green !important;
+  }
+
+  &-book {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: $c-light-pink;
+
+    span {
+      position: relative;
+      z-index: 2;
+      color: $c-dark-green;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      background-color: $c-gold;
+      color: black;
+      top: 0;
+      left: -100%;
+      height: 100%;
+      width: 100%;
+      transition: 0.2s;
+      z-index: 0;
+    }
+
+    &:hover {
+      &:before {
+        left: 0;
+      }
+
+      span {
+        color: black;
+      }
+    }
   }
 }

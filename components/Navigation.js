@@ -32,34 +32,36 @@ const Navigation = () => {
           <Col md="6" className={`nav-primary ${toggle ? "active" : ""}`}>
             <Container className="ps-2 ps-sm-3 px-md-0 ps-md-0">
               <ul>
-                <li>
+                <li className="nav-primary__link">
                   <Link href="/">
                     <a>Home</a>
                   </Link>
                 </li>
-                <li>
+                <li className="nav-primary__link">
                   <Link href="/pricing">
                     <a>Pricing</a>
                   </Link>
                 </li>
-                <li>
+                <li className="nav-primary__link">
                   <Link href="/bridal">
                     <a>Bridal</a>
                   </Link>
                 </li>
-                <li>
+                <li className="nav-primary__link">
                   <Link href="/courses">
                     <a>Courses</a>
                   </Link>
                 </li>
-                <li>
+                <li className="nav-primary__link">
                   <Link href="/contact">
                     <a>Contact</a>
                   </Link>
                 </li>
                 <li className="d-none d-md-block">
                   <Link href="/contact">
-                    <a className="btn btn-secondary">Book</a>
+                    <a className="btn btn-book">
+                      <span>BOOK</span>
+                    </a>
                   </Link>
                 </li>
               </ul>

@@ -24,6 +24,61 @@
       padding-top: 0;
     }
 
+    &__link {
+      padding: 20px 0;
+      position: relative;
+
+      @include media-breakpoint-up(sm) {
+        margin-left: 25px;
+        padding: 0;
+        overflow: hidden;
+        font-size: 12px;
+      }
+
+      @include media-breakpoint-up(lg) {
+        font-size: 16px;
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 60%;
+        background-color: $c-gold;
+        bottom: 0;
+
+        @include media-breakpoint-up(md) {
+          transition: 0.5s;
+          height: 2px;
+          width: 100%;
+          left: -100%;
+          overflow: hidden;
+        }
+      }
+
+      &:hover {
+        @include media-breakpoint-up(md) {
+          &:before {
+            left: 0;
+          }
+        }
+      }
+    }
+
+    .btn-book {
+      span {
+        font-size: 12px;
+
+        @include media-breakpoint-up(lg) {
+          font-size: 16px;
+        }
+      }
+
+      @include media-breakpoint-up(md) {
+        margin-left: 20px;
+      }
+    }
+
     ul {
       list-style: none;
       padding-left: 0;
@@ -35,55 +90,10 @@
         align-items: center;
       }
 
-      li {
-        padding: 20px 0;
-        position: relative;
-
-        @include media-breakpoint-up(sm) {
-          margin-left: 25px;
-          padding: 0;
-          overflow: hidden;
-          font-size: 12px;
-        }
-
-        @include media-breakpoint-up(lg) {
-          font-size: 16px;
-        }
-
-        &:before {
-          content: "";
-          position: absolute;
-          height: 1px;
-          width: 60%;
-          background-color: $c-gold;
-          bottom: 0;
-
-          @include media-breakpoint-up(md) {
-            transition: 0.5s;
-            height: 2px;
-            width: 100%;
-            left: -100%;
-            overflow: hidden;
-          }
-        }
-
-        &:hover {
-          @include media-breakpoint-up(md) {
-            &:before {
-              left: 0;
-            }
-          }
-        }
-
-        a {
-          color: white;
-          text-decoration: none;
-          font-weight: normal;
-
-          @include media-breakpoint-up(md) {
-            // color: $c-light-pink;
-          }
-        }
+      a {
+        color: white;
+        text-decoration: none;
+        font-weight: normal;
       }
     }
 
