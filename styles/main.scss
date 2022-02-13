@@ -36,3 +36,9 @@ main {
     padding-top: 105px;
   }
 }
+
+.disable-scroll {
+  overflow: hidden;
+  margin: 0;
+  height: 100%;
+}

@@ -1,4 +1,4 @@
-import { useState, ReactElement } from "react";
+import { useState, ReactElement, useEffect } from "react";
 // Font Awesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
@@ -18,8 +18,16 @@ const Navigation = () => {
 
   function toggleNav() {
     setToggle(!toggle);
-    console.log(toggle);
   }
+
+  useEffect(() => {
+    if (toggle) {
+      document.querySelector("body").classList.add("disable-scroll");
+    } else {
+      document.querySelector("body").classList.remove("disable-scroll");
+    }
+  });
+
   return (
     <header className="header">
       <Container>
