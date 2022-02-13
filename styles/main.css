@@ -12146,6 +12146,18 @@ ul {
           text-decoration-color: #bd8e36;
 }
 
+@media (min-width: 576px) {
+  .footer__col h4, .footer__col .h4 {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer__col h4, .footer__col .h4 {
+    font-size: 24px;
+  }
+}
+
 .footer__col svg {
   margin-right: 10px;
   margin-bottom: -5px;

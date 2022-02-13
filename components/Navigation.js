@@ -30,7 +30,7 @@ const Navigation = () => {
             </div>
           </Col>
           <Col md="6" className={`nav-primary ${toggle ? "active" : ""}`}>
-            <Container className="ps-2 ps-sm-3">
+            <Container className="ps-2 ps-sm-3 px-md-0 ps-md-0">
               <ul>
                 <li>
                   <Link href="/">
