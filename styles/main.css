@@ -11962,6 +11962,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   font-family: "Poppins", sans-serif;
 }
 
+body,
 p,
 li,
 a {
@@ -12024,6 +12025,7 @@ ul {
   -webkit-box-shadow: none;
           box-shadow: none;
   outline: none;
+  max-width: 250px;
 }
 
 .btn-outline-primary {
@@ -12250,6 +12252,41 @@ ul {
   .section {
     padding: 60px 0;
   }
+}
+
+.section h1, .section .h1,
+.section h2,
+.section .h2,
+.section h3,
+.section .h3,
+.section h4,
+.section .h4,
+.section h5,
+.section .h5 {
+  color: #144941;
+}
+
+.section__home-text {
+  position: relative;
+}
+
+.section__home-text:before {
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  max-width: 200px;
+  background-color: rgba(20, 73, 65, 0.3);
+}
+
+.section--pink {
+  background-color: #fcccca;
+}
+
+.section--green {
+  background-color: rgba(20, 73, 65, 0.3);
 }
 
 .nav-primary {
@@ -12515,6 +12552,10 @@ main {
   padding-top: 90px;
   position: relative;
   z-index: 0;
+}
+
+main img {
+  width: 100%;
 }
 
 @media (min-width: 576px) {

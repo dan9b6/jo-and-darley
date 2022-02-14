@@ -4,4 +4,37 @@
   @include media-breakpoint-up(md) {
     padding: 60px 0;
   }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: $c-dark-green;
+  }
+
+  &__home {
+    &-text {
+      position: relative;
+
+      &:before {
+        content: "";
+        position: absolute;
+        bottom: -40px;
+        left: 0;
+        height: 2px;
+        width: 100%;
+        max-width: 200px;
+        background-color: $c-light-green;
+      }
+    }
+  }
+
+  &--pink {
+    background-color: $c-light-pink;
+  }
+
+  &--green {
+    background-color: $c-light-green;
+  }
 }
