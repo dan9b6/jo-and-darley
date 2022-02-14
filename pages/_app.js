@@ -1,6 +1,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/main.css";
 
+import Head from "next/head";
+
 // Components
 import Navigation from "../components/Navigation";
 import Footer from "../components/footer";
@@ -8,6 +10,18 @@ import Footer from "../components/footer";
 function MyApp({ Component, pageProps }) {
   return (
     <>
+      <Head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="true"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Poppins:wght@300;400;700&display=swap"
+          rel="stylesheet"
+        />
+      </Head>
       <Navigation />
       <Component {...pageProps} />
       <Footer />
