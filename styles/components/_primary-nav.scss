@@ -5,7 +5,7 @@
     left: 0;
     width: 100%;
     background-color: $c-dark-green;
-    transition: 0.5s;
+    transition: 0.5s ease-in-out;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -28,6 +28,8 @@
     &__link {
       padding: 15px 0;
       position: relative;
+      opacity: 0;
+      transition: 0.2s;
 
       &:first-child {
         padding-top: 0;
@@ -38,6 +40,7 @@
         padding: 0;
         font-size: 12px;
         overflow: hidden;
+        opacity: 1;
 
         &:first-child {
           padding-top: unset;
@@ -108,6 +111,13 @@
 
     &.active {
       top: 0;
+
+      .nav-primary {
+        &__social,
+        &__link {
+          opacity: 1;
+        }
+      }
     }
 
     &__social {
@@ -117,6 +127,8 @@
       border-top: 5px solid $c-gold;
       padding-top: 20px;
       padding-bottom: 20px;
+      opacity: 0;
+      transition: 0.2s;
 
       &-icon {
         position: relative;
