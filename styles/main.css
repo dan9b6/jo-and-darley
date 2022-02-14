@@ -11543,11 +11543,15 @@ ul {
     max-width: unset;
     width: unset;
     padding: 30px 0;
+    z-index: 1;
   }
 }
 .nav-primary__link {
   padding: 15px 0;
   position: relative;
+}
+.nav-primary__link:first-child {
+  padding-top: 0;
 }
 @media (min-width: 768px) {
   .nav-primary__link {
@@ -11555,6 +11559,9 @@ ul {
     padding: 0;
     font-size: 12px;
     overflow: hidden;
+  }
+  .nav-primary__link:first-child {
+    padding-top: unset;
   }
 }
 @media (min-width: 992px) {
