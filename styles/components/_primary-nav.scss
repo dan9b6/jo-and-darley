@@ -1,10 +1,8 @@
 .nav {
   &-primary {
     position: fixed;
-    top: 0;
-    padding-top: 90px;
-    left: -100%;
-    min-height: 100vh;
+    top: -100%;
+    left: 0;
     width: 100%;
     background-color: $c-dark-green;
     transition: 0.5s;
@@ -12,6 +10,8 @@
     flex-direction: column;
     justify-content: space-between;
     font-family: $c-font-body;
+    padding: 90px 0 0;
+    z-index: -1;
 
     @include media-breakpoint-up(md) {
       position: relative;
@@ -21,11 +21,11 @@
       display: block;
       max-width: unset;
       width: unset;
-      padding-top: 0;
+      padding: 30px 0;
     }
 
     &__link {
-      padding: 20px 0;
+      padding: 15px 0;
       position: relative;
 
       @include media-breakpoint-up(md) {
@@ -98,13 +98,10 @@
     }
 
     &.active {
-      left: 0;
+      top: 0;
     }
 
     &__social {
-      position: absolute;
-      bottom: 0;
-      left: 0;
       width: 100%;
       background-color: $c-light-pink;
       height: 200px;

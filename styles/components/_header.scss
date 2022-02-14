@@ -2,9 +2,8 @@
   position: fixed;
   height: 90px;
   width: 100%;
-  padding: 30px 0;
   background-color: $c-dark-green;
-  z-index: 2;
+  z-index: 1;
 
   @include media-breakpoint-up(md) {
     height: auto;
@@ -12,9 +11,12 @@
 
   &__content {
     justify-content: space-between;
+    padding: 30px 0;
+    background-color: $c-dark-green;
 
     @include media-breakpoint-up(md) {
       align-items: center;
+      padding: unset;
     }
   }
 
