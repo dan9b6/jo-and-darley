@@ -11958,7 +11958,7 @@ fieldset:disabled .btn {
   }
 }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+h1, .h1, h2, .h2, h3, .h3 {
   font-family: "Poppins", sans-serif;
 }
 
@@ -11975,7 +11975,7 @@ ul {
 }
 
 .banner {
-  height: 70vh;
+  height: 250px;
   width: 100%;
   background-color: black;
   display: -webkit-box;
@@ -11989,13 +11989,16 @@ ul {
           align-items: center;
   overflow: hidden;
   border-bottom: 20px solid #144941;
-}
-
-.banner--home {
-  background-image: url("/images/home-bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-image: url("/images/home-bg.jpg");
+}
+
+@media (min-width: 768px) {
+  .banner {
+    height: 350px;
+  }
 }
 
 .banner__content {
@@ -12003,19 +12006,45 @@ ul {
   z-index: 2;
 }
 
-.banner__content:before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: -25px;
-  height: 30px;
-  width: 500px;
-  background-color: #144941;
-  z-index: -1;
+.banner__content h1, .banner__content .h1 {
+  color: #144941;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #fff;
+          text-decoration-color: #fff;
+  padding-left: 40px;
 }
 
 .banner__content img {
   width: 300px;
+}
+
+.banner__content:before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 15px;
+  height: 50px;
+  width: 500px;
+  background-color: #fcccca;
+  -webkit-transform: skewX(-15deg);
+          transform: skewX(-15deg);
+  z-index: -1;
+}
+
+@media (min-width: 768px) {
+  .banner__content:before {
+    height: 65px;
+  }
+}
+
+.banner--home {
+  height: 70vh;
+  background-image: url("/images/home-bg.jpg");
+}
+
+.banner--home .banner__content:before {
+  left: -25px;
+  right: unset;
 }
 
 .btn {
@@ -12285,6 +12314,31 @@ ul {
 
 .section--green {
   background-color: rgba(20, 73, 65, 0.3);
+}
+
+.pricing__table {
+  border: 2px solid #144941;
+  padding: 30px;
+}
+
+.pricing__table-data {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.pricing__table-data p:first-child {
+  margin-bottom: 5px;
+  text-decoration: underline;
+}
+
+.pricing__table-data-title {
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.pricing__table-data-title h4, .pricing__table-data-title .h4 {
+  margin-bottom: 30px;
 }
 
 .nav-primary {

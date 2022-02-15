@@ -1,5 +1,5 @@
 .banner {
-  height: 70vh;
+  height: 250px;
   width: 100%;
   background-color: black;
   display: flex;
@@ -7,31 +7,56 @@
   align-items: center;
   overflow: hidden;
   border-bottom: 20px solid $c-dark-green;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/images/home-bg.jpg");
 
-  &--home {
-    background-image: url("/images/home-bg.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  @include media-breakpoint-up(md) {
+    height: 350px;
   }
 
   &__content {
     position: relative;
     z-index: 2;
 
-    &:before {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: -25px;
-      height: 30px;
-      width: 500px;
-      background-color: $c-dark-green;
-      z-index: -1;
+    h1 {
+      color: $c-dark-green;
+      text-decoration: underline;
+      text-decoration-color: $c-white;
+      padding-left: 40px;
     }
 
     img {
       width: 300px;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 15px;
+      height: 50px;
+      width: 500px;
+      background-color: $c-light-pink;
+      transform: skewX(-15deg);
+      z-index: -1;
+
+      @include media-breakpoint-up(md) {
+        height: 65px;
+      }
+    }
+  }
+
+  &--home {
+    height: 70vh;
+    background-image: url("/images/home-bg.jpg");
+
+    .banner__content {
+      &:before {
+        left: -25px;
+        right: unset;
+      }
     }
   }
 }

@@ -1,0 +1,26 @@
+.pricing {
+  &__table {
+    border: 2px solid $c-dark-green;
+    padding: 30px;
+
+    &-data {
+      text-transform: uppercase;
+      margin-bottom: 30px;
+      font-size: 14px;
+
+      p:first-child {
+        margin-bottom: 5px;
+        text-decoration: underline;
+      }
+
+      &-title {
+        margin-bottom: 30px;
+        text-transform: uppercase;
+
+        h4 {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+}

@@ -1,11 +1,14 @@
 import React from "react";
+import Container from "react-bootstrap/Container";
 
-const Banner = () => {
+const Banner = ({ title, bgImg }) => {
   return (
-    <div className="banner banner--home">
-      <div className="banner__content">
-        <img src="/images/logo.png" alt="logo" title="Jo & Darley logo" />
-      </div>
+    <div className="banner">
+      <Container>
+        <div className="banner__content">
+          <h1>{title}</h1>
+        </div>
+      </Container>
     </div>
   );
 };
