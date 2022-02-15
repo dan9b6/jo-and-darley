@@ -12109,7 +12109,7 @@ ul {
 
 .header {
   position: fixed;
-  height: 90px;
+  padding: 30px 0;
   width: 100%;
   background-color: #144941;
   z-index: 1;
@@ -12125,7 +12125,6 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 30px 0;
   background-color: #144941;
 }
 
@@ -12134,7 +12133,6 @@ ul {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: unset;
   }
 }
 
@@ -12291,8 +12289,8 @@ ul {
 
 .nav-primary {
   position: fixed;
-  top: -100%;
-  left: 0;
+  top: 0;
+  left: -100%;
   width: 100%;
   background-color: #144941;
   -webkit-transition: 0.5s ease-in-out;
@@ -12308,8 +12306,8 @@ ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-family: "Roboto Mono", monospace;
-  padding: 90px 0 0;
   z-index: -1;
+  padding: 90px 0 0;
 }
 
 @media (min-width: 768px) {
@@ -12321,8 +12319,8 @@ ul {
     display: block;
     max-width: unset;
     width: unset;
-    padding: 30px 0;
     z-index: 1;
+    padding: unset;
   }
 }
 
@@ -12424,7 +12422,7 @@ ul {
 }
 
 .nav-primary.active {
-  top: 0;
+  left: 0;
 }
 
 .nav-primary.active .nav-primary__social, .nav-primary.active .nav-primary__link {
