@@ -12045,6 +12045,7 @@ ul {
 .banner--home .banner__content:before {
   left: -25px;
   right: unset;
+  background-color: #144941;
 }
 
 .btn {
