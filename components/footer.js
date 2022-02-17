@@ -9,6 +9,8 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 
+50.766048231701596, -2.0212539091808615;
+
 import Link from "next/link";
 
 const Footer = () => {
