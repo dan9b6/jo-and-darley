@@ -20,11 +20,25 @@ const Navigation = () => {
     setToggle(!toggle);
   }
 
+  function disableScrolling() {
+    var x = window.scrollX;
+    var y = window.scrollY;
+    window.onscroll = function () {
+      window.scrollTo(x, y);
+    };
+  }
+
+  function enableScrolling() {
+    window.onscroll = function () {};
+  }
+
   useEffect(() => {
     if (toggle) {
       document.querySelector("body").classList.add("disable-scroll--mobile");
+      disableScrolling();
     } else {
       document.querySelector("body").classList.remove("disable-scroll--mobile");
+      enableScrolling();
     }
   });
 
