@@ -5,6 +5,7 @@
   box-shadow: none;
   outline: none;
   max-width: 250px;
+  border: none;
 
   &-outline {
     &-primary {
@@ -25,18 +26,15 @@
 
   &-primary {
     background-color: $c-dark-green;
-    border-color: $c-dark-green;
   }
 
   &-secondary {
     background-color: $c-light-pink;
-    border-color: $c-light-pink;
     color: $c-dark-green !important;
   }
 
   &-tertiary {
     background-color: #fff;
-    border-color: #fff;
     color: $c-dark-green !important;
   }
 
