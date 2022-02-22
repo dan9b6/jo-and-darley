@@ -83,6 +83,11 @@
     text-align: center;
     color: $c-white;
     font-size: 12px;
+    padding-top: 20px;
+
+    @include media-breakpoint-up(md) {
+      padding-top: unset;
+    }
   }
 
   #map {

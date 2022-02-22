@@ -34,7 +34,11 @@ const Navigation = () => {
         <Row className="header__content">
           <Col xs="6" md="3">
             <div className="header__logo">
-              <img src="/images/logo.png" alt="Logo" />
+              <Link href="/">
+                <a>
+                  <img src="/images/logo.png" alt="Logo" />
+                </a>
+              </Link>
             </div>
           </Col>
           <Col md="6" className={`nav-primary ${toggle ? "active" : ""}`}>
@@ -56,8 +60,8 @@ const Navigation = () => {
                   </Link>
                 </li>
                 <li className="nav-primary__link">
-                  <Link href="/courses">
-                    <a onClick={toggleNav}>Courses</a>
+                  <Link href="/education">
+                    <a onClick={toggleNav}>Education</a>
                   </Link>
                 </li>
                 <li className="nav-primary__link">

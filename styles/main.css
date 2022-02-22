@@ -11536,6 +11536,12 @@ ul {
   text-align: center;
   color: #fff;
   font-size: 12px;
+  padding-top: 20px;
+}
+@media (min-width: 768px) {
+  .footer__privacy {
+    padding-top: unset;
+  }
 }
 .footer #map {
   height: 100%;
