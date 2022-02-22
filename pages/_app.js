@@ -4,7 +4,7 @@ import "../styles/main.css";
 import Head from "next/head";
 
 // Components
-import Navigation from "../components/Navigation";
+import Navigation from "../components/navigation";
 import Footer from "../components/footer";
 
 function MyApp({ Component, pageProps }) {

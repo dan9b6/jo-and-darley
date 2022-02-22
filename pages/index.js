@@ -9,7 +9,7 @@ export default function Home() {
     <main>
       <HomeBanner />
       <Section>
-        <Row className="mb-5 pb-5 align-items-center">
+        <Row className="align-items-center">
           <Col md="6">
             <div className="section__home-text">
               <h2>Passionate about hair.</h2>
@@ -25,7 +25,7 @@ export default function Home() {
             <img src="/images/logo.png" alt="" title="" />
           </Col>
         </Row>
-        <Row className="mb-5 py-5 align-items-center">
+        <Row className="align-items-center">
           <Col md="6">
             <div className="section__home-text">
               <h2>Celebrating individuality.</h2>
@@ -40,7 +40,7 @@ export default function Home() {
             <img src="/images/logo.png" alt="" title="" />
           </Col>
         </Row>
-        <Row className="pt-5 align-items-center">
+        <Row className="align-items-center">
           <Col md="6">
             <div className="section__home-text">
               <h2>Education.</h2>

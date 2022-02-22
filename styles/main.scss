@@ -21,6 +21,17 @@
   box-sizing: border-box;
 }
 
+#__next {
+  height: 100%;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 main {
   padding-top: 90px;
   position: relative;
@@ -39,12 +50,22 @@ main {
   }
 
   @include media-breakpoint-up(lg) {
-    padding-top: 105px;
+    padding-top: 104px;
   }
 }
 
-.disable-scroll {
-  overflow: hidden;
-  margin: 0;
-  height: 100%;
+.disable-scroll--mobile {
+  @include media-breakpoint-down(md) {
+    overflow: hidden;
+    margin: 0;
+    height: 100%;
+  }
+}
+
+.disable-scroll--desktop {
+  @include media-breakpoint-up(md) {
+    overflow: hidden;
+    margin: 0;
+    height: 100%;
+  }
 }

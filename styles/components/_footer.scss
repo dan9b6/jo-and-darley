@@ -84,4 +84,13 @@
     color: $c-white;
     font-size: 12px;
   }
+
+  #map {
+    height: 100%;
+    min-height: 200px;
+
+    @include media-breakpoint-up(md) {
+      min-height: unset;
+    }
+  }
 }

@@ -11537,6 +11537,15 @@ ul {
   color: #fff;
   font-size: 12px;
 }
+.footer #map {
+  height: 100%;
+  min-height: 200px;
+}
+@media (min-width: 768px) {
+  .footer #map {
+    min-height: unset;
+  }
+}
 
 .section {
   padding: 40px 0;
@@ -11789,6 +11798,17 @@ ul {
   box-sizing: border-box;
 }
 
+#__next {
+  height: 100%;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 main {
   padding-top: 90px;
   position: relative;
@@ -11809,12 +11829,22 @@ main img {
 }
 @media (min-width: 992px) {
   main {
-    padding-top: 105px;
+    padding-top: 104px;
   }
 }
 
-.disable-scroll {
-  overflow: hidden;
-  margin: 0;
-  height: 100%;
+@media (max-width: 767.98px) {
+  .disable-scroll--mobile {
+    overflow: hidden;
+    margin: 0;
+    height: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .disable-scroll--desktop {
+    overflow: hidden;
+    margin: 0;
+    height: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */

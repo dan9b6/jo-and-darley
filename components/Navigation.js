@@ -22,9 +22,9 @@ const Navigation = () => {
 
   useEffect(() => {
     if (toggle) {
-      document.querySelector("body").classList.add("disable-scroll");
+      document.querySelector("body").classList.add("disable-scroll--mobile");
     } else {
-      document.querySelector("body").classList.remove("disable-scroll");
+      document.querySelector("body").classList.remove("disable-scroll--mobile");
     }
   });
 
@@ -34,7 +34,7 @@ const Navigation = () => {
         <Row className="header__content">
           <Col xs="6" md="3">
             <div className="header__logo">
-              <img src="/images/logo.png" alt="" title="" />
+              <img src="/images/logo.png" alt="Logo" />
             </div>
           </Col>
           <Col md="6" className={`nav-primary ${toggle ? "active" : ""}`}>
