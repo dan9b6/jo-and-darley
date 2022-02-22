@@ -42,27 +42,27 @@ const Navigation = () => {
               <ul>
                 <li className="nav-primary__link">
                   <Link href="/">
-                    <a>Home</a>
+                    <a onClick={toggleNav}>Home</a>
                   </Link>
                 </li>
                 <li className="nav-primary__link">
                   <Link href="/pricing">
-                    <a>Pricing</a>
+                    <a onClick={toggleNav}>Pricing</a>
                   </Link>
                 </li>
                 <li className="nav-primary__link">
                   <Link href="/bridal">
-                    <a>Bridal</a>
+                    <a onClick={toggleNav}>Bridal</a>
                   </Link>
                 </li>
                 <li className="nav-primary__link">
                   <Link href="/courses">
-                    <a>Courses</a>
+                    <a onClick={toggleNav}>Courses</a>
                   </Link>
                 </li>
                 <li className="nav-primary__link">
                   <Link href="/contact">
-                    <a>Contact</a>
+                    <a onClick={toggleNav}>Contact</a>
                   </Link>
                 </li>
                 <li className="d-none d-md-block">
