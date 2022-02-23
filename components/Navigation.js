@@ -1,4 +1,4 @@
-import { useState, ReactElement, useEffect } from "react";
+import { useState, useEffect } from "react";
 // Font Awesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
@@ -10,7 +10,6 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 // Next
-import Image from "next/image";
 import Link from "next/link";
 
 const Navigation = () => {
