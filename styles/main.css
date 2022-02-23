@@ -11460,6 +11460,30 @@ ul {
   }
 }
 
+.form {
+  border: 2px solid #144941;
+  padding: 10px;
+}
+.form .contact-form__group {
+  margin-bottom: 20px;
+}
+.form .contact-form__group input,
+.form .contact-form__group textarea {
+  width: 100%;
+  padding: 5px 10px;
+  border: 2px solid #144941;
+}
+.form .contact-form__group input:focus, .form .contact-form__group input:active, .form .contact-form__group input:focus-visible,
+.form .contact-form__group textarea:focus,
+.form .contact-form__group textarea:active,
+.form .contact-form__group textarea:focus-visible {
+  outline: #ffe1d3;
+  box-shadow: none;
+}
+.form .contact-form__group textarea {
+  min-height: 125px;
+}
+
 .footer {
   border-top: 20px solid #ffe1d3;
   background-color: #144941;
