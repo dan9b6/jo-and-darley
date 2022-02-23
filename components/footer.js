@@ -1,4 +1,6 @@
 import React from "react";
+import { useEffect, useRef } from "react";
+import { Loader } from "@googlemaps/js-api-loader";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
@@ -7,11 +9,39 @@ import { faInstagram, faFacebook } from "@fortawesome/free-brands-svg-icons";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Button from "react-bootstrap/Button";
-
 import Link from "next/link";
 
 const Footer = () => {
+  const googlemap = useRef(null);
+  useEffect(() => {
+    const loader = new Loader({
+      apiKey: process.env.NEXT_PUBLIC_API_KEY,
+      version: "weekly",
+    });
+    let map;
+    let marker;
+    loader.load().then(() => {
+      const google = window.google;
+
+      var myLatlng = new google.maps.LatLng(
+        50.765779847367675,
+        -2.021353615339215
+      );
+
+      map = new google.maps.Map(googlemap.current, {
+        center: myLatlng,
+        zoom: 12,
+      });
+
+      marker = new google.maps.Marker({
+        position: myLatlng,
+        title: "Hello World!",
+      });
+
+      marker.setMap(map);
+    });
+  });
+
   return (
     <footer className="footer">
       <Container>
@@ -100,7 +130,7 @@ const Footer = () => {
           </Col>
           <Col xs="12" sm="6" lg="3" className="footer__col">
             <h4>Location</h4>
-            <img src="/images/logo.png" alt="" title="" />
+            <div id="map" ref={googlemap} />
           </Col>
         </Row>
         <p className="footer__privacy">

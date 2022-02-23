@@ -11560,6 +11560,21 @@ ul {
   text-align: center;
   color: #fff;
   font-size: 12px;
+  padding-top: 20px;
+}
+@media (min-width: 768px) {
+  .footer__privacy {
+    padding-top: unset;
+  }
+}
+.footer #map {
+  height: 100%;
+  min-height: 200px;
+}
+@media (min-width: 768px) {
+  .footer #map {
+    min-height: unset;
+  }
 }
 
 .section {
@@ -11811,6 +11826,17 @@ ul {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+#__next {
+  height: 100%;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 main {
