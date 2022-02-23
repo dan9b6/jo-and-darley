@@ -12135,6 +12135,12 @@ ul {
   color: black;
 }
 
+.btn-book:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .header {
   position: fixed;
   padding: 30px 0;
@@ -12174,6 +12180,25 @@ ul {
   .header__logo img {
     width: 125px;
   }
+}
+
+.form {
+  border: 2px solid #144941;
+  padding: 10px;
+}
+
+.form .contact-form__group {
+  margin-bottom: 20px;
+}
+
+.form .contact-form__group input,
+.form .contact-form__group textarea {
+  width: 100%;
+  padding: 5px 10px;
+}
+
+.form .contact-form__group textarea {
+  min-height: 125px;
 }
 
 .footer {

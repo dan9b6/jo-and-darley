@@ -19,6 +19,12 @@ const Navigation = () => {
     setToggle(!toggle);
   }
 
+  function closeNav() {
+    if (toggle) {
+      setToggle(false);
+    }
+  }
+
   function disableScrolling() {
     var x = window.scrollX;
     var y = window.scrollY;
@@ -47,7 +53,7 @@ const Navigation = () => {
         <Row className="header__content">
           <Col xs="6" md="3">
             <div className="header__logo">
-              <Link href="/">
+              <Link href="/" scroll={true}>
                 <a>
                   <img src="/images/logo.png" alt="Logo" />
                 </a>
@@ -58,32 +64,32 @@ const Navigation = () => {
             <Container className="">
               <ul>
                 <li className="nav-primary__link">
-                  <Link href="/">
-                    <a onClick={toggleNav}>Home</a>
+                  <Link href="/" scroll={true}>
+                    <a onClick={closeNav}>Home</a>
                   </Link>
                 </li>
                 <li className="nav-primary__link">
-                  <Link href="/pricing">
-                    <a onClick={toggleNav}>Pricing</a>
+                  <Link href="/pricing" scroll={true}>
+                    <a onClick={closeNav}>Pricing</a>
                   </Link>
                 </li>
                 <li className="nav-primary__link">
-                  <Link href="/bridal">
-                    <a onClick={toggleNav}>Bridal</a>
+                  <Link href="/bridal" scroll={true}>
+                    <a onClick={closeNav}>Bridal</a>
                   </Link>
                 </li>
                 <li className="nav-primary__link">
-                  <Link href="/education">
-                    <a onClick={toggleNav}>Education</a>
+                  <Link href="/education" scroll={true}>
+                    <a onClick={closeNav}>Education</a>
                   </Link>
                 </li>
                 <li className="nav-primary__link">
-                  <Link href="/contact">
-                    <a onClick={toggleNav}>Contact</a>
+                  <Link href="/contact" scroll={true}>
+                    <a onClick={closeNav}>Contact</a>
                   </Link>
                 </li>
                 <li className="d-none d-md-block">
-                  <Link href="/contact">
+                  <Link href="/contact" scroll={true}>
                     <a className="btn btn-book">
                       <span>BOOK</span>
                     </a>
