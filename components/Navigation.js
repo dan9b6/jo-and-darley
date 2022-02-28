@@ -1,4 +1,4 @@
-import { useState, ReactElement, useEffect } from "react";
+import { useState, useEffect } from "react";
 // Font Awesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
@@ -10,7 +10,6 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 // Next
-import Image from "next/image";
 import Link from "next/link";
 
 const Navigation = () => {
@@ -20,11 +19,31 @@ const Navigation = () => {
     setToggle(!toggle);
   }
 
+  function closeNav() {
+    if (toggle) {
+      setToggle(false);
+    }
+  }
+
+  function disableScrolling() {
+    var x = window.scrollX;
+    var y = window.scrollY;
+    window.onscroll = function () {
+      window.scrollTo(x, y);
+    };
+  }
+
+  function enableScrolling() {
+    window.onscroll = function () {};
+  }
+
   useEffect(() => {
     if (toggle) {
-      document.querySelector("body").classList.add("disable-scroll");
+      document.querySelector("body").classList.add("disable-scroll--mobile");
+      disableScrolling();
     } else {
-      document.querySelector("body").classList.remove("disable-scroll");
+      document.querySelector("body").classList.remove("disable-scroll--mobile");
+      enableScrolling();
     }
   });
 
@@ -34,39 +53,43 @@ const Navigation = () => {
         <Row className="header__content">
           <Col xs="6" md="3">
             <div className="header__logo">
-              <img src="/images/logo.png" alt="" title="" />
+              <Link href="/" scroll={true}>
+                <a>
+                  <img src="/images/logo.png" alt="Logo" />
+                </a>
+              </Link>
             </div>
           </Col>
           <Col md="6" className={`nav-primary ${toggle ? "active" : ""}`}>
             <Container className="">
               <ul>
                 <li className="nav-primary__link">
-                  <Link href="/">
-                    <a onClick={toggleNav}>Home</a>
+                  <Link href="/" scroll={true}>
+                    <a onClick={closeNav}>Home</a>
                   </Link>
                 </li>
                 <li className="nav-primary__link">
-                  <Link href="/pricing">
-                    <a onClick={toggleNav}>Pricing</a>
+                  <Link href="/pricing" scroll={true}>
+                    <a onClick={closeNav}>Pricing</a>
                   </Link>
                 </li>
                 <li className="nav-primary__link">
-                  <Link href="/bridal">
-                    <a onClick={toggleNav}>Bridal</a>
+                  <Link href="/bridal" scroll={true}>
+                    <a onClick={closeNav}>Bridal</a>
                   </Link>
                 </li>
                 <li className="nav-primary__link">
-                  <Link href="/education">
-                    <a onClick={toggleNav}>Education</a>
+                  <Link href="/education" scroll={true}>
+                    <a onClick={closeNav}>Education</a>
                   </Link>
                 </li>
                 <li className="nav-primary__link">
-                  <Link href="/contact">
-                    <a onClick={toggleNav}>Contact</a>
+                  <Link href="/contact" scroll={true}>
+                    <a onClick={closeNav}>Contact</a>
                   </Link>
                 </li>
                 <li className="d-none d-md-block">
-                  <Link href="/contact">
+                  <Link href="/contact" scroll={true}>
                     <a className="btn btn-book">
                       <span>BOOK</span>
                     </a>
