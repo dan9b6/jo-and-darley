@@ -69,8 +69,8 @@ const Navigation = () => {
                   </Link>
                 </li>
                 <li className="nav-primary__link">
-                  <Link href="/pricing" scroll={true}>
-                    <a onClick={closeNav}>Pricing</a>
+                  <Link href="/services" scroll={true}>
+                    <a onClick={closeNav}>Services</a>
                   </Link>
                 </li>
                 <li className="nav-primary__link">

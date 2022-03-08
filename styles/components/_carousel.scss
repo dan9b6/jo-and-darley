@@ -1,0 +1,45 @@
+.carousel {
+  &--reviews {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $c-light-pink;
+    padding: 40px 0;
+
+    @include media-breakpoint-up(lg) {
+      padding: 80px 0;
+    }
+
+    .carousel {
+      width: 100%;
+      max-width: 750px;
+
+      &-item__content {
+        height: 100%;
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+
+        @include media-breakpoint-up(lg) {
+          width: 90%;
+        }
+      }
+
+      &-indicators {
+        bottom: -30px;
+      }
+
+      &-control-prev {
+        @include media-breakpoint-up(lg) {
+          left: -100px;
+        }
+      }
+
+      &-control-next {
+        @include media-breakpoint-up(lg) {
+          right: -100px;
+        }
+      }
+    }
+  }
+}

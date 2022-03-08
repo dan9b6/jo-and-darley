@@ -10,7 +10,7 @@ import Row from "react-bootstrap/Row";
 const Pricing = () => {
   return (
     <main>
-      <Banner title="Pricing" />
+      <Banner title="Services" />
       <Section>
         <div className="pricing__table">
           <Row>

@@ -69,24 +69,22 @@ const Contact = () => {
               <h4>Opening Hours:</h4>
               <ul>
                 <li>Monday: 08:00 - 18:00</li>
-                <li>Monday: 08:00 - 18:00</li>
-                <li>Monday: 08:00 - 18:00</li>
-                <li>Monday: 08:00 - 18:00</li>
-                <li>Monday: 08:00 - 18:00</li>
-                <li>Monday: 08:00 - 18:00</li>
-                <li>Monday: 08:00 - 18:00</li>
+                <li>Tuesday: 08:00 - 18:00</li>
+                <li>Wednesday: 08:00 - 18:00</li>
+                <li>Thursday: 08:00 - 18:00</li>
+                <li>Friday: 08:00 - 18:00</li>
+                <li>Saturday: 08:00 - 18:00</li>
+                <li>Sunday: 08:00 - 18:00</li>
               </ul>
             </Col>
             <Col sm="6" md="3">
-              <h4>Opening Hours:</h4>
+              <h4>Location:</h4>
               <ul>
-                <li>Monday: 08:00 - 18:00</li>
-                <li>Monday: 08:00 - 18:00</li>
-                <li>Monday: 08:00 - 18:00</li>
-                <li>Monday: 08:00 - 18:00</li>
-                <li>Monday: 08:00 - 18:00</li>
-                <li>Monday: 08:00 - 18:00</li>
-                <li>Monday: 08:00 - 18:00</li>
+                <li>2 & 3 Albert Parade</li>
+                <li>147b Wareham Road</li>
+                <li>Corfe Mullen</li>
+                <li>Dorset</li>
+                <li>BH21 3LA</li>
               </ul>
             </Col>
             <Col xs="12" md="6">
