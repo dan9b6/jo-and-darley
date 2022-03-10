@@ -65,34 +65,19 @@ const Contact = () => {
       <Section>
         <div className="form">
           <Row>
-            <Col sm="6" md="3">
-              <h4>Opening Hours:</h4>
-              <ul>
-                <li>Monday: 08:00 - 18:00</li>
-                <li>Tuesday: 08:00 - 18:00</li>
-                <li>Wednesday: 08:00 - 18:00</li>
-                <li>Thursday: 08:00 - 18:00</li>
-                <li>Friday: 08:00 - 18:00</li>
-                <li>Saturday: 08:00 - 18:00</li>
-                <li>Sunday: 08:00 - 18:00</li>
-              </ul>
-            </Col>
-            <Col sm="6" md="3">
-              <h4>Location:</h4>
-              <ul>
-                <li>2 & 3 Albert Parade</li>
-                <li>147b Wareham Road</li>
-                <li>Corfe Mullen</li>
-                <li>Dorset</li>
-                <li>BH21 3LA</li>
-              </ul>
-            </Col>
-            <Col xs="12" md="6">
+            <Col xs="12" lg="6">
               <form
                 className="contact-form"
                 method="post"
                 onSubmit={handleOnSubmit}
               >
+                <h2>Get in touch</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aliquam vehicula enim risus, eget imperdiet enim suscipit ac.
+                  Vestibulum eleifend feugiat vestibulum. Aenean pellentesque,
+                  turpis non laoreet.
+                </p>
                 <Row>
                   <Col xs="12" md="6">
                     <div className="contact-form__group">
@@ -156,6 +141,28 @@ const Contact = () => {
                   </div>
                 </div>
               </form>
+            </Col>
+            <Col sm="6" lg="3">
+              <h4>Opening Hours:</h4>
+              <ul>
+                <li>Monday: 08:00 - 18:00</li>
+                <li>Tuesday: 08:00 - 18:00</li>
+                <li>Wednesday: 08:00 - 18:00</li>
+                <li>Thursday: 08:00 - 18:00</li>
+                <li>Friday: 08:00 - 18:00</li>
+                <li>Saturday: 08:00 - 18:00</li>
+                <li>Sunday: 08:00 - 18:00</li>
+              </ul>
+            </Col>
+            <Col sm="6" lg="3">
+              <h4>Location:</h4>
+              <ul>
+                <li>2 & 3 Albert Parade</li>
+                <li>147b Wareham Road</li>
+                <li>Corfe Mullen</li>
+                <li>Dorset</li>
+                <li>BH21 3LA</li>
+              </ul>
             </Col>
           </Row>
         </div>

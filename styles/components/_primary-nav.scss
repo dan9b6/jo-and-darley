@@ -38,17 +38,12 @@
       @include media-breakpoint-up(md) {
         margin-left: 25px;
         padding: 0;
-        font-size: 12px;
         overflow: hidden;
         opacity: 1;
 
         &:first-child {
           padding-top: unset;
         }
-      }
-
-      @include media-breakpoint-up(lg) {
-        font-size: 16px;
       }
 
       &:before {
@@ -78,14 +73,6 @@
     }
 
     .btn-book {
-      span {
-        font-size: 12px;
-
-        @include media-breakpoint-up(lg) {
-          font-size: 16px;
-        }
-      }
-
       @include media-breakpoint-up(md) {
         margin-left: 20px;
       }

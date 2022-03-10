@@ -74,11 +74,6 @@ const Navigation = () => {
                   </Link>
                 </li>
                 <li className="nav-primary__link">
-                  <Link href="/bridal" scroll={true}>
-                    <a onClick={closeNav}>Bridal</a>
-                  </Link>
-                </li>
-                <li className="nav-primary__link">
                   <Link href="/education" scroll={true}>
                     <a onClick={closeNav}>Education</a>
                   </Link>

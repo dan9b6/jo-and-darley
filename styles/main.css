@@ -11928,17 +11928,11 @@ ul {
   .nav-primary__link {
     margin-left: 25px;
     padding: 0;
-    font-size: 12px;
     overflow: hidden;
     opacity: 1;
   }
   .nav-primary__link:first-child {
     padding-top: unset;
-  }
-}
-@media (min-width: 992px) {
-  .nav-primary__link {
-    font-size: 16px;
   }
 }
 .nav-primary__link:before {
@@ -11961,14 +11955,6 @@ ul {
 @media (min-width: 768px) {
   .nav-primary__link:hover:before {
     left: 0;
-  }
-}
-.nav-primary .btn-book span {
-  font-size: 12px;
-}
-@media (min-width: 992px) {
-  .nav-primary .btn-book span {
-    font-size: 16px;
   }
 }
 @media (min-width: 768px) {
