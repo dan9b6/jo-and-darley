@@ -1,5 +1,6 @@
 import React from "react";
 import Banner from "../components/banner";
+import CTA from "../components/cta/default";
 import Section from "../components/section";
 
 import Link from "next/link";
@@ -131,20 +132,26 @@ const Pricing = () => {
               <div className="pricing__table-data">
                 <p>FROM £15</p>
               </div>
-              <div className="pricing__table-data-title">
-                <h4>BRIDAL PACKAGES</h4>
-              </div>
-              <div className="pricing__table-data">
-                <p>Checkout our latest bridal package for your special day</p>
-                <Link href="/bridal">
-                  <a className="btn btn-primary">
-                    <span>Bridal Package</span>
-                  </a>
-                </Link>
-              </div>
             </Col>
           </Row>
         </div>
+      </Section>
+      <Section>
+        <CTA
+          title="Make your special day more special."
+          img="/images/person.png"
+        >
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+            vehicula enim risus, eget imperdiet enim suscipit ac. Vestibulum
+            eleifend feugiat vestibulum. Aenean pellentesque, turpis non laoreet
+            ullamcorper, erat justo mollis neque, quis rutrum nulla ante et
+            massa. Proin sodales augue lorem.
+          </p>
+          <a href="/services" className="btn btn-primary">
+            See Bridal Package
+          </a>
+        </CTA>
       </Section>
     </main>
   );

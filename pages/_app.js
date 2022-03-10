@@ -6,6 +6,7 @@ import Head from "next/head";
 // Components
 import Navigation from "../components/Navigation";
 import Footer from "../components/footer";
+import Modal from "../components/modal";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -19,6 +20,7 @@ function MyApp({ Component, pageProps }) {
         />
       </Head>
       <Navigation />
+      <Modal />
       <Component {...pageProps} />
       <Footer />
     </>

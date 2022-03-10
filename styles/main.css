@@ -11626,8 +11626,10 @@ ul {
 }
 
 .form {
-  border: 2px solid #144941;
   padding: 10px;
+  text-align: center;
+  padding: 40px 15px;
+  background-color: #ffe1d3;
 }
 @media (min-width: 768px) {
   .form {
@@ -11638,30 +11640,37 @@ ul {
   position: relative;
   margin-bottom: 25px;
 }
-.form .contact-form__group {
+
+.contact-form__group {
   margin-bottom: 20px;
 }
-.form .contact-form__group input,
-.form .contact-form__group textarea {
+.contact-form__group input,
+.contact-form__group textarea {
   width: 100%;
   padding: 5px 10px;
   border: 2px solid #144941;
 }
-.form .contact-form__group input:focus, .form .contact-form__group input:active, .form .contact-form__group input:focus-visible,
-.form .contact-form__group textarea:focus,
-.form .contact-form__group textarea:active,
-.form .contact-form__group textarea:focus-visible {
+.contact-form__group input:focus, .contact-form__group input:active, .contact-form__group input:focus-visible,
+.contact-form__group textarea:focus,
+.contact-form__group textarea:active,
+.contact-form__group textarea:focus-visible {
   box-shadow: none;
   border-color: #ffe1d3;
   outline: none;
 }
-.form .contact-form__group textarea {
+.contact-form__group textarea {
   min-height: 125px;
 }
-.form .contact-form__group .btn.loading span {
+.contact-form__group .btn {
+  background-color: #144941;
+}
+.contact-form__group .btn span {
+  color: #fff;
+}
+.contact-form__group .btn.loading span {
   opacity: 0;
 }
-.form .contact-form__group .btn.loading:before {
+.contact-form__group .btn.loading:before {
   content: "";
   position: absolute;
   left: 0;
@@ -11671,7 +11680,7 @@ ul {
   background-color: #bd8e36;
   z-index: 3;
 }
-.form .contact-form__group .btn.loading:after {
+.contact-form__group .btn.loading:after {
   content: "";
   position: absolute;
   height: 20px;
@@ -11683,11 +11692,11 @@ ul {
   -webkit-animation: spin 1s linear infinite;
           animation: spin 1s linear infinite;
 }
-.form .contact-form__group .btn.success span {
+.contact-form__group .btn.success span {
   color: #fff;
   opacity: 1;
 }
-.form .contact-form__group .btn.success:before {
+.contact-form__group .btn.success:before {
   content: "";
   position: absolute;
   left: 0;
@@ -11697,16 +11706,36 @@ ul {
   background-color: green;
   z-index: 2;
 }
-.form .contact-form__validation {
+.contact-form__subsection {
+  padding: 40px 15px;
+}
+.contact-form__validation {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
-.form .contact-form__validation-message {
-  color: tomato;
+@media (min-width: 768px) {
+  .contact-form__validation {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
-.form .contact-form__validation-message.hidden {
+.contact-form__validation-message {
+  color: tomato;
+  margin-top: 20px;
+}
+.contact-form__validation-message.hidden {
   display: none;
+}
+@media (min-width: 768px) {
+  .contact-form__validation-message {
+    margin-top: unset;
+  }
+}
+
+.subsection {
+  padding: 30px 15px;
 }
 
 @-webkit-keyframes spin {
@@ -11823,6 +11852,66 @@ ul {
   .footer #map {
     min-height: unset;
   }
+}
+
+.modal__content {
+  background-color: white;
+  z-index: 1000000;
+  max-width: 90%;
+  max-height: 90%;
+  overflow: auto;
+  padding: 50px 30px 30px;
+  text-align: center;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .modal__content {
+    max-width: 600px;
+  }
+}
+.modal__content .contact-form__validation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.modal__content .contact-form__validation .btn {
+  margin-bottom: 20px;
+}
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.2s;
+}
+.modal__overlay.active {
+  opacity: 1;
+  z-index: 10000;
+}
+.modal__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ffe1d3;
+  color: #144941;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal__close svg {
+  width: 25px;
+  height: 25px;
 }
 
 .section {

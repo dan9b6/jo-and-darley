@@ -37,6 +37,10 @@ const Navigation = () => {
     window.onscroll = function () {};
   }
 
+  function openModal() {
+    document.querySelector(".modal__overlay").classList.add("active");
+  }
+
   useEffect(() => {
     if (toggle) {
       document.querySelector("body").classList.add("disable-scroll--mobile");
@@ -85,9 +89,9 @@ const Navigation = () => {
                 </li>
                 <li className="d-none d-md-block">
                   <Link href="/contact" scroll={true}>
-                    <a className="btn btn-book">
+                    <button className="btn btn-book" onClick={openModal}>
                       <span>BOOK</span>
-                    </a>
+                    </button>
                   </Link>
                 </li>
               </ul>
