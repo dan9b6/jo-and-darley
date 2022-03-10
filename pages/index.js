@@ -1,5 +1,6 @@
 import HomeBanner from "../components/home-banner";
 import Section from "../components/section";
+import CTA from "../components/cta/default";
 import SplitCTA from "../components/cta/split";
 import CustomCarousel from "../components/carousel";
 
@@ -29,9 +30,6 @@ export default function Home() {
           prioritising client's hair needs, whilst building a community of
           giving & creative individuals.
         </p>
-        <a className="btn btn-book">
-          <span>See Our Courses</span>
-        </a>
       </SplitCTA>
       <SplitCTA>
         <h2>Education.</h2>
@@ -44,66 +42,64 @@ export default function Home() {
           <span>See Our Courses</span>
         </a>
       </SplitCTA>
+      <Section>
+        <h2 className="text-center mb-5">Meet The Team</h2>
+        <Row>
+          <Col md="4">
+            <div className="employee">
+              <img src="/images/person.png" alt="" title="" />
+              <div className="employee__info">
+                <h4>Persons Name</h4>
+                <p>Director</p>
+              </div>
+            </div>
+          </Col>
+          <Col md="4">
+            <div className="employee">
+              <img src="/images/person.png" alt="" title="" />
+              <h4>Persons Name</h4>
+              <p>Senior Stylist</p>
+            </div>
+          </Col>
+          <Col md="4">
+            <div className="employee">
+              <img src="/images/person.png" alt="" title="" />
+              <h4>Persons Name</h4>
+              <p>Junior Stylist</p>
+            </div>
+          </Col>
+        </Row>
+      </Section>
       <CustomCarousel />
 
       <Section>
-        <Row className="mb-5 pb-5 align-items-center">
-          <Col md="6">
-            <div className="section__home-text">
-              <h2>Passionate about hair.</h2>
-              <p>
-                Jo's creativity, alongside her fascination for hair colouring &
-                precision cutting, became the foundation that led to her
-                education worldwide & accumulating extensive knowledge within
-                the hair industry.
-              </p>
-            </div>
-          </Col>
-          <Col md="6">
-            <img src="/images/logo.png" alt="" title="" />
-          </Col>
-        </Row>
-        <Row className="mb-5 py-5 align-items-center">
-          <Col md="6">
-            <div className="section__home-text">
-              <h2>Celebrating individuality.</h2>
-              <p>
-                Jo & the team are passionate about caring for all hair types &
-                prioritising client's hair needs, whilst building a community of
-                giving & creative individuals.
-              </p>
-            </div>
-          </Col>
-          <Col md="6">
-            <img src="/images/logo.png" alt="" title="" />
-          </Col>
-        </Row>
-        <Row className="pt-5 align-items-center">
-          <Col md="6">
-            <div className="section__home-text">
-              <h2>Education.</h2>
-              <p>
-                Jo & the team are passionate about caring for all hair types &
-                prioritising client's hair needs, whilst building a community of
-                giving & creative individuals.
-              </p>
-              <p>
-                At Jo Darley & Co we are now offering new and exciting hair
-                styling courses throughout the year so that you could become a
-                qualified styling and hairdresser. Check out our latest courses
-                and course information.
-              </p>
-              <Link href="/courses">
-                <a className="btn btn-book">
-                  <span>View our courses</span>
-                </a>
-              </Link>
-            </div>
-          </Col>
-          <Col md="6">
-            <img src="/images/logo.png" alt="" title="" />
-          </Col>
-        </Row>
+        <CTA
+          title="Make your special day more special."
+          img="/images/person.png"
+        >
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+            vehicula enim risus, eget imperdiet enim suscipit ac. Vestibulum
+            eleifend feugiat vestibulum. Aenean pellentesque, turpis non laoreet
+            ullamcorper, erat justo mollis neque, quis rutrum nulla ante et
+            massa. Proin sodales augue lorem.
+          </p>
+          <a href="/services" className="btn btn-primary">
+            See Bridal Package
+          </a>
+        </CTA>
+        <CTA title="Lorem Ipsum." img="/images/person.png" reverse>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+            vehicula enim risus, eget imperdiet enim suscipit ac. Vestibulum
+            eleifend feugiat vestibulum. Aenean pellentesque, turpis non laoreet
+            ullamcorper, erat justo mollis neque, quis rutrum nulla ante et
+            massa. Proin sodales augue lorem.
+          </p>
+          <a href="/services" className="btn btn-primary">
+            Button
+          </a>
+        </CTA>
       </Section>
     </main>
   );

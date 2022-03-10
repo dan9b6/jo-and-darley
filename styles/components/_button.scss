@@ -5,7 +5,8 @@
   box-shadow: none;
   outline: none;
   max-width: 250px;
-  border: none;
+  border: 2px solid;
+  transition: 0.2s;
 
   &:active,
   &:focus,
@@ -33,6 +34,14 @@
 
   &-primary {
     background-color: $c-dark-green;
+    color: $c-white;
+    border-color: $c-dark-green;
+
+    &:hover {
+      background-color: transparent;
+      color: $c-dark-green;
+      border-color: $c-dark-green;
+    }
   }
 
   &-secondary {
@@ -52,6 +61,7 @@
     align-items: center;
     overflow: hidden;
     background-color: $c-light-pink;
+    border: none;
 
     span {
       position: relative;
@@ -72,15 +82,17 @@
       z-index: 0;
     }
 
-    &:hover {
-      border-color: $c-gold;
+    @include media-breakpoint-up(lg) {
+      &:hover {
+        border-color: $c-gold;
 
-      &:before {
-        left: 0;
-      }
+        &:before {
+          left: 0;
+        }
 
-      span {
-        color: black;
+        span {
+          color: black;
+        }
       }
     }
   }

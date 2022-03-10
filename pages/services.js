@@ -137,7 +137,7 @@ const Pricing = () => {
               <div className="pricing__table-data">
                 <p>Checkout our latest bridal package for your special day</p>
                 <Link href="/bridal">
-                  <a className="btn btn-book">
+                  <a className="btn btn-primary">
                     <span>Bridal Package</span>
                   </a>
                 </Link>

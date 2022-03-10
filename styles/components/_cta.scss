@@ -1,4 +1,34 @@
 .cta {
+  &__img {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+
+    @include media-breakpoint-up(md) {
+      justify-content: flex-end;
+      margin-top: unset;
+    }
+
+    img {
+      max-height: 300px;
+      width: auto;
+    }
+  }
+
+  &--flex {
+    .row {
+      flex-direction: row-reverse;
+    }
+
+    .cta {
+      &__img {
+        @include media-breakpoint-up(md) {
+          justify-content: flex-start;
+        }
+      }
+    }
+  }
+
   &--split {
     position: relative;
 
