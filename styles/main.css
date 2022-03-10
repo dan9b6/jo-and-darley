@@ -11731,14 +11731,20 @@ ul {
   background-color: #144941;
   padding: 30px 0;
 }
+.footer h4, .footer .h4,
+.footer a,
+.footer ul,
+.footer li {
+  color: #fff;
+}
+.footer a {
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
 .footer__col {
   margin-bottom: 30px;
-}
-.footer__col h4, .footer__col .h4,
-.footer__col a,
-.footer__col ul,
-.footer__col li {
-  color: #fff;
 }
 @media (min-width: 576px) {
   .footer__col li {

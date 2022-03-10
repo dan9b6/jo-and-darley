@@ -134,7 +134,10 @@ const Footer = () => {
           </Col>
         </Row>
         <p className="footer__privacy">
-          Privacy Policy - Copyright 2022 - Dan Burton
+          <Link href="/privacy-policy">
+            <a>Privacy Policy</a>
+          </Link>{" "}
+          - Copyright 2022 - Dan Burton
         </p>
       </Container>
     </footer>
