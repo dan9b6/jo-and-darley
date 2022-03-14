@@ -12,18 +12,18 @@ export default function Home() {
   return (
     <main>
       <HomeBanner />
-      <SplitCTA>
+      <SplitCTA bgImg="/images/cta/4.jpg">
         <h2>Passionate about hair.</h2>
         <p>
           Jo's creativity, alongside her fascination for hair colouring &
           precision cutting, became the foundation that led to her education
           worldwide & accumulating extensive knowledge within the hair industry.
         </p>
-        <a className="btn btn-book">
+        <a className="btn btn-primary">
           <span>See Our Services</span>
         </a>
       </SplitCTA>
-      <SplitCTA reverse>
+      <SplitCTA reverse bgImg="/images/cta/12.jpg">
         <h2>Celebrating individuality.</h2>
         <p>
           Jo & the team are passionate about caring for all hair types &
@@ -31,14 +31,14 @@ export default function Home() {
           giving & creative individuals.
         </p>
       </SplitCTA>
-      <SplitCTA>
+      <SplitCTA bgImg="/images/cta/2.jpg">
         <h2>Education.</h2>
         <p>
           Jo & the team are passionate about caring for all hair types &
           prioritising client's hair needs, whilst building a community of
           giving & creative individuals.
         </p>
-        <a className="btn btn-book">
+        <a className="btn btn-primary">
           <span>See Our Courses</span>
         </a>
       </SplitCTA>
@@ -75,7 +75,7 @@ export default function Home() {
       <Section>
         <CTA
           title="Make your special day more special."
-          img="/images/person.png"
+          img="/images/cta/10.jpg"
         >
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
@@ -88,7 +88,11 @@ export default function Home() {
             See Bridal Package
           </a>
         </CTA>
-        <CTA title="Lorem Ipsum." img="/images/person.png" reverse>
+        <CTA
+          title="Lorem Ipsum."
+          img="/images/banner/contact-banner.jpg"
+          reverse
+        >
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
             vehicula enim risus, eget imperdiet enim suscipit ac. Vestibulum

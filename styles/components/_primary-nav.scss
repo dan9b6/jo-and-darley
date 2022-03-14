@@ -51,7 +51,7 @@
         position: absolute;
         height: 1px;
         width: 60%;
-        background-color: $c-gold;
+        background-color: $c-light-pink;
         bottom: 0;
 
         @include media-breakpoint-up(md) {
@@ -72,7 +72,7 @@
       }
     }
 
-    .btn-book {
+    .btn {
       @include media-breakpoint-up(md) {
         margin-left: 20px;
       }

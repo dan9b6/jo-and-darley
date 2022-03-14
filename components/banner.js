@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 
 const Banner = ({ title, bgImg }) => {
   return (
-    <div className="banner">
+    <div className="banner" style={{ backgroundImage: "url(" + bgImg + ")" }}>
       <Container>
         <div className="banner__content">
           <h1>{title}</h1>

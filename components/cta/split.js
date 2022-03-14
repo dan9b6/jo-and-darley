@@ -3,10 +3,13 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-const SplitCTA = ({ reverse, children }) => {
+const SplitCTA = ({ bgImg, reverse, children }) => {
   return (
     <div className={`cta--split ${reverse ? "cta--split__reverse" : ""}`}>
-      <div className="cta--split__img"></div>
+      <div
+        className="cta--split__img"
+        style={{ backgroundImage: "url(" + bgImg + ")" }}
+      ></div>
       <Container>
         <Row className={`${reverse ? "justify-content-end" : ""}`}>
           <Col md="8" lg="6">

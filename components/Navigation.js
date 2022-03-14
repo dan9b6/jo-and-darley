@@ -89,8 +89,8 @@ const Navigation = () => {
                 </li>
                 <li className="d-none d-md-block">
                   <Link href="/contact" scroll={true}>
-                    <button className="btn btn-book" onClick={openModal}>
-                      <span>BOOK</span>
+                    <button className="btn btn-secondary" onClick={openModal}>
+                      BOOK
                     </button>
                   </Link>
                 </li>

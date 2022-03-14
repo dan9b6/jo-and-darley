@@ -20,11 +20,17 @@ const ContactForm = () => {
     }));
   }
 
+  function handleChange(e) {
+    let submitBtn = document.getElementById("contact-form-submit");
+    submitBtn.innerHTML = "Submit";
+    submitBtn.classList.remove("success");
+  }
+
   async function handleOnSubmit(e) {
     e.preventDefault();
 
     const formValidationMessage = document.querySelector(
-      ".contact-form__validation-message"
+      ".contact .contact-form__validation-message"
     );
 
     if (
@@ -37,7 +43,6 @@ const ContactForm = () => {
       formValidationMessage.classList.remove("hidden");
     } else {
       formValidationMessage.classList.add("hidden");
-
       fetch("/api/mail", {
         method: "post",
         body: JSON.stringify(contactData),
@@ -48,7 +53,7 @@ const ContactForm = () => {
             submitBtn.classList.add("loading");
             setTimeout(() => {
               submitBtn.classList.add("success");
-              submitBtn.querySelector("span").innerHTML = "Message Sent";
+              submitBtn.innerHTML = "Message Sent";
               submitBtn.classList.remove("loading");
             }, 2000);
             return res.json();
@@ -59,7 +64,12 @@ const ContactForm = () => {
   }
 
   return (
-    <form className="contact-form" method="post" onSubmit={handleOnSubmit}>
+    <form
+      className="contact-form"
+      method="post"
+      onSubmit={handleOnSubmit}
+      onChange={handleChange}
+    >
       <Row>
         <Col xs="12" md="6">
           <div className="contact-form__group">
@@ -113,8 +123,8 @@ const ContactForm = () => {
         </Col>
       </Row>
       <div className="contact-form__group contact-form__validation">
-        <button id="contact-form-submit" className="btn btn-book">
-          <span>Submit</span>
+        <button id="contact-form-submit" className="btn btn-primary">
+          Submit
         </button>
         <div className="contact-form__validation-message hidden">
           <small className="mb-0 pb-0">Please fill all fields *</small>

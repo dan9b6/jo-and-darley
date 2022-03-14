@@ -8,11 +8,11 @@ import Col from "react-bootstrap/Col";
 const Contact = () => {
   return (
     <main>
-      <Banner title="Contact" />
+      <Banner title="Contact" bgImg="/images/banner/contact-banner.jpg" />
       <Section>
-        <div className="">
+        <div className="contact">
           <Row>
-            <Col xs="12" md="9" lg="9">
+            <Col xs="12" lg="9">
               <div className="form">
                 <h2>Get in touch</h2>
                 <p className="mb-4">
@@ -26,7 +26,7 @@ const Contact = () => {
             </Col>
             <Col xs="12" lg="3" className="subsection">
               <Row>
-                <Col sm="6" md="12" className="mb-md-5">
+                <Col sm="6" lg="12" className="mb-md-5">
                   <h4>Opening Hours:</h4>
                   <ul>
                     <li>Monday: 08:00 - 18:00</li>
@@ -38,7 +38,7 @@ const Contact = () => {
                     <li>Sunday: 08:00 - 18:00</li>
                   </ul>
                 </Col>
-                <Col sm="6" md="12">
+                <Col sm="6" lg="12">
                   <h4>Location:</h4>
                   <ul>
                     <li>2 & 3 Albert Parade</li>
