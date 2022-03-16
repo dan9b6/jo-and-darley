@@ -11454,6 +11454,9 @@ ul {
   }
 }
 
+.cta {
+  margin-bottom: 80px;
+}
 .cta__img {
   display: flex;
   justify-content: center;
@@ -11466,8 +11469,16 @@ ul {
   }
 }
 .cta__img img {
+  height: auto;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   max-height: 300px;
-  width: auto;
+}
+@media (min-width: 768px) {
+  .cta__img img {
+    width: 80%;
+  }
 }
 .cta--flex .row {
   flex-direction: row-reverse;

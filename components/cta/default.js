@@ -5,7 +5,7 @@ import Col from "react-bootstrap/Col";
 const Cta = ({ title, img, children, reverse }) => {
   return (
     <div className={`cta ${reverse ? "cta--flex" : ""}`}>
-      <Row className="mb-5 pb-5 align-items-center">
+      <Row className="align-items-center">
         <Col md="6">
           <div>
             <h2>{title}</h2>
