@@ -1,5 +1,9 @@
 .cta {
-  margin-bottom: 80px;
+  margin-bottom: 40px;
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: 80px;
+  }
 
   &__img {
     display: flex;
@@ -9,6 +13,11 @@
     @include media-breakpoint-up(md) {
       justify-content: flex-end;
       margin-top: unset;
+    }
+
+    .img-container {
+      height: 300px;
+      width: 100%;
     }
 
     img {

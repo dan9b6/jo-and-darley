@@ -9,8 +9,14 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
+
 // Next
 import Link from "next/link";
+import Image from "next/image";
+import Logo from "../public/images/logo.png";
+
+//
+import ImageContainer from "./image-container";
 
 const Navigation = () => {
   const [toggle, setToggle] = useState(false);
@@ -59,7 +65,14 @@ const Navigation = () => {
             <div className="header__logo">
               <Link href="/" scroll={true}>
                 <a>
-                  <img src="/images/logo.png" alt="Logo" />
+                  <ImageContainer>
+                    <Image
+                      src={Logo}
+                      alt="Logo"
+                      layout="fill"
+                      objectFit="contain"
+                    />
+                  </ImageContainer>
                 </a>
               </Link>
             </div>

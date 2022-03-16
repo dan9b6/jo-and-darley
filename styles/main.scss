@@ -59,6 +59,11 @@ main {
   }
 }
 
+.img-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
 .disable-scroll--mobile {
   @include media-breakpoint-down(md) {
     overflow: hidden;

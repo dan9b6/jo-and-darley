@@ -1,8 +1,16 @@
 import React from "react";
+import Image from "next/image";
+
+import ImageContainer from "../components/image-container";
+import Logo from "../public/images/logo.png";
 
 const TestComponent = () => {
   return (
     <main className="container">
+      <ImageContainer>
+        <Image src={Logo} alt="Logo" layout="fill" objectFit="contain" />
+      </ImageContainer>
+
       <div>
         <section id="text">
           <header>

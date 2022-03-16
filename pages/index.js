@@ -7,6 +7,8 @@ import CustomCarousel from "../components/carousel";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Link from "next/link";
+import Image from "next/image";
+import ImageContainer from "../components/image-container";
 
 export default function Home() {
   return (
@@ -47,7 +49,14 @@ export default function Home() {
         <Row>
           <Col md="4">
             <div className="employee">
-              <img src="/images/person.png" alt="" title="" />
+              <ImageContainer>
+                <Image
+                  src="/images/person.png"
+                  alt="Logo"
+                  layout="fill"
+                  objectFit="contain"
+                />
+              </ImageContainer>
               <div className="employee__info">
                 <h4>Persons Name</h4>
                 <p>Director</p>
@@ -56,14 +65,28 @@ export default function Home() {
           </Col>
           <Col md="4">
             <div className="employee">
-              <img src="/images/person.png" alt="" title="" />
+              <ImageContainer>
+                <Image
+                  src="/images/person.png"
+                  alt="Logo"
+                  layout="fill"
+                  objectFit="contain"
+                />
+              </ImageContainer>
               <h4>Persons Name</h4>
               <p>Senior Stylist</p>
             </div>
           </Col>
           <Col md="4">
             <div className="employee">
-              <img src="/images/person.png" alt="" title="" />
+              <ImageContainer>
+                <Image
+                  src="/images/person.png"
+                  alt="Logo"
+                  layout="fill"
+                  objectFit="contain"
+                />
+              </ImageContainer>
               <h4>Persons Name</h4>
               <p>Junior Stylist</p>
             </div>

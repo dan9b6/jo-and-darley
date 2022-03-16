@@ -2,6 +2,9 @@ import React from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
+import ImageContainer from "../image-container";
+import Image from "next/image";
+
 const Cta = ({ title, img, children, reverse }) => {
   return (
     <div className={`cta ${reverse ? "cta--flex" : ""}`}>
@@ -14,7 +17,9 @@ const Cta = ({ title, img, children, reverse }) => {
         </Col>
         <Col md="6">
           <div className="cta__img">
-            <img src={img} alt={title} />
+            <ImageContainer>
+              <Image src={img} alt={title} layout="fill" objectFit="contain" />
+            </ImageContainer>
           </div>
         </Col>
       </Row>
