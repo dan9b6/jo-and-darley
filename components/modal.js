@@ -51,7 +51,7 @@ const Modal = () => {
     } else {
       formValidationMessage.classList.add("hidden");
 
-      fetch("/api/mail", {
+      fetch("/api/SendGrid", {
         method: "post",
         body: JSON.stringify(modalContactData),
       })
