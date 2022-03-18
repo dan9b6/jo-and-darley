@@ -43,7 +43,7 @@ const ContactForm = () => {
       formValidationMessage.classList.remove("hidden");
     } else {
       formValidationMessage.classList.add("hidden");
-      fetch("/api/mail", {
+      fetch("/api/SendGrid", {
         method: "post",
         body: JSON.stringify(contactData),
       })
@@ -57,6 +57,8 @@ const ContactForm = () => {
               submitBtn.classList.remove("loading");
             }, 2000);
             return res.json();
+          } else {
+            console.log("Error in sending message");
           }
         })
         .catch((error) => console.log("error"));

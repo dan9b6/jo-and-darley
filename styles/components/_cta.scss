@@ -18,16 +18,14 @@
     .img-container {
       height: 300px;
       width: 100%;
-    }
-
-    img {
-      height: auto;
-      width: 100%;
-      object-fit: cover;
-      max-height: 300px;
 
       @include media-breakpoint-up(md) {
         width: 80%;
+        height: 400px;
+      }
+
+      @include media-breakpoint-up(lg) {
+        height: 300px;
       }
     }
   }

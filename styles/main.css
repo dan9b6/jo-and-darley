@@ -11477,16 +11477,15 @@ ul {
   height: 300px;
   width: 100%;
 }
-.cta__img img {
-  height: auto;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  max-height: 300px;
-}
 @media (min-width: 768px) {
-  .cta__img img {
+  .cta__img .img-container {
     width: 80%;
+    height: 400px;
+  }
+}
+@media (min-width: 992px) {
+  .cta__img .img-container {
+    height: 300px;
   }
 }
 .cta--flex .row {
