@@ -11288,7 +11288,9 @@ h2,
 h3,
 .h3,
 h4,
-.h4 {
+.h4,
+h5,
+.h5 {
   font-family: "Poppins", sans-serif;
 }
 
@@ -11533,7 +11535,7 @@ ul {
   }
 }
 .cta--split__text {
-  padding-top: 20px;
+  padding-top: 40px;
   padding-bottom: 40px;
 }
 @media (min-width: 768px) {
@@ -11558,6 +11560,120 @@ ul {
     padding-left: 15px;
     padding-right: unset;
   }
+}
+.cta--instagram {
+  position: relative;
+  padding-bottom: 80px;
+}
+.cta--instagram-heading {
+  text-align: center;
+  padding-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .cta--instagram-heading {
+    padding-bottom: 30px;
+  }
+}
+.cta--instagram .img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  opacity: 1;
+  cursor: pointer;
+  color: #144941;
+  text-decoration: none;
+}
+@media (min-width: 768px) {
+  .cta--instagram .img-overlay {
+    background-color: rgba(254, 227, 210, 0.3);
+    opacity: 0;
+  }
+  .cta--instagram .img-overlay:hover {
+    opacity: 1;
+  }
+}
+.cta--instagram .img-overlay__icon {
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  position: absolute;
+  bottom: 10px;
+}
+@media (min-width: 768px) {
+  .cta--instagram .img-overlay__icon {
+    position: relative;
+    bottom: unset;
+  }
+}
+.cta--instagram p {
+  display: none;
+}
+@media (min-width: 768px) {
+  .cta--instagram p {
+    display: block;
+  }
+}
+.cta--instagram .img-container {
+  height: 300px;
+  width: 100%;
+  transition: 0.2s;
+  margin: 0 auto 20px;
+}
+@media (min-width: 768px) {
+  .cta--instagram .img-container {
+    margin-bottom: unset;
+    height: 200px;
+  }
+}
+@media (min-width: 992px) {
+  .cta--instagram .img-container {
+    height: 350px;
+  }
+}
+
+.education__heading {
+  padding: 80px 15px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(254, 227, 210, 0.3);
+}
+@media (min-width: 768px) {
+  .education__heading:before {
+    content: "“a natural, concise way of learning to cut hair”";
+    position: absolute;
+    font-size: 36px;
+    top: 50px;
+    color: rgba(20, 73, 65, 0.05);
+    font-family: "Poppins", sans-serif;
+  }
+}
+@media (min-width: 992px) {
+  .education__heading:before {
+    font-size: 48px;
+  }
+}
+.education__header {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid rgba(20, 73, 65, 0.05);
+}
+.education__header h2, .education__header .h2 {
+  text-decoration: underline;
+  -webkit-text-decoration-color: rgba(20, 73, 65, 0.3);
+          text-decoration-color: rgba(20, 73, 65, 0.3);
 }
 
 .employee {
@@ -11946,6 +12062,9 @@ ul {
 .section--green {
   background-color: rgba(20, 73, 65, 0.3);
 }
+.section--light-pink {
+  background-color: rgba(254, 227, 210, 0.3);
+}
 
 .pricing__table {
   border: 2px solid #144941;
@@ -12183,6 +12302,15 @@ main img {
   }
 }
 
+.link {
+  color: #144941;
+  font-weight: bold;
+  transition: 0.2s;
+}
+.link:hover {
+  color: rgba(20, 73, 65, 0.3);
+}
+
 .img-container {
   position: relative;
   height: 100%;
@@ -12203,4 +12331,20 @@ main img {
     margin: 0;
     height: 100%;
   }
+}
+
+.custom-list li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 30px;
+}
+.custom-list li:before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 0;
+  height: 3px;
+  width: 15px;
+  background-color: rgba(20, 73, 65, 0.05);
+  transform: skew(15deg);
 }/*# sourceMappingURL=main.css.map */

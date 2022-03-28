@@ -10,6 +10,7 @@
 @import "../styles/components/button";
 @import "../styles/components/carousel";
 @import "../styles/components/cta";
+@import "../styles/components/education";
 @import "../styles/components/employee";
 @import "../styles/components/header";
 @import "../styles/components/form";
@@ -59,6 +60,16 @@ main {
   }
 }
 
+.link {
+  color: $c-dark-green;
+  font-weight: bold;
+  transition: 0.2s;
+
+  &:hover {
+    color: $c-light-green;
+  }
+}
+
 .img-container {
   position: relative;
   height: 100%;
@@ -77,5 +88,24 @@ main {
     overflow: hidden;
     margin: 0;
     height: 100%;
+  }
+}
+
+.custom-list {
+  li {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 30px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 12px;
+      left: -0;
+      height: 3px;
+      width: 15px;
+      background-color: $c-lightest-green;
+      transform: skew(15deg);
+    }
   }
 }

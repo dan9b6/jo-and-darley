@@ -4,13 +4,86 @@ import Image from "next/image";
 import ImageContainer from "../components/image-container";
 import Logo from "../public/images/logo.png";
 
+import Section from "../components/section";
+import SplitCTA from "../components/cta/split";
+
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+
 const TestComponent = () => {
   return (
     <main className="container">
       <ImageContainer>
         <Image src={Logo} alt="Logo" layout="fill" objectFit="contain" />
       </ImageContainer>
-
+      <SplitCTA reverse bgImg="/images/cta/12.jpg">
+        <h2>Celebrating individuality.</h2>
+        <p>
+          Jo & the team are passionate about caring for all hair types &
+          prioritising client's hair needs, whilst building a community of
+          giving & creative individuals.
+        </p>
+      </SplitCTA>
+      <SplitCTA bgImg="/images/cta/2.jpg">
+        <h2>Education.</h2>
+        <p>
+          Jo & the team are passionate about caring for all hair types &
+          prioritising client's hair needs, whilst building a community of
+          giving & creative individuals.
+        </p>
+        <a className="btn btn-primary">
+          <span>See Our Courses</span>
+        </a>
+      </SplitCTA>
+      <Section>
+        <h2 className="text-center mb-5">Meet The Team</h2>
+        <Row>
+          <Col md="4">
+            <div className="employee">
+              <ImageContainer>
+                <Image
+                  src="/images/person.png"
+                  alt="Logo"
+                  layout="fill"
+                  objectFit="contain"
+                />
+              </ImageContainer>
+              <div className="employee__info">
+                <h4>Persons Name</h4>
+                <p>Director</p>
+              </div>
+            </div>
+          </Col>
+          <Col md="4">
+            <div className="employee">
+              <ImageContainer>
+                <Image
+                  src="/images/person.png"
+                  alt="Logo"
+                  layout="fill"
+                  objectFit="contain"
+                />
+              </ImageContainer>
+              <h4>Persons Name</h4>
+              <p>Senior Stylist</p>
+            </div>
+          </Col>
+          <Col md="4">
+            <div className="employee">
+              <ImageContainer>
+                <Image
+                  src="/images/person.png"
+                  alt="Logo"
+                  layout="fill"
+                  objectFit="contain"
+                />
+              </ImageContainer>
+              <h4>Persons Name</h4>
+              <p>Junior Stylist</p>
+            </div>
+          </Col>
+        </Row>
+      </Section>
       <div>
         <section id="text">
           <header>

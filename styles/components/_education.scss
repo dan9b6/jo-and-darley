@@ -1,0 +1,38 @@
+.education {
+  &__heading {
+    padding: 80px 15px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $c-lightest-pink;
+
+    &:before {
+      @include media-breakpoint-up(md) {
+        content: "“a natural, concise way of learning to cut hair”";
+        position: absolute;
+        font-size: 36px;
+        top: 50px;
+        color: $c-lightest-green;
+        font-family: $c-font-heading;
+      }
+
+      @include media-breakpoint-up(lg) {
+        font-size: 48px;
+      }
+    }
+  }
+
+  &__header {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid $c-lightest-green;
+
+    h2 {
+      text-decoration: underline;
+      text-decoration-color: $c-light-green;
+    }
+  }
+}

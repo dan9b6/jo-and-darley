@@ -140,7 +140,7 @@ const Pricing = () => {
       <Section>
         <CTA
           title="Make your special day more special."
-          img="/images/person.png"
+          img="/images/instagram/instagram-4.jpg"
         >
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
@@ -154,16 +154,6 @@ const Pricing = () => {
           </a>
         </CTA>
       </Section>
-      <SplitCTA reverse bgImg="/images/cta/15.jpg">
-        <h2>Animal Friendly.</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-          feugiat libero sed nulla cursus pellentesque. Nam elementum, leo non
-          tincidunt luctus, quam sapien accumsan neque, non egestas est lectus
-          id ex. Sed ut facilisis orci. Nulla nec rutrum leo. Suspendisse at dui
-          fringilla, ornare urna eget, viverra nibh.
-        </p>
-      </SplitCTA>
     </main>
   );
 };
