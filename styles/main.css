@@ -11563,7 +11563,11 @@ ul {
 }
 .cta--instagram {
   position: relative;
-  padding-bottom: 80px;
+}
+@media (min-width: 768px) {
+  .cta--instagram {
+    padding-bottom: 80px;
+  }
 }
 .cta--instagram-heading {
   text-align: center;
