@@ -82,7 +82,6 @@ const Modal = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
           vehicula enim risus, eget imperdiet enim suscipit ac.
         </p>
-        {/* <ContactForm /> */}
         <form
           className="contact-form"
           method="post"
