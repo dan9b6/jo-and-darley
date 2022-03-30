@@ -140,7 +140,7 @@ const Pricing = () => {
       <Section>
         <CTA
           title="Make your special day more special."
-          img="/images/instagram/instagram-4.jpg"
+          img="/images/instagram/instagram-5.jpg"
         >
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
