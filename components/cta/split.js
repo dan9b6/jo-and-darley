@@ -6,9 +6,13 @@ import Col from "react-bootstrap/Col";
 import ImageContainer from "../image-container";
 import Image from "next/image";
 
-const SplitCTA = ({ bgImg, reverse, children }) => {
+const SplitCTA = ({ bgImg, reverse, children, bg }) => {
   return (
-    <div className={`cta--split ${reverse ? "cta--split__reverse" : ""}`}>
+    <div
+      className={`cta--split ${reverse ? "cta--split__reverse" : ""} ${
+        bg ? "section--" + bg : ""
+      }`}
+    >
       <Container>
         <Row className={`${reverse ? "justify-content-end" : ""}`}>
           <Col md="8" lg="6">

@@ -11,12 +11,13 @@ const Education = () => {
   return (
     <main>
       <Banner title="Education" bgImg="/images/banner/education-banner.jpg" />
-      <Section>
+      <div className="education__heading">
+        <h2>“a natural, concise way of learning to cut hair”</h2>
+      </div>
+      <Section bg="pink">
         <div className="education__section">
           <div className="education__header">
-            <h2>
-              Foundations of Cutting - <i>Course</i>
-            </h2>
+            <h2>Foundations of Cutting</h2>
             <h3>1 Day Course</h3>
             <h4>
               An introduction to creating any haircut – beginner level &amp;
@@ -26,7 +27,7 @@ const Education = () => {
           <Row>
             <Col lg="6" className="mb-4">
               <h5>
-                <strong>Day 1:</strong>
+                <strong>The Day:</strong>
               </h5>
               <ul className="custom-list">
                 <li>
@@ -96,10 +97,7 @@ const Education = () => {
           </Row>
         </div>
       </Section>
-      <div className="education__heading">
-        <h2>“a natural, concise way of learning to cut hair”</h2>
-      </div>
-      <SplitCTA bgImg="/images/cta/6.jpg">
+      <SplitCTA bgImg="/images/cta/6.jpg" bg="light-pink">
         <div>
           <h2>General Course Details</h2>
           <p>

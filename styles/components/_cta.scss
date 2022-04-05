@@ -46,6 +46,7 @@
 
   &--split {
     position: relative;
+    background-color: $c-light-pink;
 
     @include media-breakpoint-up(md) {
       padding: 80px 0;

@@ -48,8 +48,6 @@
 
     h4 {
       margin-bottom: 25px;
-      text-decoration: underline;
-      text-decoration-color: $c-gold;
 
       @include media-breakpoint-up(sm) {
         font-size: 14px;

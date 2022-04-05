@@ -13,7 +13,7 @@ const Pricing = () => {
   return (
     <main>
       <Banner title="Services" bgImg="/images/banner/services-banner.jpg" />
-      <Section>
+      <Section bg="pink">
         <div className="pricing__table">
           <Row>
             <Col md="4">
@@ -137,7 +137,7 @@ const Pricing = () => {
           </Row>
         </div>
       </Section>
-      <Section>
+      <Section bg="light-pink">
         <CTA
           title="Make your special day more special."
           img="/images/instagram/instagram-5.jpg"

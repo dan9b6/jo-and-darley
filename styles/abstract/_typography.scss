@@ -4,6 +4,9 @@ h3,
 h4,
 h5 {
   font-family: $c-font-heading;
+  font-weight: bold;
+  font-display: swap;
+  color: $c-dark-green;
 }
 
 body,
@@ -11,6 +14,8 @@ p,
 li,
 a {
   font-family: $c-font-body;
+  font-display: swap;
+  color: $c-dark-green;
 }
 
 ul {

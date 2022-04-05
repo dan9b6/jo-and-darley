@@ -9,17 +9,15 @@ const Contact = () => {
   return (
     <main>
       <Banner title="Contact" bgImg="/images/banner/contact-banner.jpg" />
-      <Section>
+      <Section bg="light-pink">
         <div className="contact">
           <Row>
             <Col xs="12" lg="9">
               <div className="form">
                 <h2>Get in touch</h2>
                 <p className="mb-4">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Aliquam vehicula enim risus, eget imperdiet enim suscipit ac.
-                  Vestibulum eleifend feugiat vestibulum. Aenean pellentesque,
-                  turpis non laoreet.
+                  To arrange a complimentary consultation, make a booking or for
+                  any other enquiries, get in touch…
                 </p>
                 <ContactForm />
               </div>
