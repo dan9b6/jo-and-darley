@@ -11385,12 +11385,6 @@ ul {
   height: 80px;
   width: 200px;
 }
-@media (min-width: 576px) {
-  .banner--home .banner__content .img-container {
-    height: 100px;
-    width: 250px;
-  }
-}
 
 .btn {
   padding: 10px 30px;
@@ -11458,6 +11452,11 @@ ul {
 .carousel--reviews .carousel {
   width: 100%;
   max-width: 750px;
+}
+@media (min-width: 576px) {
+  .carousel--reviews .carousel {
+    height: 200px;
+  }
 }
 .carousel--reviews .carousel-item__content {
   height: 100%;

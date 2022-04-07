@@ -8,153 +8,186 @@ import Link from "next/link";
 
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
+import Head from "next/head";
 
 const Pricing = () => {
   return (
-    <main>
-      <Banner title="Services" bgImg="/images/banner/services-banner.jpg" />
-      <Section bg="pink">
-        <div className="pricing__table">
-          <Row>
-            <Col md="4">
-              <div className="pricing__table-data-title">
-                <h4>Cut & Styling</h4>
-                <p>
-                  <strong>Junior Stylist / Stylist / Director</strong>
-                </p>
-              </div>
-              <div className="pricing__table-data">
-                <p>Short / Clippered Cut</p>
-                <p>£20 / £27 / £30</p>
-              </div>
-              <div className="pricing__table-data">
-                <p>Blow Dry - Short</p>
-                <p>£20 / £25 / £27</p>
-              </div>
-              <div className="pricing__table-data">
-                <p>Blow Dry - Long</p>
-                <p>£25 / £30 / £35</p>
-              </div>
-              <div className="pricing__table-data">
-                <p>Hair Up</p>
-                <p>£30 / £40 / £45</p>
-              </div>
-              <div className="pricing__table-data">
-                <p>Kids 0-14 years</p>
-                <p>£10 - £35 / £10 - £35 / No Kids</p>
-              </div>
-              <div className="pricing__table-data-title">
-                <h4>Highlights</h4>
-              </div>
-              <div className="pricing__table-data">
-                <p>T-SECTION</p>
-                <p>FROM £50</p>
-              </div>
-              <div className="pricing__table-data">
-                <p>HALF HEAD</p>
-                <p>SHORT / LONG</p>
-                <p>FROM £60 / £70</p>
-              </div>
-              <div className="pricing__table-data">
-                <p>FULL HEAD</p>
-                <p>SHORT / LONG</p>
-                <p>FROM £90 / £100</p>
-              </div>
-            </Col>
-            <Col md="4">
-              <div className="pricing__table-data-title">
-                <h4>Colour</h4>
-              </div>
-              <div className="pricing__table-data">
-                <p>Roots</p>
-                <p>£40</p>
-              </div>
-              <div className="pricing__table-data">
-                <p>Full Head</p>
-                <p>from £50</p>
-              </div>
-              <div className="pricing__table-data">
-                <p>Semi-permanent</p>
-                <p>Short / Long</p>
-                <p>from £32 / £42</p>
-              </div>
-              <div className="pricing__table-data">
-                <p>Colour Correction</p>
-                <p>Price on consultation only</p>
-                <p>From £70 (Including treatment)</p>
-              </div>
-              <div className="pricing__table-data-title">
-                <h4>Balayage</h4>
-              </div>
-              <div className="pricing__table-data">
-                <p>Express</p>
-                <p>Colour, Toner & Natural Dry</p>
-                <p>from £130</p>
-              </div>
-              <div className="pricing__table-data">
-                <p>Luxury</p>
-                <p>Colour, Toner, Cut & Finish</p>
-                <p>from £170</p>
-              </div>
-              <div className="pricing__table-data-title">
-                <h4>Bleach Roots</h4>
-              </div>
-              <div className="pricing__table-data">
-                <p>FROM £60</p>
-              </div>
-            </Col>
-            <Col md="4">
-              <div className="pricing__table-data-title">
-                <h4>Toner</h4>
-              </div>
-              <div className="pricing__table-data">
-                <p>Short / Long</p>
-                <p>£18 / £28</p>
-              </div>
-              <div className="pricing__table-data-title">
-                <h4>Perming</h4>
-              </div>
-              <div className="pricing__table-data">
-                <p>Price on consultation only</p>
-                <p>(Cut & Finish Included)</p>
-                <p>Short / Long</p>
-                <p>from £90 / £120</p>
-              </div>
-              <div className="pricing__table-data-title">
-                <h4>BRAZILIAN BLOW DRY</h4>
-              </div>
-              <div className="pricing__table-data">
-                <p>SHORT / LONG</p>
-                <p>FROM £100 / £130</p>
-              </div>
-              <div className="pricing__table-data-title">
-                <h4>OWAY ORGANIC TREATMENT</h4>
-              </div>
-              <div className="pricing__table-data">
-                <p>FROM £15</p>
-              </div>
-            </Col>
-          </Row>
-        </div>
-      </Section>
-      <Section bg="light-pink">
-        <CTA
-          title="Make your special day more special."
-          img="/images/instagram/instagram-5.jpg"
-        >
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-            vehicula enim risus, eget imperdiet enim suscipit ac. Vestibulum
-            eleifend feugiat vestibulum. Aenean pellentesque, turpis non laoreet
-            ullamcorper, erat justo mollis neque, quis rutrum nulla ante et
-            massa. Proin sodales augue lorem.
-          </p>
-          <a href="/services" className="btn btn-primary">
-            See Bridal Package
-          </a>
-        </CTA>
-      </Section>
-    </main>
+    <>
+      <Head>
+        <title>Jo Darley & Co - Services</title>
+        <meta name="title" content="Jo Darley & Co" />
+        <meta
+          name="description"
+          content="Our spacious, boutique salon & team of cutting & colour specialists provide the highest quality of hairdressing. We pride ourselves on client experience & exclusively use luxury organic colour & haircare. Located on the South Coast near Wimborne, Dorset - a short drive from Poole & Bournemouth."
+        />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://metatags.io/" />
+        <meta property="og:title" content="Jo Darley & Co" />
+        <meta
+          property="og:description"
+          content="Our spacious, boutique salon & team of cutting & colour specialists provide the highest quality of hairdressing. We pride ourselves on client experience & exclusively use luxury organic colour & haircare. Located on the South Coast near Wimborne, Dorset - a short drive from Poole & Bournemouth."
+        />
+        <meta
+          property="og:image"
+          content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"
+        />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://metatags.io/" />
+        <meta property="twitter:title" content="Jo Darley & Co" />
+        <meta
+          property="twitter:description"
+          content="Our spacious, boutique salon & team of cutting & colour specialists provide the highest quality of hairdressing. We pride ourselves on client experience & exclusively use luxury organic colour & haircare. Located on the South Coast near Wimborne, Dorset - a short drive from Poole & Bournemouth."
+        />
+        <meta
+          property="twitter:image"
+          content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"
+        />
+      </Head>
+      <main>
+        <Banner title="Services" bgImg="/images/banner/services-banner.jpg" />
+        <Section bg="pink">
+          <div className="pricing__table">
+            <Row>
+              <Col md="4">
+                <div className="pricing__table-data-title">
+                  <h4>Cut & Styling</h4>
+                  <p>
+                    <strong>Junior Stylist / Stylist / Director</strong>
+                  </p>
+                </div>
+                <div className="pricing__table-data">
+                  <p>Short / Clippered Cut</p>
+                  <p>£20 / £27 / £30</p>
+                </div>
+                <div className="pricing__table-data">
+                  <p>Blow Dry - Short</p>
+                  <p>£20 / £25 / £27</p>
+                </div>
+                <div className="pricing__table-data">
+                  <p>Blow Dry - Long</p>
+                  <p>£25 / £30 / £35</p>
+                </div>
+                <div className="pricing__table-data">
+                  <p>Hair Up</p>
+                  <p>£30 / £40 / £45</p>
+                </div>
+                <div className="pricing__table-data">
+                  <p>Kids 0-14 years</p>
+                  <p>£10 - £35 / £10 - £35 / No Kids</p>
+                </div>
+                <div className="pricing__table-data-title">
+                  <h4>Highlights</h4>
+                </div>
+                <div className="pricing__table-data">
+                  <p>T-SECTION</p>
+                  <p>FROM £50</p>
+                </div>
+                <div className="pricing__table-data">
+                  <p>HALF HEAD</p>
+                  <p>SHORT / LONG</p>
+                  <p>FROM £60 / £70</p>
+                </div>
+                <div className="pricing__table-data">
+                  <p>FULL HEAD</p>
+                  <p>SHORT / LONG</p>
+                  <p>FROM £90 / £100</p>
+                </div>
+              </Col>
+              <Col md="4">
+                <div className="pricing__table-data-title">
+                  <h4>Colour</h4>
+                </div>
+                <div className="pricing__table-data">
+                  <p>Roots</p>
+                  <p>£40</p>
+                </div>
+                <div className="pricing__table-data">
+                  <p>Full Head</p>
+                  <p>from £50</p>
+                </div>
+                <div className="pricing__table-data">
+                  <p>Semi-permanent</p>
+                  <p>Short / Long</p>
+                  <p>from £32 / £42</p>
+                </div>
+                <div className="pricing__table-data">
+                  <p>Colour Correction</p>
+                  <p>Price on consultation only</p>
+                  <p>From £70 (Including treatment)</p>
+                </div>
+                <div className="pricing__table-data-title">
+                  <h4>Balayage</h4>
+                </div>
+                <div className="pricing__table-data">
+                  <p>Express</p>
+                  <p>Colour, Toner & Natural Dry</p>
+                  <p>from £130</p>
+                </div>
+                <div className="pricing__table-data">
+                  <p>Luxury</p>
+                  <p>Colour, Toner, Cut & Finish</p>
+                  <p>from £170</p>
+                </div>
+                <div className="pricing__table-data-title">
+                  <h4>Bleach Roots</h4>
+                </div>
+                <div className="pricing__table-data">
+                  <p>FROM £60</p>
+                </div>
+              </Col>
+              <Col md="4">
+                <div className="pricing__table-data-title">
+                  <h4>Toner</h4>
+                </div>
+                <div className="pricing__table-data">
+                  <p>Short / Long</p>
+                  <p>£18 / £28</p>
+                </div>
+                <div className="pricing__table-data-title">
+                  <h4>Perming</h4>
+                </div>
+                <div className="pricing__table-data">
+                  <p>Price on consultation only</p>
+                  <p>(Cut & Finish Included)</p>
+                  <p>Short / Long</p>
+                  <p>from £90 / £120</p>
+                </div>
+                <div className="pricing__table-data-title">
+                  <h4>BRAZILIAN BLOW DRY</h4>
+                </div>
+                <div className="pricing__table-data">
+                  <p>SHORT / LONG</p>
+                  <p>FROM £100 / £130</p>
+                </div>
+                <div className="pricing__table-data-title">
+                  <h4>OWAY ORGANIC TREATMENT</h4>
+                </div>
+                <div className="pricing__table-data">
+                  <p>FROM £15</p>
+                </div>
+              </Col>
+            </Row>
+          </div>
+        </Section>
+        <Section bg="light-pink">
+          <CTA
+            title="Make your special day more special."
+            img="/images/instagram/instagram-5.jpg"
+          >
+            <p>
+              We offer a bespoke salon experience for your special day. You &
+              your bridal party can enjoy the privacy of the salon, accompanied
+              by complimentary pastries & bubbly.
+            </p>
+            <a href="/services" className="btn btn-primary">
+              Make an enquiry
+            </a>
+          </CTA>
+        </Section>
+      </main>
+    </>
   );
 };
 

@@ -5,14 +5,15 @@ import Image from "next/image";
 const HomeBanner = () => {
   return (
     <div className="banner banner--home">
-      <ImageContainer>
+      <div className="img-container">
         <Image
           src="/images/banner/home-banner.jpg"
           alt="Logo"
           layout="fill"
           objectFit="cover"
+          priority
         />
-      </ImageContainer>
+      </div>
       <div className="banner__content">
         <ImageContainer>
           <Image

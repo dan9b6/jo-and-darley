@@ -8,13 +8,15 @@ const CustomCarousel = () => {
         <Carousel.Item>
           <div className="carousel-item__content">
             <div>
-              <h4>
-                "It was a thoroughly enjoyable visit. From someone who rarely
-                treats themselves, I was welcomed so warmly and explained every
-                detail at each step. Thanks to all for making me feel so relaxed
-                - and for my wonderful haircut, it’s beautiful and exactly what
-                I wanted."
-              </h4>
+              <p>
+                <strong>
+                  "It was a thoroughly enjoyable visit. From someone who rarely
+                  treats themselves, I was welcomed so warmly and explained
+                  every detail at each step. Thanks to all for making me feel so
+                  relaxed - and for my wonderful haircut, it’s beautiful and
+                  exactly what I wanted."
+                </strong>
+              </p>
               <p>Anonymous User</p>
             </div>
           </div>
@@ -22,13 +24,13 @@ const CustomCarousel = () => {
         <Carousel.Item>
           <div className="carousel-item__content">
             <div>
-              <h4>
+              <strong>
                 "It was a thoroughly enjoyable visit. From someone who rarely
                 treats themselves, I was welcomed so warmly and explained every
                 detail at each step. Thanks to all for making me feel so relaxed
                 - and for my wonderful haircut, it’s beautiful and exactly what
                 I wanted."
-              </h4>
+              </strong>
               <p>Anonymous User</p>
             </div>
           </div>
@@ -36,13 +38,13 @@ const CustomCarousel = () => {
         <Carousel.Item>
           <div className="carousel-item__content">
             <div>
-              <h4>
+              <strong>
                 "It was a thoroughly enjoyable visit. From someone who rarely
                 treats themselves, I was welcomed so warmly and explained every
                 detail at each step. Thanks to all for making me feel so relaxed
                 - and for my wonderful haircut, it’s beautiful and exactly what
                 I wanted."
-              </h4>
+              </strong>
               <p>Anonymous User</p>
             </div>
           </div>
