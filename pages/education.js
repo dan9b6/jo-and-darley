@@ -43,8 +43,8 @@ const Education = () => {
           content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"
         />
       </Head>
-      <main>
-        <Banner title="Education" bgImg="/images/banner/education-banner.jpg" />
+      <main className="education">
+        <Banner title="Education" bgImg="/images/banner/education.jpg" />
         <div className="education__heading">
           <h2>“a natural, concise way of learning to cut hair”</h2>
         </div>
@@ -132,7 +132,7 @@ const Education = () => {
             </Row>
           </div>
         </Section>
-        <SplitCTA bgImg="/images/cta/6.jpg" bg="light-pink">
+        <SplitCTA bgImg="/images/cta/tiger-print.jpg" bg="light-pink">
           <div>
             <h2>General Course Details</h2>
             <p>

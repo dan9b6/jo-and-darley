@@ -3,6 +3,10 @@
     border: 2px solid $c-dark-green;
     padding: 30px;
 
+    &-end {
+      border-top: 2px solid $c-dark-green;
+    }
+
     &-data {
       text-transform: uppercase;
       margin-bottom: 30px;

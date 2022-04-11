@@ -1,4 +1,10 @@
 .education {
+  .banner {
+    img {
+      object-position: top;
+    }
+  }
+
   &__heading {
     padding: 40px 15px;
     width: 100%;

@@ -167,25 +167,48 @@ const Pricing = () => {
                 <div className="pricing__table-data">
                   <p>FROM £15</p>
                 </div>
+                <div className="pricing__table-data pricing__table-end pt-4">
+                  <p>
+                    ALL COLOUR SERVICES REQUIRE A COMPLIMENTARY CONSULTATION AND
+                    A SKIN TEST AT LEAST 48 HOURS PRIOR TO THE APPOINTMENT –
+                    PLEASE CALL US IN ADVANCE IN ORDER TO BOOK THIS.
+                  </p>
+                  <a className="btn btn-primary mt-4" href="tel:01202690009">
+                    Call 01202 690009
+                  </a>
+                </div>
               </Col>
             </Row>
           </div>
         </Section>
         <Section bg="light-pink">
-          <CTA
-            title="Make your special day more special."
-            img="/images/instagram/instagram-5.jpg"
-          >
+          <div className="text-center">
+            <h2>Make your special day more special.</h2>
             <p>
               We offer a bespoke salon experience for your special day. You &
               your bridal party can enjoy the privacy of the salon, accompanied
               by complimentary pastries & bubbly.
             </p>
-            <a href="/services" className="btn btn-primary">
-              Make an enquiry
-            </a>
-          </CTA>
+            <Link href="/contact">
+              <a className="btn btn-primary">Make an enquiry</a>
+            </Link>
+          </div>
         </Section>
+        <SplitCTA bgImg="/images/cta/outside-sign.jpg">
+          <h2>Opening Hours.</h2>
+          <ul>
+            <li>Monday: CLOSED - EDUCATION DAY</li>
+            <li>Tuesday: 09:00 - 17:30</li>
+            <li>Wednesday: 09:00 - 17:30</li>
+            <li>Thursday: 09:00 - 17:30</li>
+            <li>Friday: 09:00 - 17:30</li>
+            <li>Saturday: 08:00 - 16:30</li>
+            <li>Sunday: CLOSED</li>
+          </ul>
+          <Link href="/contact">
+            <a className="btn btn-primary">Book appointment</a>
+          </Link>
+        </SplitCTA>
       </main>
     </>
   );

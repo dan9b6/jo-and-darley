@@ -42,7 +42,7 @@ const Contact = () => {
         />
       </Head>
       <main>
-        <Banner title="Contact" bgImg="/images/banner/contact-banner.jpg" />
+        <Banner title="Contact" bgImg="/images/banner/contact.jpg" />
         <Section bg="light-pink">
           <div className="contact">
             <Row>

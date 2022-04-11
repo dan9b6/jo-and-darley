@@ -51,14 +51,19 @@ export default function Home() {
       </Head>
       <main>
         <HomeBanner />
-        <SplitCTA bgImg="/images/cta/4.jpg">
-          <h2>What can we do for you?</h2>
+        <SplitCTA bgImg="/images/cta/what-we-offer.jpg">
+          <h2>PASSIONATE ABOUT HAIR.</h2>
           <p>
-            Jo & Darley offer an extensive range of services to make your hair
-            look just as you want it. Not only is our services delivered at a
-            high quality, but also at a reasonable price.
+            Jo’s creativity, alongside her fascination for hair colouring &amp;
+            precision cutting, became the foundation that led to her educating
+            worldwide &amp; accumulating extensive knowledge within the hair
+            industry.
           </p>
-          <p>Why not see for yourself?</p>
+          <p>
+            Jo &amp; the team are passionate about caring for all hair types
+            &amp; prioritising client’s hair needs, whilst building a community
+            of giving &amp; creative individuals.
+          </p>
           <Link href="/services">
             <a className="btn btn-primary">See Our Services</a>
           </Link>
@@ -139,19 +144,24 @@ export default function Home() {
             </Row>
           </div>
         </Section>
-        <SplitCTA bgImg="/images/cta/16.jpg" reverse>
+        <SplitCTA bgImg="/images/cta/education-cta.jpg" reverse>
           <h2>Education.</h2>
           <p>
-            Jo & Darley are looking to share their vast experience with the rest
-            of the industry with our latest Cutting Courses. Are you interested
-            in becoming a hair stylist?
+            Sharing knowledge is an important part of salon life at Jo &amp; Co.
+            Developing individuals who value education &amp; strive to fulfil
+            their upmost potential throughout their career.
+          </p>
+          <p>
+            Our stylists &amp; young stylists take every opportunity to learn,
+            share &amp; implement ideas. Jo &amp; Co. offer bespoke educational
+            courses tailored to your individual needs.
           </p>
           <Link href="/education">
             <a className="btn btn-primary">See Our Courses</a>
           </Link>
         </SplitCTA>
         <CustomCarousel />
-        <SplitCTA bgImg="/images/cta/15.jpg">
+        <SplitCTA bgImg="/images/cta/refill-station.jpg">
           <h2>Eco-conscious.</h2>
           <ul className="custom-list">
             <li>

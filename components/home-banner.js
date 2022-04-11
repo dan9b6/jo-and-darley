@@ -7,7 +7,7 @@ const HomeBanner = () => {
     <div className="banner banner--home">
       <div className="img-container">
         <Image
-          src="/images/banner/2.jpg"
+          src="/images/banner/home.jpg"
           alt="Logo"
           layout="fill"
           objectFit="cover"

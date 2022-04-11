@@ -11324,6 +11324,12 @@ ul {
   background-repeat: no-repeat;
   background-color: #144941;
 }
+.banner img {
+  opacity: 1;
+  transition: 0.5s;
+  -webkit-animation: banner-animate 0.5s;
+          animation: banner-animate 0.5s;
+}
 @media (min-width: 768px) {
   .banner {
     height: 350px;
@@ -11367,6 +11373,12 @@ ul {
   align-items: center;
   flex-direction: column;
 }
+.banner--home img {
+  opacity: 1;
+  transition: 0.5s;
+  -webkit-animation: banner-animate 0.5s;
+          animation: banner-animate 0.5s;
+}
 .banner--home .banner__content {
   position: absolute;
   padding: 10px 20px;
@@ -11388,6 +11400,23 @@ ul {
   margin: 0 auto;
 }
 
+@-webkit-keyframes banner-animate {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes banner-animate {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .btn {
   padding: 10px 30px;
   border-radius: 0;
@@ -11673,6 +11702,10 @@ ul {
   }
 }
 
+.education .banner img {
+  -o-object-position: top;
+     object-position: top;
+}
 .education__heading {
   padding: 40px 15px;
   width: 100%;
@@ -12100,6 +12133,9 @@ ul {
 .pricing__table {
   border: 2px solid #144941;
   padding: 30px;
+}
+.pricing__table-end {
+  border-top: 2px solid #144941;
 }
 .pricing__table-data {
   text-transform: uppercase;
