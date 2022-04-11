@@ -46,13 +46,10 @@
       }
     }
 
-    h3 {
+    h2 {
       margin-bottom: 25px;
       color: $c-white;
-
-      @include media-breakpoint-up(sm) {
-        font-size: 14px;
-      }
+      font-size: 18px;
 
       @include media-breakpoint-up(lg) {
         font-size: 20px;

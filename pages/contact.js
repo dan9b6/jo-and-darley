@@ -10,7 +10,7 @@ const Contact = () => {
   return (
     <>
       <Head>
-        <title>Jo Darley & Co - Contact Us</title>
+        <title>Contact Us | Jo Darley & Co</title>
         <meta name="title" content="Jo Darley & Co" />
         <meta
           name="description"

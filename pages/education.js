@@ -12,7 +12,7 @@ const Education = () => {
   return (
     <>
       <Head>
-        <title>Jo Darley & Co - Education</title>
+        <title>Education | Jo Darley & Co</title>
         <meta name="title" content="Jo Darley & Co" />
         <meta
           name="description"

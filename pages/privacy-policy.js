@@ -8,7 +8,7 @@ const PrivacyPolicy = () => {
   return (
     <>
       <Head>
-        <title>Jo Darley & Co - Privacy Policy</title>
+        <title>Privacy Policy | Jo Darley & Co</title>
         <meta name="title" content="Jo Darley & Co" />
         <meta
           name="description"

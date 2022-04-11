@@ -14,7 +14,7 @@ const Pricing = () => {
   return (
     <>
       <Head>
-        <title>Jo Darley & Co - Services</title>
+        <title>Services | Jo Darley & Co</title>
         <meta name="title" content="Jo Darley & Co" />
         <meta
           name="description"

@@ -47,7 +47,7 @@ const Footer = () => {
       <Container>
         <Row className="mb-4">
           <Col xs="12" sm="6" lg="3" className="footer__col">
-            <h3>Links</h3>
+            <h2>Links</h2>
             <ul>
               <li>
                 <Link href="/">
@@ -77,10 +77,10 @@ const Footer = () => {
             </ul>
           </Col>
           <Col xs="12" sm="6" lg="3" className="footer__col footer__social">
-            <h3>Social</h3>
+            <h2>Social</h2>
             <ul>
               <li>
-                <Link href="/contact">
+                <Link href="https://www.instagram.com/jodarleyandco/">
                   <a target="_blank">
                     <FontAwesomeIcon
                       className="footer__social-icon"
@@ -91,18 +91,18 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/contact">
+                <Link href="https://www.facebook.com/jodarleyandco/">
                   <a target="_blank">
                     <FontAwesomeIcon
                       className="footer__social-icon"
                       icon={faFacebook}
                     />
-                    @joanddarley
+                    @jodarleyandco
                   </a>
                 </Link>
               </li>
               <li>
-                <Link href="/contact">
+                <Link href="mailto:hair@jodarleyandco.com">
                   <a target="_blank">
                     <FontAwesomeIcon className="" icon={faEnvelope} />
                     hair@jodarleyandco.com
@@ -110,8 +110,8 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/contact">
-                  <a target="_blank">
+                <Link href="tel:01202690009">
+                  <a>
                     <FontAwesomeIcon className="" icon={faPhone} />
                     01202 690009
                   </a>
@@ -120,7 +120,7 @@ const Footer = () => {
             </ul>
           </Col>
           <Col xs="12" sm="6" lg="3" className="footer__col">
-            <h3>Address</h3>
+            <h2>Address</h2>
             <ul>
               <li>2 & 3 Albert Parade</li>
               <li>147b Wareham Road</li>
@@ -129,7 +129,7 @@ const Footer = () => {
             </ul>
           </Col>
           <Col xs="12" sm="6" lg="3" className="footer__col">
-            <h3>Location</h3>
+            <h2>Location</h2>
             {/* <div id="map" ref={googlemap} /> */}
           </Col>
         </Row>
