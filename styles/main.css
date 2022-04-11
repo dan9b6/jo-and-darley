@@ -11314,7 +11314,6 @@ ul {
 .banner {
   height: 250px;
   width: 100%;
-  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11323,7 +11322,7 @@ ul {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #fee3d2;
+  background-color: #144941;
 }
 @media (min-width: 768px) {
   .banner {

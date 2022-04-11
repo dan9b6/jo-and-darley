@@ -7,7 +7,13 @@ const Banner = ({ title, bgImg }) => {
   return (
     <div className="banner">
       <ImageContainer>
-        <Image src={bgImg} alt="Logo" layout="fill" objectFit="cover" />
+        <Image
+          src={bgImg}
+          alt="Logo"
+          layout="fill"
+          objectFit="cover"
+          priority
+        />
         <Container>
           <div className="banner__content">
             <h1>{title}</h1>

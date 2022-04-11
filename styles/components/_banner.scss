@@ -1,7 +1,6 @@
 .banner {
   height: 250px;
   width: 100%;
-  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,7 +9,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: $c-light-pink;
+  background-color: $c-dark-green;
 
   @include media-breakpoint-up(md) {
     height: 350px;
