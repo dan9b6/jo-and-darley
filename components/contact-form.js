@@ -8,7 +8,7 @@ const ContactForm = () => {
     firstName: "",
     lastName: "",
     email: "",
-    phone: "",
+    phone: null,
     message: "",
   });
 
@@ -36,7 +36,7 @@ const ContactForm = () => {
     if (
       contactData.firstName == "" ||
       contactData.lastName == "" ||
-      contactData.phone == "" ||
+      contactData.phone == null ||
       contactData.email == "" ||
       contactData.message == ""
     ) {
@@ -79,7 +79,8 @@ const ContactForm = () => {
               type="text"
               name="firstName"
               onChange={handleFormInput}
-              placeholder="First name..."
+              placeholder="First name"
+              required
             />
           </div>
         </Col>
@@ -89,7 +90,8 @@ const ContactForm = () => {
               type="text"
               name="lastName"
               onChange={handleFormInput}
-              placeholder="Last name..."
+              placeholder="Last name"
+              required
             />
           </div>
         </Col>
@@ -100,16 +102,18 @@ const ContactForm = () => {
               name="email"
               onChange={handleFormInput}
               placeholder="Email address"
+              required
             />
           </div>
         </Col>
         <Col xs="12" md="6">
           <div className="contact-form__group">
             <input
-              type="text"
+              type="number"
               name="phone"
               onChange={handleFormInput}
               placeholder="Contact number"
+              required
             />
           </div>
         </Col>
@@ -120,6 +124,7 @@ const ContactForm = () => {
               name="message"
               onChange={handleFormInput}
               placeholder="Message"
+              required
             />
           </div>
         </Col>

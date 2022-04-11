@@ -47,7 +47,7 @@ const Footer = () => {
       <Container>
         <Row className="mb-4">
           <Col xs="12" sm="6" lg="3" className="footer__col">
-            <h4>Links</h4>
+            <h3>Links</h3>
             <ul>
               <li>
                 <Link href="/">
@@ -77,7 +77,7 @@ const Footer = () => {
             </ul>
           </Col>
           <Col xs="12" sm="6" lg="3" className="footer__col footer__social">
-            <h4>Social</h4>
+            <h3>Social</h3>
             <ul>
               <li>
                 <Link href="/contact">
@@ -120,7 +120,7 @@ const Footer = () => {
             </ul>
           </Col>
           <Col xs="12" sm="6" lg="3" className="footer__col">
-            <h4>Address</h4>
+            <h3>Address</h3>
             <ul>
               <li>2 & 3 Albert Parade</li>
               <li>147b Wareham Road</li>
@@ -129,7 +129,7 @@ const Footer = () => {
             </ul>
           </Col>
           <Col xs="12" sm="6" lg="3" className="footer__col">
-            <h4>Location</h4>
+            <h3>Location</h3>
             {/* <div id="map" ref={googlemap} /> */}
           </Col>
         </Row>

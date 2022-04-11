@@ -1,14 +1,19 @@
 import React from "react";
+import Image from "next/image";
+import ImageContainer from "../components/image-container";
 import Container from "react-bootstrap/Container";
 
 const Banner = ({ title, bgImg }) => {
   return (
-    <div className="banner" style={{ backgroundImage: "url(" + bgImg + ")" }}>
-      <Container>
-        <div className="banner__content">
-          <h1>{title}</h1>
-        </div>
-      </Container>
+    <div className="banner">
+      <ImageContainer>
+        <Image src={bgImg} alt="Logo" layout="fill" objectFit="cover" />
+        <Container>
+          <div className="banner__content">
+            <h1>{title}</h1>
+          </div>
+        </Container>
+      </ImageContainer>
     </div>
   );
 };
