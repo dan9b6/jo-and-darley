@@ -71,7 +71,7 @@ export default function Home() {
                 <ImageContainer>
                   <Image
                     src="/images/instagram/instagram-1.jpg"
-                    alt="Logo"
+                    alt="First Instagram Image"
                     layout="fill"
                     objectFit="contain"
                   />
@@ -94,7 +94,7 @@ export default function Home() {
                 <ImageContainer>
                   <Image
                     src="/images/instagram/instagram-2.jpg"
-                    alt="Logo"
+                    alt="Second Instagram Image"
                     layout="fill"
                     objectFit="contain"
                   />
@@ -117,7 +117,7 @@ export default function Home() {
                 <ImageContainer>
                   <Image
                     src="/images/instagram/instagram-3.jpg"
-                    alt="Logo"
+                    alt="Three Instagram Image"
                     layout="fill"
                     objectFit="contain"
                   />

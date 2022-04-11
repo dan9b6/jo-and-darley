@@ -12,6 +12,7 @@ const HomeBanner = () => {
           layout="fill"
           objectFit="cover"
           priority
+          loading="eager"
         />
       </div>
       <div className="banner__content">

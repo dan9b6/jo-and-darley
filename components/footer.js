@@ -12,35 +12,35 @@ import Col from "react-bootstrap/Col";
 import Link from "next/link";
 
 const Footer = () => {
-  const googlemap = useRef(null);
-  useEffect(() => {
-    const loader = new Loader({
-      apiKey: process.env.NEXT_PUBLIC_API_KEY,
-      version: "weekly",
-    });
-    let map;
-    let marker;
-    loader.load().then(() => {
-      const google = window.google;
+  // const googlemap = useRef(null);
+  // useEffect(() => {
+  //   const loader = new Loader({
+  //     apiKey: process.env.NEXT_PUBLIC_API_KEY,
+  //     version: "weekly",
+  //   });
+  //   let map;
+  //   let marker;
+  //   loader.load().then(() => {
+  //     const google = window.google;
 
-      var myLatlng = new google.maps.LatLng(
-        50.765779847367675,
-        -2.021353615339215
-      );
+  //     var myLatlng = new google.maps.LatLng(
+  //       50.765779847367675,
+  //       -2.021353615339215
+  //     );
 
-      map = new google.maps.Map(googlemap.current, {
-        center: myLatlng,
-        zoom: 12,
-      });
+  //     map = new google.maps.Map(googlemap.current, {
+  //       center: myLatlng,
+  //       zoom: 12,
+  //     });
 
-      marker = new google.maps.Marker({
-        position: myLatlng,
-        title: "Hello World!",
-      });
+  //     marker = new google.maps.Marker({
+  //       position: myLatlng,
+  //       title: "Hello World!",
+  //     });
 
-      marker.setMap(map);
-    });
-  });
+  //     marker.setMap(map);
+  //   });
+  // });
 
   return (
     <footer className="footer">
@@ -130,7 +130,7 @@ const Footer = () => {
           </Col>
           <Col xs="12" sm="6" lg="3" className="footer__col">
             <h4>Location</h4>
-            <div id="map" ref={googlemap} />
+            {/* <div id="map" ref={googlemap} /> */}
           </Col>
         </Row>
         <p className="footer__privacy">
