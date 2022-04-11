@@ -11,7 +11,6 @@ const HomeBanner = () => {
           alt="Logo"
           layout="fill"
           objectFit="cover"
-          priority
           loading="eager"
         />
       </div>
