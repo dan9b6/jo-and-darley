@@ -17,7 +17,7 @@ const Cta = ({ title, img, children, reverse }) => {
         </Col>
         <Col md="6">
           <div className="cta__img">
-            <ImageContainer>
+            <ImageContainer animate>
               <Image src={img} alt={title} layout="fill" objectFit="cover" />
             </ImageContainer>
           </div>

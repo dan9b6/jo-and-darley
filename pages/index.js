@@ -73,7 +73,7 @@ export default function Home() {
             <h2 className="cta--instagram-heading">Check Out Our Instagram</h2>
             <Row>
               <Col md="4">
-                <ImageContainer>
+                <ImageContainer animate>
                   <Image
                     src="/images/instagram/instagram-1.jpg"
                     alt="First Instagram Image"
@@ -96,7 +96,7 @@ export default function Home() {
                 </ImageContainer>
               </Col>
               <Col md="4">
-                <ImageContainer>
+                <ImageContainer animate>
                   <Image
                     src="/images/instagram/instagram-2.jpg"
                     alt="Second Instagram Image"
@@ -119,7 +119,7 @@ export default function Home() {
                 </ImageContainer>
               </Col>
               <Col md="4">
-                <ImageContainer>
+                <ImageContainer animate>
                   <Image
                     src="/images/instagram/instagram-3.jpg"
                     alt="Three Instagram Image"

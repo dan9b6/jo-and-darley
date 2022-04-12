@@ -11,7 +11,7 @@ const Contact = () => {
     <>
       <Head>
         <title>Contact Us | Jo Darley & Co</title>
-        <meta name="title" content="Jo Darley & Co" />
+        <meta name="title" content="Contact Us | Jo Darley & Co" />
         <meta
           name="description"
           content="Our spacious, boutique salon & team of cutting & colour specialists provide the highest quality of hairdressing. We pride ourselves on client experience & exclusively use luxury organic colour & haircare. Located on the South Coast near Wimborne, Dorset - a short drive from Poole & Bournemouth."
@@ -19,7 +19,7 @@ const Contact = () => {
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://metatags.io/" />
-        <meta property="og:title" content="Jo Darley & Co" />
+        <meta property="og:title" content="Contact Us | Jo Darley & Co" />
         <meta
           property="og:description"
           content="Our spacious, boutique salon & team of cutting & colour specialists provide the highest quality of hairdressing. We pride ourselves on client experience & exclusively use luxury organic colour & haircare. Located on the South Coast near Wimborne, Dorset - a short drive from Poole & Bournemouth."
@@ -31,7 +31,7 @@ const Contact = () => {
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://metatags.io/" />
-        <meta property="twitter:title" content="Jo Darley & Co" />
+        <meta property="twitter:title" content="Contact Us | Jo Darley & Co" />
         <meta
           property="twitter:description"
           content="Our spacious, boutique salon & team of cutting & colour specialists provide the highest quality of hairdressing. We pride ourselves on client experience & exclusively use luxury organic colour & haircare. Located on the South Coast near Wimborne, Dorset - a short drive from Poole & Bournemouth."

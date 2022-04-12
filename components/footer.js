@@ -1,6 +1,5 @@
 import React from "react";
-import { useEffect, useRef } from "react";
-import { Loader } from "@googlemaps/js-api-loader";
+import { useState } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
@@ -11,36 +10,19 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Link from "next/link";
 
+import ImageContainer from "./image-container";
+import Image from "next/image";
+import MapCopy from "../public/images/map-screenshot.jpg";
+
+import GoogleMap from "../components/google-map";
+
 const Footer = () => {
-  // const googlemap = useRef(null);
-  // useEffect(() => {
-  //   const loader = new Loader({
-  //     apiKey: process.env.NEXT_PUBLIC_API_KEY,
-  //     version: "weekly",
-  //   });
-  //   let map;
-  //   let marker;
-  //   loader.load().then(() => {
-  //     const google = window.google;
+  const [changeMap, setChangeMap] = useState();
 
-  //     var myLatlng = new google.maps.LatLng(
-  //       50.765779847367675,
-  //       -2.021353615339215
-  //     );
-
-  //     map = new google.maps.Map(googlemap.current, {
-  //       center: myLatlng,
-  //       zoom: 12,
-  //     });
-
-  //     marker = new google.maps.Marker({
-  //       position: myLatlng,
-  //       title: "Hello World!",
-  //     });
-
-  //     marker.setMap(map);
-  //   });
-  // });
+  function showMap() {
+    setChangeMap(true);
+    document.querySelector(".map-copy").style.display = "none";
+  }
 
   return (
     <footer className="footer">
@@ -130,7 +112,12 @@ const Footer = () => {
           </Col>
           <Col xs="12" sm="6" lg="3" className="footer__col">
             <h2>Location</h2>
-            {/* <div id="map" ref={googlemap} /> */}
+            <div className="map-copy" onClick={showMap}>
+              <ImageContainer>
+                <Image src={MapCopy} />
+              </ImageContainer>
+            </div>
+            {changeMap && <GoogleMap />}
           </Col>
         </Row>
         <p className="footer__privacy">

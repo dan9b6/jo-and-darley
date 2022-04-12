@@ -21,7 +21,7 @@ const SplitCTA = ({ bgImg, reverse, children, bg }) => {
         </Row>
       </Container>
       <div className="cta--split__img">
-        <ImageContainer>
+        <ImageContainer animate>
           <Image src={bgImg} alt="Logo" layout="fill" objectFit="cover" />
         </ImageContainer>
       </div>
