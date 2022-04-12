@@ -13,8 +13,8 @@ export default (req, res) => {
   `;
 
   const data = {
-    to: "dkburton0@gmail.com",
-    from: "contact@jodarleyandco.com",
+    to: "dan_burts@outlook.com",
+    from: "contactform@jodarleyandco.com",
     subject: "New Web Form Message",
     text: message,
     html: message.replace(/\r\n/g, "<br />"),
