@@ -84,6 +84,7 @@ export default function Home() {
                     href="https://www.instagram.com/jodarleyandco/"
                     className="img-overlay"
                     target={"_blank"}
+                    alt="Image overlay for instagram image 1"
                   >
                     <FontAwesomeIcon
                       className="img-overlay__icon"
@@ -107,6 +108,7 @@ export default function Home() {
                     href="https://www.instagram.com/jodarleyandco/"
                     className="img-overlay"
                     target={"_blank"}
+                    alt="Image overlay for instagram image 1"
                   >
                     <FontAwesomeIcon
                       className="img-overlay__icon"
@@ -122,7 +124,7 @@ export default function Home() {
                 <ImageContainer animate>
                   <Image
                     src="/images/instagram/instagram-3.jpg"
-                    alt="Three Instagram Image"
+                    alt="Third Instagram Image"
                     layout="fill"
                     objectFit="contain"
                   />
@@ -130,6 +132,7 @@ export default function Home() {
                     href="https://www.instagram.com/jodarleyandco/"
                     className="img-overlay"
                     target={"_blank"}
+                    alt="Image overlay for instagram image 1"
                   >
                     <FontAwesomeIcon
                       className="img-overlay__icon"

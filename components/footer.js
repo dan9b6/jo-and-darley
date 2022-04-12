@@ -114,7 +114,7 @@ const Footer = () => {
             <h2>Location</h2>
             <div className="map-copy" onClick={showMap}>
               <ImageContainer>
-                <Image src={MapCopy} />
+                <Image src={MapCopy} alt="google map image of salon location" />
               </ImageContainer>
             </div>
             {changeMap && <GoogleMap />}
