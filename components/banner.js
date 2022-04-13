@@ -13,8 +13,6 @@ const Banner = ({ title, bgImg }) => {
           layout="fill"
           objectFit="cover"
           loading="eager"
-          priority={true}
-          quality={90}
         />
         <Container>
           <div className="banner__content">

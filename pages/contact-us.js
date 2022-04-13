@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Banner from "../components/banner";
 import ContactForm from "../components/contact-form";
 import Section from "../components/section";
@@ -6,7 +5,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Head from "next/head";
 
-const Contact = () => {
+const ContactUs = () => {
   return (
     <>
       <Head>
@@ -90,4 +89,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactUs;

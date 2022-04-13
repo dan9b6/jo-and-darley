@@ -96,7 +96,7 @@ const Navigation = () => {
                   </Link>
                 </li>
                 <li className="nav-primary__link">
-                  <Link href="/contact" scroll={true}>
+                  <Link href="/contact-us" scroll={true}>
                     <a onClick={closeNav}>Contact</a>
                   </Link>
                 </li>
