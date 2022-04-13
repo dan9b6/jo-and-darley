@@ -13,7 +13,7 @@ export default (req, res) => {
   `;
 
   const data = {
-    to: "dan_burts@outlook.com",
+    to: "hair@jodarleyandco.com",
     from: "contactform@jodarleyandco.com",
     subject: "New Web Form Message",
     text: message,
