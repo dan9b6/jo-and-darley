@@ -9,10 +9,12 @@ const Banner = ({ title, bgImg }) => {
       <ImageContainer>
         <Image
           src={bgImg}
-          alt="Logo"
+          alt="Banner image"
           layout="fill"
           objectFit="cover"
           loading="eager"
+          priority={true}
+          quality={90}
         />
         <Container>
           <div className="banner__content">

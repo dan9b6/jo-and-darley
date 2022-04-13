@@ -132,7 +132,11 @@ const Education = () => {
             </Row>
           </div>
         </Section>
-        <SplitCTA bgImg="/images/cta/tiger-print.jpg" bg="light-pink">
+        <SplitCTA
+          bgImg="/images/cta/tiger-print.jpg"
+          bg="light-pink"
+          altText="tiger print painting"
+        >
           <div>
             <h2>General Course Details</h2>
             <p>

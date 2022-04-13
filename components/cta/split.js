@@ -6,7 +6,7 @@ import Col from "react-bootstrap/Col";
 import ImageContainer from "../image-container";
 import Image from "next/image";
 
-const SplitCTA = ({ bgImg, reverse, children, bg }) => {
+const SplitCTA = ({ bgImg, reverse, children, bg, altText }) => {
   return (
     <div
       className={`cta--split ${reverse ? "cta--split__reverse" : ""} ${
@@ -22,7 +22,7 @@ const SplitCTA = ({ bgImg, reverse, children, bg }) => {
       </Container>
       <div className="cta--split__img">
         <ImageContainer animate>
-          <Image src={bgImg} alt="Logo" layout="fill" objectFit="cover" />
+          <Image src={bgImg} alt={altText} layout="fill" objectFit="cover" />
         </ImageContainer>
       </div>
     </div>

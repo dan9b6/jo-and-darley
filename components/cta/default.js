@@ -5,7 +5,7 @@ import Col from "react-bootstrap/Col";
 import ImageContainer from "../image-container";
 import Image from "next/image";
 
-const Cta = ({ title, img, children, reverse }) => {
+const Cta = ({ title, img, children, reverse, altText }) => {
   return (
     <div className={`cta ${reverse ? "cta--flex" : ""}`}>
       <Row className="align-items-center">
@@ -18,7 +18,7 @@ const Cta = ({ title, img, children, reverse }) => {
         <Col md="6">
           <div className="cta__img">
             <ImageContainer animate>
-              <Image src={img} alt={title} layout="fill" objectFit="cover" />
+              <Image src={img} alt={altText} layout="fill" objectFit="cover" />
             </ImageContainer>
           </div>
         </Col>

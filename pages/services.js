@@ -194,7 +194,10 @@ const Pricing = () => {
             </Link>
           </div>
         </Section>
-        <SplitCTA bgImg="/images/cta/outside-sign.jpg">
+        <SplitCTA
+          bgImg="/images/cta/outside-sign.jpg"
+          altText="Our sign from the shop"
+        >
           <h2>Opening Hours.</h2>
           <ul>
             <li>Monday: CLOSED - EDUCATION DAY</li>

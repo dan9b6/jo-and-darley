@@ -51,7 +51,7 @@ export default function Home() {
       </Head>
       <main>
         <HomeBanner />
-        <SplitCTA bgImg="/images/cta/what-we-offer.jpg">
+        <SplitCTA bgImg="/images/cta/what-we-offer.jpg" altText="our products">
           <h2>PASSIONATE ABOUT HAIR.</h2>
           <p>
             Jo’s creativity, alongside her fascination for hair colouring &amp;
@@ -147,7 +147,11 @@ export default function Home() {
             </Row>
           </div>
         </Section>
-        <SplitCTA bgImg="/images/cta/education-cta.jpg" reverse>
+        <SplitCTA
+          bgImg="/images/cta/education-cta.jpg"
+          reverse
+          altText="our seating area"
+        >
           <h2>Education.</h2>
           <p>
             Sharing knowledge is an important part of salon life at Jo &amp; Co.
@@ -164,7 +168,10 @@ export default function Home() {
           </Link>
         </SplitCTA>
         <CustomCarousel />
-        <SplitCTA bgImg="/images/cta/refill-station.jpg">
+        <SplitCTA
+          bgImg="/images/cta/refill-station.jpg"
+          altText="our product stand"
+        >
           <h2>Eco-conscious.</h2>
           <ul className="custom-list">
             <li>

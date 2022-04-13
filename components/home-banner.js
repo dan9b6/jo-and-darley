@@ -8,10 +8,11 @@ const HomeBanner = () => {
       <div className="img-container">
         <Image
           src="/images/banner/home.jpg"
-          alt="Logo"
+          alt="Home Banner"
           layout="fill"
           objectFit="cover"
           loading="eager"
+          priority={true}
         />
       </div>
       <div className="banner__content">
