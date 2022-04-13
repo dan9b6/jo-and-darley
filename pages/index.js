@@ -1,6 +1,5 @@
 import HomeBanner from "../components/home-banner";
 import Section from "../components/section";
-import CTA from "../components/cta/default";
 import SplitCTA from "../components/cta/split";
 import CustomCarousel from "../components/carousel";
 
@@ -73,7 +72,7 @@ export default function Home() {
             <h2 className="cta--instagram-heading">Check Out Our Instagram</h2>
             <Row>
               <Col md="4">
-                <ImageContainer animate>
+                <ImageContainer>
                   <Image
                     src="/images/instagram/instagram-1.jpg"
                     alt="First Instagram Image"
@@ -97,7 +96,7 @@ export default function Home() {
                 </ImageContainer>
               </Col>
               <Col md="4">
-                <ImageContainer animate>
+                <ImageContainer>
                   <Image
                     src="/images/instagram/instagram-2.jpg"
                     alt="Second Instagram Image"
@@ -121,7 +120,7 @@ export default function Home() {
                 </ImageContainer>
               </Col>
               <Col md="4">
-                <ImageContainer animate>
+                <ImageContainer>
                   <Image
                     src="/images/instagram/instagram-3.jpg"
                     alt="Third Instagram Image"
@@ -148,7 +147,7 @@ export default function Home() {
           </div>
         </Section>
         <SplitCTA
-          bgImg="/images/cta/education-cta.jpg"
+          bgImg="/images/cta/education2.jpg"
           reverse
           altText="our seating area"
         >

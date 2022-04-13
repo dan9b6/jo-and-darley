@@ -11,12 +11,6 @@
   background-repeat: no-repeat;
   background-color: $c-dark-green;
 
-  img {
-    opacity: 1;
-    transition: 0.5s;
-    animation: banner-animate 0.5s;
-  }
-
   @include media-breakpoint-up(md) {
     height: 350px;
   }
@@ -34,7 +28,6 @@
     border: 10px solid $c-light-pink;
 
     @include media-breakpoint-up(md) {
-      // padding: 10px 40px;
       margin: 0;
       max-width: 300px;
     }
@@ -62,12 +55,6 @@
     align-items: center;
     flex-direction: column;
 
-    img {
-      opacity: 1;
-      transition: 0.5s;
-      animation: banner-animate 0.5s;
-    }
-
     .banner__content {
       position: absolute;
       padding: 10px 20px;
@@ -89,14 +76,5 @@
         margin: 0 auto;
       }
     }
-  }
-}
-
-@keyframes banner-animate {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }

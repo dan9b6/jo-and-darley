@@ -101,11 +101,9 @@ const Navigation = () => {
                   </Link>
                 </li>
                 <li className="d-none d-md-block">
-                  <Link href="/contact" scroll={true}>
-                    <button className="btn btn-secondary" onClick={openModal}>
-                      BOOK
-                    </button>
-                  </Link>
+                  <button className="btn btn-secondary" onClick={openModal}>
+                    BOOK
+                  </button>
                 </li>
               </ul>
             </Container>

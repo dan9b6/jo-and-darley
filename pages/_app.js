@@ -1,10 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import "aos/dist/aos.css";
 import "../styles/main.css";
 
-import { useEffect } from "react";
 import Head from "next/head";
-import AOS from "aos";
 
 // Components
 import Navigation from "../components/Navigation";
@@ -12,12 +9,6 @@ import Footer from "../components/footer";
 import Modal from "../components/modal";
 
 function MyApp({ Component, pageProps }) {
-  useEffect(() => {
-    AOS.init({
-      once: true,
-    });
-  }, []);
-
   return (
     <>
       <Head>
