@@ -125,7 +125,7 @@ const Education = () => {
                 <ul className="custom-list">
                   <li>£250.00 (including VAT)</li>
                 </ul>
-                <Link href="/contact">
+                <Link href="/contact-us">
                   <a className="btn btn-primary">Enquiry Now</a>
                 </Link>
               </Col>

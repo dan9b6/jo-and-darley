@@ -67,6 +67,56 @@ export default function Home() {
             <a className="btn btn-primary">See Our Services</a>
           </Link>
         </SplitCTA>
+
+        <SplitCTA
+          bgImg="/images/cta/refill-station.jpg"
+          altText="our product stand"
+          reverse
+          bg="light-pink"
+        >
+          <h2>Eco-conscious.</h2>
+          <ul className="custom-list">
+            <li>
+              For all of our colour, wash & styling, we exclusively use Italian
+              haircare brand, Oway.
+            </li>
+            <li>
+              Oway produces ultra-concentrated formulas with organic,
+              plant-based & biodegradable ingredients. Good for hair, good for
+              the environment.
+            </li>
+            <li>
+              Using only glass bottles & aluminium tubes, Oway is plastic free,
+              recyclable & cruelty-free PETA certified – a few of the many
+              reasons why we love the brand.
+            </li>
+            <li>
+              Recycle with us in salon by using our shampoo & conditioner refill
+              station.
+            </li>
+          </ul>
+        </SplitCTA>
+        <CustomCarousel />
+        <SplitCTA
+          bgImg="/images/image006.jpg"
+          reverse
+          altText="our seating area"
+        >
+          <h2>Education.</h2>
+          <p>
+            Sharing knowledge is an important part of salon life at Jo &amp; Co.
+            Developing individuals who value education &amp; strive to fulfil
+            their upmost potential throughout their career.
+          </p>
+          <p>
+            Our stylists &amp; young stylists take every opportunity to learn,
+            share &amp; implement ideas. Jo &amp; Co. offer bespoke educational
+            courses tailored to your individual needs.
+          </p>
+          <Link href="/education">
+            <a className="btn btn-primary">See Our Courses</a>
+          </Link>
+        </SplitCTA>
         <Section bg="light-pink">
           <div className="cta--instagram">
             <h2 className="cta--instagram-heading">Check Out Our Instagram</h2>
@@ -146,53 +196,6 @@ export default function Home() {
             </Row>
           </div>
         </Section>
-        <SplitCTA
-          bgImg="/images/cta/education2.jpg"
-          reverse
-          altText="our seating area"
-        >
-          <h2>Education.</h2>
-          <p>
-            Sharing knowledge is an important part of salon life at Jo &amp; Co.
-            Developing individuals who value education &amp; strive to fulfil
-            their upmost potential throughout their career.
-          </p>
-          <p>
-            Our stylists &amp; young stylists take every opportunity to learn,
-            share &amp; implement ideas. Jo &amp; Co. offer bespoke educational
-            courses tailored to your individual needs.
-          </p>
-          <Link href="/education">
-            <a className="btn btn-primary">See Our Courses</a>
-          </Link>
-        </SplitCTA>
-        <CustomCarousel />
-        <SplitCTA
-          bgImg="/images/cta/refill-station.jpg"
-          altText="our product stand"
-        >
-          <h2>Eco-conscious.</h2>
-          <ul className="custom-list">
-            <li>
-              For all of our colour, wash & styling, we exclusively use Italian
-              haircare brand, Oway.
-            </li>
-            <li>
-              Oway produces ultra-concentrated formulas with organic,
-              plant-based & biodegradable ingredients. Good for hair, good for
-              the environment.
-            </li>
-            <li>
-              Using only glass bottles & aluminium tubes, Oway is plastic free,
-              recyclable & cruelty-free PETA certified – a few of the many
-              reasons why we love the brand.
-            </li>
-            <li>
-              Recycle with us in salon by using our shampoo & conditioner refill
-              station.
-            </li>
-          </ul>
-        </SplitCTA>
       </main>
     </>
   );

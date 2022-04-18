@@ -38,6 +38,18 @@
     background-color: $c-light-green;
   }
 
+  &--dark-green {
+    background-color: $c-dark-green;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    p {
+      color: $c-light-pink;
+    }
+  }
+
   &--light-pink {
     background-color: $c-lightest-pink;
   }

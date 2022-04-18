@@ -1,4 +1,10 @@
 .carousel {
+  &-indicators {
+    button {
+      background-color: $c-light-pink;
+    }
+  }
+
   &--reviews {
     display: flex;
     align-items: center;

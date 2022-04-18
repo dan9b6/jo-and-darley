@@ -181,22 +181,23 @@ const Pricing = () => {
             </Row>
           </div>
         </Section>
-        <Section bg="light-pink">
+        <Section bg="dark-green">
           <div className="text-center">
-            <h2>Make your special day more special.</h2>
+            <h2>YOUR SPECIAL DAY.</h2>
             <p>
               We offer a bespoke salon experience for your special day. You &
               your bridal party can enjoy the privacy of the salon, accompanied
               by complimentary pastries & bubbly.
             </p>
-            <Link href="/contact">
-              <a className="btn btn-primary">Make an enquiry</a>
+            <Link href="/contact-us">
+              <a className="btn btn-secondary">Make an enquiry</a>
             </Link>
           </div>
         </Section>
         <SplitCTA
           bgImg="/images/cta/outside-sign.jpg"
           altText="Our sign from the shop"
+          bg="light-pink"
         >
           <h2>Opening Hours.</h2>
           <ul>
@@ -208,7 +209,7 @@ const Pricing = () => {
             <li>Saturday: 08:00 - 16:30</li>
             <li>Sunday: CLOSED</li>
           </ul>
-          <Link href="/contact">
+          <Link href="/contact-us">
             <a className="btn btn-primary">Book appointment</a>
           </Link>
         </SplitCTA>

@@ -11291,7 +11291,7 @@ h4,
 .h4,
 h5,
 .h5 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto Mono", monospace;
   font-weight: bold;
   font-display: swap;
   color: #144941;
@@ -11301,7 +11301,7 @@ body,
 p,
 li,
 a {
-  font-family: "Roboto Mono", monospace;
+  font-family: "Poppins", sans-serif;
   font-display: swap;
   color: #144941;
 }
@@ -11323,12 +11323,6 @@ ul {
   background-position: center;
   background-repeat: no-repeat;
   background-color: #144941;
-}
-.banner img {
-  opacity: 1;
-  transition: 0.5s;
-  -webkit-animation: banner-animate 0.5s;
-          animation: banner-animate 0.5s;
 }
 @media (min-width: 768px) {
   .banner {
@@ -11373,12 +11367,6 @@ ul {
   align-items: center;
   flex-direction: column;
 }
-.banner--home img {
-  opacity: 1;
-  transition: 0.5s;
-  -webkit-animation: banner-animate 0.5s;
-          animation: banner-animate 0.5s;
-}
 .banner--home .banner__content {
   position: absolute;
   padding: 10px 20px;
@@ -11400,23 +11388,6 @@ ul {
   margin: 0 auto;
 }
 
-@-webkit-keyframes banner-animate {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes banner-animate {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .btn {
   padding: 10px 30px;
   border-radius: 0;
@@ -11429,8 +11400,8 @@ ul {
   position: relative;
 }
 .btn:active, .btn:focus, .btn:focus-visible {
-  outline: none;
-  box-shadow: none;
+  outline: none !important;
+  box-shadow: none !important;
 }
 .btn-outline-primary {
   border-color: #144941;
@@ -11468,6 +11439,9 @@ ul {
   color: #144941 !important;
 }
 
+.carousel-indicators button {
+  background-color: #fee3d2;
+}
 .carousel--reviews {
   display: flex;
   align-items: center;
@@ -12027,6 +12001,10 @@ ul {
   }
 }
 
+.hide {
+  display: none;
+}
+
 .modal__content {
   background-color: white;
   z-index: 1000000;
@@ -12126,6 +12104,21 @@ ul {
 .section--green {
   background-color: rgba(20, 73, 65, 0.3);
 }
+.section--dark-green {
+  background-color: #144941;
+}
+.section--dark-green h1, .section--dark-green .h1,
+.section--dark-green h2,
+.section--dark-green .h2,
+.section--dark-green h3,
+.section--dark-green .h3,
+.section--dark-green h4,
+.section--dark-green .h4,
+.section--dark-green h5,
+.section--dark-green .h5,
+.section--dark-green p {
+  color: #fee3d2;
+}
 .section--light-pink {
   background-color: rgba(254, 227, 210, 0.3);
 }
@@ -12142,9 +12135,11 @@ ul {
   margin-bottom: 30px;
   font-size: 14px;
 }
-.pricing__table-data p:first-child {
-  margin-bottom: 5px;
+.pricing__table-data p {
   font-weight: bold;
+}
+.pricing__table-data p:last-child {
+  font-weight: normal;
 }
 .pricing__table-data-title {
   margin-bottom: 30px;
@@ -12178,6 +12173,12 @@ ul {
     width: unset;
     z-index: 1;
     padding: unset;
+    font-size: 14px;
+  }
+}
+@media (min-width: 992px) {
+  .nav-primary {
+    font-size: 16px;
   }
 }
 .nav-primary__link {
@@ -12253,7 +12254,7 @@ ul {
 .nav-primary__social {
   width: 100%;
   background-color: #fee3d2;
-  height: 200px;
+  height: 170px;
   padding-top: 20px;
   padding-bottom: 20px;
   opacity: 0;
@@ -12380,6 +12381,30 @@ main img {
   width: 100%;
 }
 
+img {
+  opacity: 1;
+  transition: 0.5s;
+  -webkit-animation: banner-animate 0.5s;
+          animation: banner-animate 0.5s;
+}
+
+@-webkit-keyframes banner-animate {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes banner-animate {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @media (max-width: 767.98px) {
   .disable-scroll--mobile {
     overflow: hidden;
@@ -12399,15 +12424,4 @@ main img {
 .custom-list li {
   position: relative;
   margin-bottom: 10px;
-  padding-left: 30px;
-}
-.custom-list li:before {
-  content: "";
-  position: absolute;
-  top: 12px;
-  left: 0;
-  height: 3px;
-  width: 15px;
-  background-color: rgba(20, 73, 65, 0.05);
-  transform: skew(15deg);
 }/*# sourceMappingURL=main.css.map */

@@ -12,9 +12,12 @@
       margin-bottom: 30px;
       font-size: 14px;
 
-      p:first-child {
-        margin-bottom: 5px;
+      p {
         font-weight: bold;
+
+        &:last-child {
+          font-weight: normal;
+        }
       }
 
       &-title {

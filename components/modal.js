@@ -79,8 +79,8 @@ const Modal = () => {
         </div>
         <h2>Book your appointment</h2>
         <p className="mb-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-          vehicula enim risus, eget imperdiet enim suscipit ac.
+          To book an appointment with us, please fill out all the fields below
+          and we will get back to you.
         </p>
         <form
           className="contact-form"
@@ -96,6 +96,7 @@ const Modal = () => {
                   name="firstName"
                   onChange={handleFormInput}
                   placeholder="First name..."
+                  required
                 />
               </div>
             </Col>
@@ -106,6 +107,7 @@ const Modal = () => {
                   name="lastName"
                   onChange={handleFormInput}
                   placeholder="Last name..."
+                  required
                 />
               </div>
             </Col>
@@ -116,6 +118,7 @@ const Modal = () => {
                   name="email"
                   onChange={handleFormInput}
                   placeholder="Email address"
+                  required
                 />
               </div>
             </Col>
@@ -126,6 +129,7 @@ const Modal = () => {
                   name="phone"
                   onChange={handleFormInput}
                   placeholder="Contact number"
+                  required
                 />
               </div>
             </Col>
@@ -136,6 +140,7 @@ const Modal = () => {
                   name="message"
                   onChange={handleFormInput}
                   placeholder="Message"
+                  required
                 />
               </div>
             </Col>

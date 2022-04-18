@@ -111,7 +111,6 @@ const Navigation = () => {
               <Container>
                 <Row className="justify-content-between">
                   <Col className="nav-primary__cta" xs="9">
-                    <p>Style your hair today!</p>
                     <Button className="btn-primary" onClick={openModal}>
                       Book Now
                     </Button>

@@ -3,7 +3,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: $c-font-heading;
+  font-family: $c-font-body;
   font-weight: bold;
   font-display: swap;
   color: $c-dark-green;
@@ -13,7 +13,7 @@ body,
 p,
 li,
 a {
-  font-family: $c-font-body;
+  font-family: $c-font-heading;
   font-display: swap;
   color: $c-dark-green;
 }
