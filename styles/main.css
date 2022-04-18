@@ -11457,6 +11457,7 @@ ul {
 .carousel--reviews .carousel {
   width: 100%;
   max-width: 750px;
+  color: #fee3d2;
 }
 @media (min-width: 576px) {
   .carousel--reviews .carousel {

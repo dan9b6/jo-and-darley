@@ -19,6 +19,7 @@
     .carousel {
       width: 100%;
       max-width: 750px;
+      color: $c-light-pink;
 
       @include media-breakpoint-up(sm) {
         height: 200px;
