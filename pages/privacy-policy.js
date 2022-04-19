@@ -40,7 +40,7 @@ const PrivacyPolicy = () => {
         />
       </Head>
       <main>
-        <Banner title="Privacy Policy" />
+        <Banner title="Privacy Policy" bgImg="images/banner/index.jpg" />
         <Section>
           <Container>
             <h4>The type of personal information we collect</h4>
