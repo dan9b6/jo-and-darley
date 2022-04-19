@@ -25,7 +25,7 @@ const SplitCTA = ({ bgImg, reverse, children, bg, altText }) => {
         data-aos-delay="0"
         data-aos-duration="500"
       >
-        <img src={bgImg} />
+        <img src={bgImg} alt={altText} />
       </div>
     </div>
   );

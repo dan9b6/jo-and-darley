@@ -65,7 +65,7 @@ const Navigation = () => {
             <div className="header__logo">
               <Link href="/" scroll={true}>
                 <a className="header__logo-img">
-                  <img src="images/logo.svg" />
+                  <img src="images/logo.svg" alt="logo" />
                 </a>
               </Link>
             </div>
