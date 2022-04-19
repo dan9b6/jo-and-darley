@@ -11814,6 +11814,7 @@ ul {
   align-items: center;
   background-color: #144941;
   pointer-events: none;
+  margin: 0 auto;
 }
 .contact-form__group .btn.loading:before {
   content: "";
@@ -11842,6 +11843,9 @@ ul {
   color: #fff;
   border-color: green;
   pointer-events: none;
+}
+.contact-form__group .btn.success:focus, .contact-form__group .btn.success:active, .contact-form__group .btn.success:focus-visible {
+  background-color: green;
 }
 .contact-form__subsection {
   padding: 40px 15px;

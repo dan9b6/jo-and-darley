@@ -57,6 +57,10 @@ const Pricing = () => {
                   </p>
                 </div>
                 <div className="pricing__table-data">
+                  <p>CUT &amp; FINISH</p>
+                  <p>£30 / £49 / £52</p>
+                </div>
+                <div className="pricing__table-data">
                   <p>Short / Clippered Cut</p>
                   <p>£20 / £27 / £30</p>
                 </div>

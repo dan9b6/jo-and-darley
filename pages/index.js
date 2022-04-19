@@ -9,8 +9,6 @@ import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Link from "next/link";
-import Image from "next/image";
-import ImageContainer from "../components/image-container";
 import Head from "next/head";
 
 export default function Home() {

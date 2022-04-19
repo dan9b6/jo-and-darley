@@ -59,7 +59,7 @@ const Navigation = () => {
           <Col xs="6" md="3">
             <div className="header__logo">
               <Link href="/" scroll={true}>
-                <a className="header__logo-img">
+                <a className="header__logo-img" onClick={closeNav}>
                   <img src="images/logo.svg" alt="logo" />
                 </a>
               </Link>

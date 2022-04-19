@@ -1,5 +1,5 @@
 import Banner from "../components/banner";
-import ContactForm from "../components/contact-form";
+import SendGridForm from "../components/sendgrid-form";
 import Section from "../components/section";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -52,7 +52,8 @@ const ContactUs = () => {
                     To arrange a complimentary consultation, make a booking or
                     for any other enquiries, get in touch…
                   </p>
-                  <ContactForm />
+                  {/* <ContactForm /> */}
+                  <SendGridForm />
                 </div>
               </Col>
               <Col xs="12" lg="3" className="subsection">

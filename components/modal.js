@@ -11,65 +11,70 @@ const Modal = () => {
     document.querySelector(".modal__overlay").classList.remove("active");
   }
 
-  const [modalContactData, setModalContactData] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    phone: "",
-    message: "",
-  });
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
 
-  function handleFormInput(e) {
-    const { name, value } = e.target;
-    setModalContactData((prevState) => ({
-      ...prevState,
-      [name]: value,
-    }));
-  }
+  const [valid, setValid] = useState(false);
 
-  function handleChange(e) {
-    let submitBtn = document.getElementById("modal-form-submit");
-    submitBtn.classList.remove("success");
-    submitBtn.innerHTML = "Submit";
-  }
+  const handleValidation = (e) => {
+    if (
+      firstName !== "" ||
+      lastName !== "" ||
+      email !== "" ||
+      phone !== "" ||
+      message !== ""
+    ) {
+      setValid(true);
+    }
+  };
 
-  async function handleOnSubmit(e) {
+  const handleFormSubmission = async (e) => {
     e.preventDefault();
 
+    handleValidation();
+
     const formValidationMessage = document.querySelector(
-      ".modal__content .contact-form__validation-message"
+      ".modal__overlay .contact-form__validation-message"
     );
 
-    if (
-      modalContactData.firstName == "" ||
-      modalContactData.lastName == "" ||
-      modalContactData.phone == "" ||
-      modalContactData.email == "" ||
-      modalContactData.message == ""
-    ) {
-      formValidationMessage.classList.remove("hidden");
-    } else {
+    if (valid == true) {
       formValidationMessage.classList.add("hidden");
 
-      fetch("/api/SendGrid", {
-        method: "post",
-        body: JSON.stringify(modalContactData),
-      })
-        .then((res) => {
-          if (res.status === 200) {
-            let submitBtn = document.getElementById("modal-form-submit");
-            submitBtn.classList.add("loading");
-            setTimeout(() => {
-              submitBtn.classList.add("success");
-              submitBtn.classList.remove("loading");
-              submitBtn.innerHTML = "Message Sent";
-            }, 2000);
-            return res.json();
-          }
-        })
-        .catch((error) => console.log("error"));
+      const res = await fetch("/api/SendGridApi", {
+        body: JSON.stringify({
+          email: email,
+          firstName: firstName,
+          lastName: lastName,
+          phone: phone,
+          message: message,
+        }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+        method: "POST",
+      });
+
+      let submitBtn = document.getElementById("modal-form-submit");
+      submitBtn.classList.add("loading");
+      setTimeout(() => {
+        submitBtn.classList.add("success");
+        submitBtn.innerHTML = "Message Sent";
+        submitBtn.classList.remove("loading");
+      }, 2000);
+
+      const { error } = await res.json();
+      if (error) {
+        console.log(error);
+        return;
+      }
+      console.log(firstName, lastName, email, phone, message);
+    } else {
+      formValidationMessage.classList.remove("hidden");
     }
-  }
+  };
 
   return (
     <div className="modal__overlay">
@@ -82,77 +87,87 @@ const Modal = () => {
           Please fill out the below with as much information as you can & we
           will get back to you as soon as possible.
         </p>
-        <form
-          className="contact-form"
-          method="post"
-          onSubmit={handleOnSubmit}
-          onChange={handleChange}
-        >
+        <form onSubmit={handleFormSubmission}>
           <Row>
             <Col xs="12" md="6">
               <div className="contact-form__group">
                 <input
+                  placeholder="First Name..."
                   type="text"
+                  value={firstName}
+                  onChange={(e) => {
+                    setFirstName(e.target.value);
+                  }}
                   name="firstName"
-                  onChange={handleFormInput}
-                  placeholder="First name..."
-                  required
                 />
               </div>
             </Col>
             <Col xs="12" md="6">
               <div className="contact-form__group">
                 <input
+                  placeholder="Last Name..."
                   type="text"
+                  value={lastName}
+                  onChange={(e) => {
+                    setLastName(e.target.value);
+                  }}
                   name="lastName"
-                  onChange={handleFormInput}
-                  placeholder="Last name..."
-                  required
                 />
               </div>
             </Col>
             <Col xs="12" md="6">
               <div className="contact-form__group">
                 <input
+                  placeholder="Email..."
                   type="text"
+                  value={email}
+                  onChange={(e) => {
+                    setEmail(e.target.value);
+                  }}
                   name="email"
-                  onChange={handleFormInput}
-                  placeholder="Email address"
-                  required
                 />
               </div>
             </Col>
             <Col xs="12" md="6">
               <div className="contact-form__group">
                 <input
+                  placeholder="Contact Number..."
                   type="text"
+                  value={phone}
+                  onChange={(e) => {
+                    setPhone(e.target.value);
+                  }}
                   name="phone"
-                  onChange={handleFormInput}
-                  placeholder="Contact number"
-                  required
                 />
               </div>
             </Col>
             <Col xs="12">
               <div className="contact-form__group">
                 <textarea
-                  type="text"
+                  placeholder="Message..."
                   name="message"
-                  onChange={handleFormInput}
-                  placeholder="Message"
-                  required
-                />
+                  value={message}
+                  onChange={(e) => {
+                    setMessage(e.target.value);
+                  }}
+                ></textarea>
+              </div>
+            </Col>
+            <Col xs="12">
+              <div className="contact-form__group">
+                <button id="modal-form-submit" className="btn btn-primary">
+                  Submit
+                </button>
+              </div>
+            </Col>
+            <Col xs="12">
+              <div className="contact-form__group contact-form__validation">
+                <div className="contact-form__validation-message hidden">
+                  <small className="mb-0 pb-0">Please fill all fields *</small>
+                </div>
               </div>
             </Col>
           </Row>
-          <div className="contact-form__group contact-form__validation">
-            <button id="modal-form-submit" className="btn btn-primary">
-              Submit
-            </button>
-            <div className="contact-form__validation-message hidden">
-              <small className="mb-0 pb-0">Please fill all fields *</small>
-            </div>
-          </div>
         </form>
       </div>
     </div>
