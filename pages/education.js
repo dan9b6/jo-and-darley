@@ -1,6 +1,5 @@
 import Banner from "../components/banner";
 import Section from "../components/section";
-import CTA from "../components/cta/default";
 import SplitCTA from "../components/cta/split";
 import Link from "next/link";
 
@@ -133,7 +132,7 @@ const Education = () => {
           </div>
         </Section>
         <SplitCTA
-          bgImg="/images/cta/tiger-print.jpg"
+          bgImg="/images/cta/education/1st.jpg"
           bg="light-pink"
           altText="tiger print painting"
         >

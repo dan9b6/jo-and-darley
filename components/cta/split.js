@@ -3,9 +3,6 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-import ImageContainer from "../image-container";
-import Image from "next/image";
-
 const SplitCTA = ({ bgImg, reverse, children, bg, altText }) => {
   return (
     <div
@@ -20,10 +17,15 @@ const SplitCTA = ({ bgImg, reverse, children, bg, altText }) => {
           </Col>
         </Row>
       </Container>
-      <div className="cta--split__img">
-        <ImageContainer>
-          <Image src={bgImg} alt={altText} layout="fill" objectFit="cover" />
-        </ImageContainer>
+      <div
+        className="cta--split__img"
+        data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-offset="0"
+        data-aos-delay="0"
+        data-aos-duration="500"
+      >
+        <img src={bgImg} />
       </div>
     </div>
   );

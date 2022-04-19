@@ -71,27 +71,6 @@ main {
   }
 }
 
-.img-container {
-  position: relative;
-  height: 100%;
-  width: 100%;
-}
-
-img {
-  opacity: 1;
-  transition: 0.5s;
-  animation: banner-animate 0.5s;
-}
-
-@keyframes banner-animate {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 .disable-scroll--mobile {
   @include media-breakpoint-down(md) {
     overflow: hidden;

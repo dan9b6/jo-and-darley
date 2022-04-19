@@ -1,29 +1,24 @@
 import React from "react";
-import ImageContainer from "./image-container";
-import Image from "next/image";
 
 const HomeBanner = () => {
   return (
     <div className="banner banner--home">
-      <div className="img-container">
-        <Image
-          src="/images/image002.jpg"
-          alt="Home Banner"
-          layout="fill"
-          objectFit="cover"
-          loading="eager"
-          priority={true}
-        />
-      </div>
-      <div className="banner__content">
-        <ImageContainer>
-          <Image
-            src="/images/logo3.png"
-            alt="Logo"
-            layout="fill"
-            objectFit="contain"
-          />
-        </ImageContainer>
+      <img
+        src="/images/banner/index.jpg"
+        alt="Home Banner"
+        data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-offset="0"
+      />
+      <div
+        className="banner__content"
+        data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-offset="0"
+        data-aos-delay="500"
+        data-aos-duration="750"
+      >
+        <img src="images/logo.svg" alt="logo" />
       </div>
     </div>
   );

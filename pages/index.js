@@ -50,7 +50,7 @@ export default function Home() {
       </Head>
       <main>
         <HomeBanner />
-        <SplitCTA bgImg="/images/cta/what-we-offer.jpg" altText="our products">
+        <SplitCTA bgImg="/images/cta/index/1st.jpg" altText="our products">
           <h2>PASSIONATE ABOUT HAIR.</h2>
           <p>
             Jo’s creativity, alongside her fascination for hair colouring &amp;
@@ -69,7 +69,7 @@ export default function Home() {
         </SplitCTA>
 
         <SplitCTA
-          bgImg="/images/cta/refill-station.jpg"
+          bgImg="/images/cta/index/2nd.jpg"
           altText="our product stand"
           reverse
           bg="light-pink"
@@ -97,11 +97,7 @@ export default function Home() {
           </ul>
         </SplitCTA>
         <CustomCarousel />
-        <SplitCTA
-          bgImg="/images/image006.jpg"
-          reverse
-          altText="our seating area"
-        >
+        <SplitCTA bgImg="/images/cta/index/3rd.jpg" altText="our seating area">
           <h2>Education.</h2>
           <p>
             Sharing knowledge is an important part of salon life at Jo &amp; Co.
@@ -122,76 +118,79 @@ export default function Home() {
             <h2 className="cta--instagram-heading">Check Out Our Instagram</h2>
             <Row>
               <Col md="4">
-                <ImageContainer>
-                  <Image
-                    src="/images/instagram/instagram-1.jpg"
-                    alt="First Instagram Image"
-                    layout="fill"
-                    objectFit="contain"
-                  />
+                <div
+                  className="cta--instagram-image"
+                  data-aos="fade-zoom-in"
+                  data-aos-easing="ease-in-back"
+                  data-aos-offset="0"
+                  data-aos-delay="0"
+                  data-aos-duration="500"
+                >
                   <a
-                    href="https://www.instagram.com/jodarleyandco/"
                     className="img-overlay"
-                    target={"_blank"}
-                    alt="Image overlay for instagram image 1"
+                    href="https://www.instagram.com/jodarleyandco/"
+                    target="_blank"
                   >
                     <FontAwesomeIcon
                       className="img-overlay__icon"
                       icon={faInstagram}
                     />
-                    <p>
-                      <strong>@jodarleyandco</strong>
-                    </p>
                   </a>
-                </ImageContainer>
+                  <img
+                    src="/images/instagram/2nd.jpg"
+                    alt="instagram image 1"
+                  />
+                </div>
               </Col>
               <Col md="4">
-                <ImageContainer>
-                  <Image
-                    src="/images/instagram/instagram-2.jpg"
-                    alt="Second Instagram Image"
-                    layout="fill"
-                    objectFit="contain"
-                  />
+                <div
+                  className="cta--instagram-image"
+                  data-aos="fade-zoom-in"
+                  data-aos-easing="ease-in-back"
+                  data-aos-offset="0"
+                  data-aos-delay="0"
+                  data-aos-duration="500"
+                >
                   <a
-                    href="https://www.instagram.com/jodarleyandco/"
                     className="img-overlay"
-                    target={"_blank"}
-                    alt="Image overlay for instagram image 1"
+                    href="https://www.instagram.com/jodarleyandco/"
+                    target="_blank"
                   >
                     <FontAwesomeIcon
                       className="img-overlay__icon"
                       icon={faInstagram}
                     />
-                    <p>
-                      <strong>@jodarleyandco</strong>
-                    </p>
                   </a>
-                </ImageContainer>
+                  <img
+                    src="/images/instagram/3rd.jpg"
+                    alt="instagram image 2"
+                  />
+                </div>
               </Col>
               <Col md="4">
-                <ImageContainer>
-                  <Image
-                    src="/images/instagram/instagram-3.jpg"
-                    alt="Third Instagram Image"
-                    layout="fill"
-                    objectFit="contain"
-                  />
+                <div
+                  className="cta--instagram-image"
+                  data-aos="fade-zoom-in"
+                  data-aos-easing="ease-in-back"
+                  data-aos-offset="0"
+                  data-aos-delay="0"
+                  data-aos-duration="500"
+                >
                   <a
-                    href="https://www.instagram.com/jodarleyandco/"
                     className="img-overlay"
-                    target={"_blank"}
-                    alt="Image overlay for instagram image 1"
+                    href="https://www.instagram.com/jodarleyandco/"
+                    target="_blank"
                   >
                     <FontAwesomeIcon
                       className="img-overlay__icon"
                       icon={faInstagram}
                     />
-                    <p>
-                      <strong>@jodarleyandco</strong>
-                    </p>
                   </a>
-                </ImageContainer>
+                  <img
+                    src="/images/instagram/4th.jpg"
+                    alt="instagram image 3"
+                  />
+                </div>
               </Col>
             </Row>
           </div>

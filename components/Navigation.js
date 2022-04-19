@@ -64,15 +64,8 @@ const Navigation = () => {
           <Col xs="6" md="3">
             <div className="header__logo">
               <Link href="/" scroll={true}>
-                <a>
-                  <ImageContainer>
-                    <Image
-                      src={Logo}
-                      alt="Logo"
-                      layout="fill"
-                      objectFit="contain"
-                    />
-                  </ImageContainer>
+                <a className="header__logo-img">
+                  <img src="images/logo.svg" />
                 </a>
               </Link>
             </div>

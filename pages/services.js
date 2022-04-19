@@ -1,6 +1,5 @@
 import React from "react";
 import Banner from "../components/banner";
-import CTA from "../components/cta/default";
 import SplitCTA from "../components/cta/split";
 import Section from "../components/section";
 
@@ -46,7 +45,7 @@ const Pricing = () => {
         />
       </Head>
       <main>
-        <Banner title="Services" bgImg="/images/banner/services-banner.jpg" />
+        <Banner title="Services" bgImg="/images/banner/services.jpg" />
         <Section bg="pink">
           <div className="pricing__table">
             <Row>
@@ -195,7 +194,7 @@ const Pricing = () => {
           </div>
         </Section>
         <SplitCTA
-          bgImg="/images/cta/outside-sign.jpg"
+          bgImg="/images/cta/services/1st.jpg"
           altText="Our sign from the shop"
           bg="light-pink"
         >
