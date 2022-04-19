@@ -115,7 +115,7 @@ export default function Home() {
         </SplitCTA>
         <Section bg="light-pink">
           <div className="cta--instagram">
-            <h2 className="cta--instagram-heading">Check Out Our Instagram</h2>
+            <h2 className="cta--instagram-heading">Follow us on instagram</h2>
             <Row>
               <Col md="4">
                 <div

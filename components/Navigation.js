@@ -12,11 +12,6 @@ import Button from "react-bootstrap/Button";
 
 // Next
 import Link from "next/link";
-import Image from "next/image";
-import Logo from "../public/images/logo3.png";
-
-//
-import ImageContainer from "./image-container";
 
 const Navigation = () => {
   const [toggle, setToggle] = useState(false);
@@ -107,7 +102,6 @@ const Navigation = () => {
                     <Button className="btn-primary" onClick={openModal}>
                       Book Now
                     </Button>
-                    <small>#joanddarley</small>
                   </Col>
                   <Col xs="3" className="text-right">
                     <FontAwesomeIcon

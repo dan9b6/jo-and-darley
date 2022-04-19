@@ -42,17 +42,12 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/bridal">
-                  <a>Bridal</a>
+                <Link href="/education">
+                  <a>Education</a>
                 </Link>
               </li>
               <li>
-                <Link href="/courses">
-                  <a>Courses</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact">
+                <Link href="/contact-us">
                   <a>Contact</a>
                 </Link>
               </li>
@@ -68,7 +63,7 @@ const Footer = () => {
                       className="footer__social-icon"
                       icon={faInstagram}
                     />
-                    @joanddarley
+                    @jodarleyandco
                   </a>
                 </Link>
               </li>

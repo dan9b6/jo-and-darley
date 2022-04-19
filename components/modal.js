@@ -79,8 +79,8 @@ const Modal = () => {
         </div>
         <h2>Book your appointment</h2>
         <p className="mb-4">
-          To book an appointment with us, please fill out all the fields below
-          and we will get back to you.
+          Please fill out the below with as much information as you can & we
+          will get back to you as soon as possible.
         </p>
         <form
           className="contact-form"
