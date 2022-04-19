@@ -12,7 +12,6 @@ async function sendEmail(req, res) {
         <html lang="en">
         <head>
           <meta charset="utf-8">
-        s
           <title>Contact Message - Web Form</title>
           <meta name="description" content="Contact Message - Web Form">
           <meta name="author" content="SitePoint">
