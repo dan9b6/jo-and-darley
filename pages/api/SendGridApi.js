@@ -6,13 +6,13 @@ async function sendEmail(req, res) {
   try {
     await sendgrid.send({
       to: "dan_burts@outlook.com", // Your email where you'll receive emails
-      from: "em3106.jodarleyandco.com", // your website email address here
-      subject: `Enquiry - Website Contact Form `,
+      from: "wem3106@jodarleyandco.com", // your website email address here
+      subject: `Enquiry - Website Contact Form`,
       html: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
         <html lang="en">
         <head>
           <meta charset="utf-8">
-        
+        s
           <title>Contact Message - Web Form</title>
           <meta name="description" content="Contact Message - Web Form">
           <meta name="author" content="SitePoint">

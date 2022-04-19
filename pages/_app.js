@@ -51,7 +51,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="theme-color" content="#144941"></meta>
       </Head>
       <Navigation />
-      <Modal />
+      {/* <Modal /> */}
       <Component {...pageProps} />
       <Footer />
     </>
