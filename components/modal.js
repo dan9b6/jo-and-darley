@@ -19,6 +19,8 @@ const Modal = () => {
 
   const [valid, setValid] = useState(false);
 
+  let validated = false;
+
   const handleValidation = (e) => {
     if (
       firstName !== "" ||
@@ -27,7 +29,8 @@ const Modal = () => {
       phone !== "" ||
       message !== ""
     ) {
-      setValid(true);
+      setValid(validated);
+      validated = true;
     }
   };
 
@@ -40,7 +43,7 @@ const Modal = () => {
       ".modal__overlay .contact-form__validation-message"
     );
 
-    if (valid == true) {
+    if (validated == true) {
       formValidationMessage.classList.add("hidden");
 
       const res = await fetch("/api/SendGridApi", {

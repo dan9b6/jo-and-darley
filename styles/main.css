@@ -11371,7 +11371,7 @@ ul {
   position: absolute;
   padding: 10px 20px;
   background-color: #144941;
-  box-shadow: 0 0 0 5px #fee3d2 inset;
+  box-shadow: 0 0 0 2px #fee3d2 inset;
   border: 10px solid #144941;
 }
 .banner--home .banner__content img {
@@ -11456,8 +11456,14 @@ ul {
   width: 100%;
   max-width: 750px;
   color: #fee3d2;
+  height: 500px;
 }
 @media (min-width: 576px) {
+  .carousel--reviews .carousel {
+    height: 300px;
+  }
+}
+@media (min-width: 992px) {
   .carousel--reviews .carousel {
     height: 200px;
   }
