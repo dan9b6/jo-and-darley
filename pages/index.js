@@ -128,6 +128,7 @@ export default function Home() {
                     className="img-overlay"
                     href="https://www.instagram.com/jodarleyandco/"
                     target="_blank"
+                    alt="instagram image overlay"
                   >
                     <FontAwesomeIcon
                       className="img-overlay__icon"
@@ -153,6 +154,7 @@ export default function Home() {
                     className="img-overlay"
                     href="https://www.instagram.com/jodarleyandco/"
                     target="_blank"
+                    alt="instagram image overlay"
                   >
                     <FontAwesomeIcon
                       className="img-overlay__icon"
@@ -160,7 +162,7 @@ export default function Home() {
                     />
                   </a>
                   <img
-                    src="/images/instagram/3rd.jpg"
+                    src="/images/instagram/1st.jpg"
                     alt="instagram image 2"
                   />
                 </div>
@@ -178,6 +180,7 @@ export default function Home() {
                     className="img-overlay"
                     href="https://www.instagram.com/jodarleyandco/"
                     target="_blank"
+                    alt="instagram image overlay"
                   >
                     <FontAwesomeIcon
                       className="img-overlay__icon"
