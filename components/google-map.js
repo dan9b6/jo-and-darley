@@ -6,7 +6,7 @@ const googleMap = () => {
   const googlemap = useRef(null);
   useEffect(() => {
     const loader = new Loader({
-      apiKey: process.env.NEXT_PUBLIC_API_KEY,
+      apiKey: process.env.GOOGLE_API_KEY,
       version: "weekly",
     });
     let map;
@@ -26,7 +26,7 @@ const googleMap = () => {
 
       marker = new google.maps.Marker({
         position: myLatlng,
-        title: "Hello World!",
+        title: "Jo Darley and Co Location",
       });
 
       marker.setMap(map);
