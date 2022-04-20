@@ -6,7 +6,7 @@ const googleMap = () => {
   const googlemap = useRef(null);
   useEffect(() => {
     const loader = new Loader({
-      apiKey: process.env.GOOGLE_API_KEY,
+      apiKey: process.env.NEXT_PUBLIC_API_KEY,
       version: "weekly",
     });
     let map;
