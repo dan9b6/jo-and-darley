@@ -5,6 +5,7 @@ h4,
 h5 {
   font-family: $c-font-body;
   font-weight: bold;
+  font-style: normal;
   font-display: swap;
   color: $c-dark-green;
   text-transform: uppercase;
@@ -15,6 +16,8 @@ p,
 li,
 a {
   font-family: $c-font-heading;
+  font-weight: normal;
+  font-style: normal;
   font-display: swap;
   color: $c-dark-green;
 }

@@ -11293,6 +11293,7 @@ h5,
 .h5 {
   font-family: "Roboto Mono", monospace;
   font-weight: bold;
+  font-style: normal;
   font-display: swap;
   color: #144941;
   text-transform: uppercase;
@@ -11303,6 +11304,8 @@ p,
 li,
 a {
   font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  font-style: normal;
   font-display: swap;
   color: #144941;
 }
