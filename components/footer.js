@@ -51,6 +51,11 @@ const Footer = () => {
                   <a>Contact</a>
                 </Link>
               </li>
+              <li>
+                <Link href="/privacy-policy">
+                  <a>Privacy Policy</a>
+                </Link>
+              </li>
             </ul>
           </Col>
           <Col xs="12" sm="6" lg="3" className="footer__col footer__social">
