@@ -15,8 +15,7 @@ const HomeBanner = () => {
         data-aos="fade-zoom-in"
         data-aos-easing="ease-in-back"
         data-aos-offset="0"
-        data-aos-delay="500"
-        data-aos-duration="750"
+        data-aos-delay="250"
       >
         <img src="images/logo.svg" alt="logo" />
       </div>

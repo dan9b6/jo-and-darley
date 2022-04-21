@@ -42,9 +42,9 @@
     &:active,
     &:focus,
     &:focus-visible {
-      background-color: transparent;
-      color: $c-dark-green;
-      border-color: $c-dark-green;
+      background-color: transparent !important;
+      color: $c-dark-green !important;
+      border-color: $c-dark-green !important;
     }
   }
 
@@ -56,9 +56,9 @@
     &:active,
     &:focus,
     &:focus-visible {
-      background-color: transparent;
-      color: $c-light-pink;
-      border-color: $c-light-pink;
+      background-color: transparent !important;
+      color: $c-light-pink !important;
+      border-color: $c-light-pink !important;
     }
   }
 

@@ -11425,18 +11425,18 @@ ul {
   border-color: #144941;
 }
 .btn-primary:hover, .btn-primary:active, .btn-primary:focus, .btn-primary:focus-visible {
-  background-color: transparent;
-  color: #144941;
-  border-color: #144941;
+  background-color: transparent !important;
+  color: #144941 !important;
+  border-color: #144941 !important;
 }
 .btn-secondary {
   background-color: #fee3d2;
   color: #144941;
 }
 .btn-secondary:hover, .btn-secondary:active, .btn-secondary:focus, .btn-secondary:focus-visible {
-  background-color: transparent;
-  color: #fee3d2;
-  border-color: #fee3d2;
+  background-color: transparent !important;
+  color: #fee3d2 !important;
+  border-color: #fee3d2 !important;
 }
 .btn-tertiary {
   background-color: #fff;
