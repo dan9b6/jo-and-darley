@@ -15,8 +15,8 @@ const googleMap = () => {
       const google = window.google;
 
       var myLatlng = new google.maps.LatLng(
-        50.765779847367675,
-        -2.021353615339215
+        50.76523578109976,
+        -2.021310941005347
       );
 
       map = new google.maps.Map(googlemap.current, {
