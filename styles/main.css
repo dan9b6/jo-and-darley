@@ -11964,6 +11964,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   font-weight: bold;
   font-display: swap;
   color: #144941;
+  text-transform: uppercase;
 }
 
 body,
@@ -13323,7 +13324,6 @@ ul {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  text-transform: uppercase;
 }
 
 #__next {
