@@ -47,12 +47,11 @@ const ContactUs = () => {
             <Row>
               <Col xs="12" lg="9">
                 <div className="form">
-                  <h2>Get in touch</h2>
+                  <h2>Contact Us</h2>
                   <p className="mb-4">
                     To arrange a complimentary consultation, make a booking or
-                    for any other enquiries, get in touch…
+                    for any other enquiries, please get in touch…
                   </p>
-                  {/* <ContactForm /> */}
                   <SendGridForm />
                 </div>
               </Col>
@@ -61,13 +60,13 @@ const ContactUs = () => {
                   <Col sm="6" lg="12" className="mb-md-5">
                     <h4>Opening Hours:</h4>
                     <ul>
-                      <li>Monday: 08:00 - 18:00</li>
-                      <li>Tuesday: 08:00 - 18:00</li>
-                      <li>Wednesday: 08:00 - 18:00</li>
-                      <li>Thursday: 08:00 - 18:00</li>
-                      <li>Friday: 08:00 - 18:00</li>
-                      <li>Saturday: 08:00 - 18:00</li>
-                      <li>Sunday: 08:00 - 18:00</li>
+                      <li>Monday: CLOSED - EDUCATION DAY</li>
+                      <li>Tuesday: 09:00 - 17:30</li>
+                      <li>Wednesday: 09:00 - 17:30</li>
+                      <li>Thursday: 09:00 - 17:30</li>
+                      <li>Friday: 09:00 - 17:30</li>
+                      <li>Saturday: 08:00 - 16:30</li>
+                      <li>Sunday: CLOSED</li>
                     </ul>
                   </Col>
                   <Col sm="6" lg="12">

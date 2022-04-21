@@ -79,6 +79,22 @@ const Education = () => {
                   </li>
                 </ul>
               </Col>
+
+              <Col md="6" className="mb-4">
+                <h5>
+                  <strong>The Requirements:</strong>
+                </h5>
+                <ul className="custom-list">
+                  <li>Scissors</li>
+                  <li>Cutting combs</li>
+                  <li>Section grips</li>
+                  <li>Brushes for styling</li>
+                  <li>Hair dryer </li>
+                  <li>Your own model or a block if you’d prefer</li>
+                </ul>
+              </Col>
+            </Row>
+            <Row>
               <Col lg="6" className="mb-4">
                 <h5>
                   <strong>The Learning:</strong>
@@ -102,21 +118,7 @@ const Education = () => {
                   </li>
                 </ul>
               </Col>
-            </Row>
-            <Row>
-              <Col md="6" className="mb-4">
-                <h5>
-                  <strong>The Requirements:</strong>
-                </h5>
-                <ul className="custom-list">
-                  <li>Scissors</li>
-                  <li>Cutting combs</li>
-                  <li>Section grips</li>
-                  <li>Brushes for styling</li>
-                  <li>Hair dryer </li>
-                  <li>Your own model or a block if you’d prefer</li>
-                </ul>
-              </Col>
+
               <Col md="6" className="mb-4">
                 <h5>
                   <strong>The Investment:</strong>
@@ -125,7 +127,7 @@ const Education = () => {
                   <li>£250.00 (including VAT)</li>
                 </ul>
                 <Link href="/contact-us">
-                  <a className="btn btn-primary">Enquiry Now</a>
+                  <a className="btn btn-primary">Enquire Now</a>
                 </Link>
               </Col>
             </Row>
@@ -139,17 +141,14 @@ const Education = () => {
           <div>
             <h2>General Course Details</h2>
             <p>
-              All our courses will be held on Mondays in our spacious salon near
+              Courses will be held on Mondays in our spacious salon near
               Wimborne, Dorset.
             </p>
+            <p>Courses will start at 9:00 and finish at approx. 17:00.</p>
+            <p>Course dates will be arranged with you upon booking</p>
             <p>
-              Our courses will commence at 9:00am and finish approximately at
-              5:00pm.
-            </p>
-            <p>The start date of your course will be arranged upon booking.</p>
-            <p>
-              If you are a salon owner &amp; require bespoke learning for your
-              team, please{" "}
+              If you are a salon owner & require bespoke learning for your team,
+              please{" "}
               <Link href="/contact">
                 <a className="link">get in touch for a quote.</a>
               </Link>

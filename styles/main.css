@@ -11312,6 +11312,11 @@ ul {
   padding-left: 0;
 }
 
+.custom-list {
+  list-style: disc;
+  padding-left: 20px;
+}
+
 .banner {
   height: 250px;
   width: 100%;
@@ -11458,6 +11463,7 @@ ul {
   max-width: 750px;
   color: #fee3d2;
   height: 500px;
+  display: flex;
 }
 @media (min-width: 576px) {
   .carousel--reviews .carousel {
@@ -11468,6 +11474,10 @@ ul {
   .carousel--reviews .carousel {
     height: 200px;
   }
+}
+.carousel--reviews .carousel-inner {
+  display: flex;
+  align-items: center;
 }
 .carousel--reviews .carousel-item__content {
   height: 100%;
@@ -12131,12 +12141,14 @@ ul {
 }
 .pricing__table-data p:last-child {
   font-weight: normal;
+  margin-top: -8px;
 }
 .pricing__table-data-title {
   margin-bottom: 30px;
 }
 .pricing__table-data-title h4, .pricing__table-data-title .h4 {
   margin-bottom: 30px;
+  font-family: "Poppins", sans-serif;
 }
 
 .nav-primary {
