@@ -11295,6 +11295,7 @@ h5,
   font-weight: bold;
   font-display: swap;
   color: #144941;
+  text-transform: uppercase;
 }
 
 body,
@@ -11678,10 +11679,6 @@ ul {
   }
 }
 
-.education .banner img {
-  -o-object-position: top;
-     object-position: top;
-}
 .education__heading {
   padding: 40px 15px;
   width: 100%;
@@ -12323,7 +12320,6 @@ ul {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-transform: uppercase;
 }
 
 #__next {
