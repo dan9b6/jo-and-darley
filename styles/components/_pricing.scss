@@ -17,6 +17,7 @@
 
         &:last-child {
           font-weight: normal;
+          margin-top: -8px;
         }
       }
 
@@ -25,6 +26,7 @@
 
         h4 {
           margin-bottom: 30px;
+          font-family: $c-font-heading;
         }
       }
     }

@@ -21,6 +21,7 @@
       max-width: 750px;
       color: $c-light-pink;
       height: 500px;
+      display: flex;
 
       @include media-breakpoint-up(sm) {
         height: 300px;
@@ -28,6 +29,11 @@
 
       @include media-breakpoint-up(lg) {
         height: 200px;
+      }
+
+      &-inner {
+        display: flex;
+        align-items: center;
       }
 
       &-item__content {
