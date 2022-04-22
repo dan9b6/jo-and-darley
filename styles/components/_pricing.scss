@@ -12,8 +12,14 @@
       margin-bottom: 30px;
       font-size: 14px;
 
+      .fwn {
+        font-weight: normal !important;
+      }
+
       p {
-        font-weight: bold;
+        &:first-child {
+          font-weight: bold;
+        }
 
         &:last-child {
           font-weight: normal;

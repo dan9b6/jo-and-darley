@@ -13062,7 +13062,11 @@ ul {
   font-size: 14px;
 }
 
-.pricing__table-data p {
+.pricing__table-data .fwn {
+  font-weight: normal !important;
+}
+
+.pricing__table-data p:first-child {
   font-weight: bold;
 }
 

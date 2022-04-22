@@ -52,8 +52,8 @@ const Pricing = () => {
               <Col md="4">
                 <div className="pricing__table-data-title">
                   <h4>Cut & Styling</h4>
-                  <p>
-                    <strong>Junior Stylist / Stylist / Director</strong>
+                  <p className="text-uppercase">
+                    Junior Stylist / Stylist / Director
                   </p>
                 </div>
                 <div className="pricing__table-data">
@@ -145,14 +145,14 @@ const Pricing = () => {
                   <h4>Toner</h4>
                 </div>
                 <div className="pricing__table-data">
-                  <p>Short / Long</p>
+                  <p className="fwn">Short / Long</p>
                   <p>£18 / £28</p>
                 </div>
                 <div className="pricing__table-data-title">
                   <h4>Perming</h4>
                 </div>
                 <div className="pricing__table-data">
-                  <p>Price on consultation only</p>
+                  <p className="fwn">Price on consultation only</p>
                   <p>(Cut & Finish Included)</p>
                   <p>Short / Long</p>
                   <p>from £90 / £120</p>
@@ -161,7 +161,7 @@ const Pricing = () => {
                   <h4>BRAZILIAN BLOW DRY</h4>
                 </div>
                 <div className="pricing__table-data">
-                  <p>SHORT / LONG</p>
+                  <p className="fwn">SHORT / LONG</p>
                   <p>FROM £100 / £130</p>
                 </div>
                 <div className="pricing__table-data-title">
