@@ -43,119 +43,106 @@ const PrivacyPolicy = () => {
         <Banner title="Privacy Policy" bgImg="images/banner/index.jpg" />
         <Section>
           <Container>
-            <h4>The type of personal information we collect</h4>
-            <p className="mb-5">
-              Our website collects your IP address and passes this information
-              to Google Analytics so that we can monitor how our website is
-              being used. Google uses your IP address in order to provide us
-              with general information about use of our website and also to
-              enable it to personalise advertisements on its own advertising
-              network. Google may share this information with other Google
-              services. The data we receive from Google Analytics allows us to
-              make improvements to our website.
-            </p>
-            <h4>How we use your personal information</h4>
-            <p className="mb-5">
-              We use the data collected by our website to monitor trends by
-              using analytics tools produced by Google which enable us to
-              monitor how our website is being used so that we can operate our
-              business more effectively.
-            </p>
-            <h4>Reasons for processing your personal information</h4>
-            <p className="mb-5">
-              Collecting your IP address and passing this to Google Analytics so
-              that we can improve our website is in our “legitimate interests”.
-              This is the “lawful basis” we rely on under the data protection
-              legislation to process this personal information.
-            </p>
-            <h4>Transfer of personal data</h4>
-            <p className="mb-5">
-              We will not actively send your data outside the EU but Google may
-              do this. Google subscribes to the EU-US Privacy Shield framework
-              which means that it has agreed to work with the appropriate
-              regulatory authorities to resolve any complaints regarding the
-              transfer of personal data where these complaints cannot be
-              resolved directly. Organisations subscribing to the EU-US Privacy
-              Shield framework (eg. Gmail, Dropbox, Mailchimp) are considered to
-              be permitted destinations for personal data by the EU.
-            </p>
-            <h4>How long we keep personal data</h4>
-            <p className="mb-5">
-              We will retain your IP address for 90 days after which time it is
-              automatically removed.
-            </p>
-            <h4>Questions and concerns</h4>
-            <p className="mb-5">
-              If you have any questions or concerns about our use of your
-              personal information, please let us know by sending an email to{" "}
-              <a href="mailto: danbh7296@gmail.com">...@....com</a>. You may
-              raise any concerns or obtain more information from the{" "}
-              <a href="https://ico.org.uk/" target="_blank">
-                Information Commissioner’s Office (ICO)
-              </a>
-              .
-            </p>
-            <h4>Your data protection rights</h4>
-            <p>Under data protection law, you have rights including:</p>
-            <p>
-              <strong>Your right of access</strong> - You have the right to ask
-              us for copies of your personal information.
-            </p>
-            <p>
-              <strong>Your right to rectification</strong> - You have the right
-              to ask us to rectify personal information you think is inaccurate.
-              You also have the right to ask us to complete information you
-              think is incomplete.
-            </p>
-            <p>
-              <strong>Your right to erasure</strong> - You have the right to ask
-              us to erase your personal information in certain circumstances.
-            </p>
-            <p>
-              <strong>Your right to restriction of processing</strong> - You
-              have the right to ask us to restrict the processing of your
-              personal information in certain circumstances.
-            </p>
-            <p>
-              <strong>Your right to object to processing</strong> - You have the
-              the right to object to the processing of your personal information
-              in certain circumstances.
-            </p>
-            <p>
-              <strong>Your right to data portability</strong> - You have the
-              right to ask that we transfer the personal information you gave us
-              to another organisation, or to you, in certain circumstances.
-            </p>
-            <p>
-              You are not required to pay any charge for exercising your rights.
-              If you make a request, we have one month to respond to you.
-            </p>
-            <p>
-              Please contact us at{" "}
-              <a href="mailto:danbh7296@gmail.com">...@....com</a> if you wish
-              to make a request.
-            </p>
-            <p>
-              <strong>How to complain</strong>
-            </p>
-            <p>
-              If you have any concerns about our use of your personal
-              information, you can make a complaint to us at{" "}
-              <a href="mailto:danbh7296@gmail.com">...@....com</a>.
-            </p>
-            <p>
-              You can also complain to the ICO if you are unhappy with how we
-              have used your data.
-            </p>
-            <p>
-              The ICO’s address: Information Commissioner’s Office, Wycliffe
-              House, Water Lanek, Wilmslow, Cheshire, SK9 5AF
-            </p>
-            <p>Helpline number: 0303 123 1113</p>
-            <p>
-              ICO website:{" "}
-              <a href="https://www.ico.org.uk">https://www.ico.org.uk</a>
-            </p>
+            <div>
+              <p className="mb-4">
+                This Privacy Policy describes how your personal information is
+                collected, used, and shared when you visit{" "}
+                <a href="www.jodarleyandco.com">www.jodarleyandco</a>.
+              </p>
+              <h2>PERSONAL INFORMATION WE COLLECT</h2>
+              <p>
+                When you visit the Site, we automatically collect certain
+                information about your device, including information about your
+                web browser, IP address, time zone, and some of the cookies that
+                are installed on your device. Additionally, as you browse the
+                Site, we collect information about the individual web pages or
+                products that you view, what websites or search terms referred
+                you to the Site, and information about how you interact with the
+                Site. We refer to this automatically-collected information as
+                "Device Information."
+              </p>
+              <p>
+                We collect Device Information using the following technologies:
+              </p>
+              <ul className="custom-list mb-4">
+                <li>
+                  “Cookies” are data files that are placed on your device or
+                  computer and often include an anonymous unique identifier. For
+                  more information about cookies, and how to disable cookies,
+                  visit{" "}
+                  <a href="http://www.allaboutcookies.org">
+                    http://www.allaboutcookies.org
+                  </a>
+                </li>
+                <li>
+                  “Log files” track actions occurring on the Site, and collect
+                  data including your IP address, browser type, Internet service
+                  provider, referring/exit pages, and date/time stamps. - “Web
+                  beacons,” “tags,” and “pixels” are electronic files used to
+                  record information about how you browse the Site.
+                </li>
+              </ul>
+              <h2>HOW DO WE USE YOUR PERSONAL INFORMATION?</h2>
+              <p>
+                We only use your device information to improve our service and
+                help us reach more people (for example, by generating analytics
+                about how our customers browse and interact with the Site, and
+                to assess the success of our marketing and advertising
+                campaigns). Should you contact us we only use your contact
+                information to reply to you and provide you with any information
+                or help that we can.
+              </p>
+              <p>
+                Finally, we may also share your Personal Information to comply
+                with applicable laws and regulations, to respond to a subpoena,
+                search warrant or other lawful request for information we
+                receive, or to otherwise protect our rights.
+              </p>
+              <p>
+                <b>DO NOT TRACK</b>
+              </p>
+              <p>
+                Please note that we do not alter our Site’s data collection and
+                use practices when we see a Do Not Track signal from your
+                browser.
+              </p>
+              <p>
+                <b>YOUR RIGHTS</b>
+              </p>
+              <p>
+                If you are a European resident, you have the right to access
+                personal information we hold about you and to ask that your
+                personal information be corrected, updated, or deleted. If you
+                would like to exercise this right, please contact us through the
+                contact information below.
+              </p>
+              <p>
+                <b>CHANGES</b>
+              </p>
+              <p>
+                We may update this privacy policy from time to time in order to
+                reflect, for example, changes to our practices or for other
+                operational, legal or regulatory reasons.
+              </p>
+              <p>
+                <b>CONTACT US</b>
+              </p>
+              <p>
+                For more information about our privacy practices, if you have
+                questions, or if you would like to make a complaint, please
+                contact us by e-mail at{" "}
+                <a href="mailto:hair@jodarleyandco.com">
+                  hair@jodarleyandco.com
+                </a>{" "}
+                or by mail using the details provided below:
+              </p>
+              <ul>
+                <li>2 & 3 ALBERT PARADE,</li>
+                <li>147B WAREHAM ROAD,</li>
+                <li>CORFE MULLEN,</li>
+                <li>BH21 3LA</li>
+              </ul>
+            </div>
           </Container>
         </Section>
       </main>

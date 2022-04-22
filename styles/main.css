@@ -11962,6 +11962,7 @@ fieldset:disabled .btn {
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   font-family: "Roboto Mono", monospace;
   font-weight: bold;
+  font-style: normal;
   font-display: swap;
   color: #144941;
   text-transform: uppercase;
@@ -11973,6 +11974,8 @@ li,
 a,
 button {
   font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  font-style: normal;
   font-display: swap;
   color: #144941;
 }
@@ -12108,31 +12111,34 @@ ul {
           box-shadow: none !important;
 }
 
-.btn-outline-primary {
-  border-color: #144941;
-  color: #144941;
-}
-
-.btn-outline-secondary {
-  border-color: #fee3d2;
-  color: #fee3d2;
-}
-
-.btn-outline-tertiary {
-  border-color: #fff;
-  color: #fff;
-}
-
 .btn-primary {
   background-color: #144941;
   color: #fff;
   border-color: #144941;
 }
 
-.btn-primary:hover, .btn-primary:active, .btn-primary:focus, .btn-primary:focus-visible {
-  background-color: transparent;
-  color: #144941;
-  border-color: #144941;
+.btn-primary:hover {
+  background-color: transparent !important;
+  color: #144941 !important;
+  border-color: #144941 !important;
+}
+
+.btn-primary:active {
+  background-color: transparent !important;
+  color: #144941 !important;
+  border-color: #144941 !important;
+}
+
+.btn-primary:focus {
+  background-color: transparent !important;
+  color: #144941 !important;
+  border-color: #144941 !important;
+}
+
+.btn-primary:focus-visible {
+  background-color: transparent !important;
+  color: #144941 !important;
+  border-color: #144941 !important;
 }
 
 .btn-secondary {
@@ -12140,15 +12146,28 @@ ul {
   color: #144941;
 }
 
-.btn-secondary:hover, .btn-secondary:active, .btn-secondary:focus, .btn-secondary:focus-visible {
-  background-color: transparent;
-  color: #fee3d2;
-  border-color: #fee3d2;
+.btn-secondary:hover {
+  background-color: transparent !important;
+  color: #fee3d2 !important;
+  border-color: #fee3d2 !important;
 }
 
-.btn-tertiary {
-  background-color: #fff;
-  color: #144941 !important;
+.btn-secondary:active {
+  background-color: transparent !important;
+  color: #fee3d2 !important;
+  border-color: #fee3d2 !important;
+}
+
+.btn-secondary:focus {
+  background-color: transparent !important;
+  color: #fee3d2 !important;
+  border-color: #fee3d2 !important;
+}
+
+.btn-secondary:focus-visible {
+  background-color: transparent !important;
+  color: #fee3d2 !important;
+  border-color: #fee3d2 !important;
 }
 
 .carousel-indicators button {
@@ -12179,7 +12198,7 @@ ul {
   width: 100%;
   max-width: 750px;
   color: #fee3d2;
-  height: 500px;
+  height: 575px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12475,11 +12494,6 @@ ul {
     position: relative;
     bottom: unset;
   }
-}
-
-.education .banner img {
-  -o-object-position: top;
-     object-position: top;
 }
 
 .education__heading {

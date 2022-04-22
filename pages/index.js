@@ -73,25 +73,25 @@ export default function Home() {
           bg="light-pink"
         >
           <h2>Eco-conscious.</h2>
-          <ul className="custom-list">
-            <li>
+          <ul>
+            <p>
               For all of our colour, wash & styling, we exclusively use Italian
               haircare brand, Oway.
-            </li>
-            <li>
+            </p>
+            <p>
               Oway produces ultra-concentrated formulas with organic,
               plant-based & biodegradable ingredients. Good for hair, good for
               the environment.
-            </li>
-            <li>
+            </p>
+            <p>
               Using only glass bottles & aluminium tubes, Oway is plastic free,
               recyclable & cruelty-free PETA certified – a few of the many
               reasons why we love the brand.
-            </li>
-            <li>
+            </p>
+            <p>
               Recycle with us in salon by using our shampoo & conditioner refill
               station.
-            </li>
+            </p>
           </ul>
         </SplitCTA>
         <CustomCarousel />
@@ -128,7 +128,7 @@ export default function Home() {
                     className="img-overlay"
                     href="https://www.instagram.com/jodarleyandco/"
                     target="_blank"
-                    alt="instagram image overlay"
+                    alt="instagram cover overlay 1"
                   >
                     <FontAwesomeIcon
                       className="img-overlay__icon"
@@ -154,7 +154,7 @@ export default function Home() {
                     className="img-overlay"
                     href="https://www.instagram.com/jodarleyandco/"
                     target="_blank"
-                    alt="instagram image overlay"
+                    alt="instagram cover overlay 2"
                   >
                     <FontAwesomeIcon
                       className="img-overlay__icon"
@@ -180,7 +180,7 @@ export default function Home() {
                     className="img-overlay"
                     href="https://www.instagram.com/jodarleyandco/"
                     target="_blank"
-                    alt="instagram image overlay"
+                    alt="instagram cover overlay 3"
                   >
                     <FontAwesomeIcon
                       className="img-overlay__icon"

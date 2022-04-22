@@ -16,35 +16,33 @@
     box-shadow: none !important;
   }
 
-  &-outline {
-    &-primary {
-      border-color: $c-dark-green;
-      color: $c-dark-green;
-    }
-
-    &-secondary {
-      border-color: $c-light-pink;
-      color: $c-light-pink;
-    }
-
-    &-tertiary {
-      border-color: #fff;
-      color: #fff;
-    }
-  }
-
   &-primary {
     background-color: $c-dark-green;
     color: $c-white;
     border-color: $c-dark-green;
 
-    &:hover,
-    &:active,
-    &:focus,
+    &:hover {
+      background-color: transparent !important;
+      color: $c-dark-green !important;
+      border-color: $c-dark-green !important;
+    }
+
+    &:active {
+      background-color: transparent !important;
+      color: $c-dark-green !important;
+      border-color: $c-dark-green !important;
+    }
+
+    &:focus {
+      background-color: transparent !important;
+      color: $c-dark-green !important;
+      border-color: $c-dark-green !important;
+    }
+
     &:focus-visible {
-      background-color: transparent;
-      color: $c-dark-green;
-      border-color: $c-dark-green;
+      background-color: transparent !important;
+      color: $c-dark-green !important;
+      border-color: $c-dark-green !important;
     }
   }
 
@@ -52,18 +50,26 @@
     background-color: $c-light-pink;
     color: $c-dark-green;
 
-    &:hover,
-    &:active,
-    &:focus,
-    &:focus-visible {
-      background-color: transparent;
-      color: $c-light-pink;
-      border-color: $c-light-pink;
+    &:hover {
+      background-color: transparent !important;
+      color: $c-light-pink !important;
+      border-color: $c-light-pink !important;
     }
-  }
+    &:active {
+      background-color: transparent !important;
+      color: $c-light-pink !important;
+      border-color: $c-light-pink !important;
+    }
+    &:focus {
+      background-color: transparent !important;
+      color: $c-light-pink !important;
+      border-color: $c-light-pink !important;
+    }
 
-  &-tertiary {
-    background-color: #fff;
-    color: $c-dark-green !important;
+    &:focus-visible {
+      background-color: transparent !important;
+      color: $c-light-pink !important;
+      border-color: $c-light-pink !important;
+    }
   }
 }

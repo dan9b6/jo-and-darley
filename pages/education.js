@@ -149,7 +149,7 @@ const Education = () => {
             <p>
               If you are a salon owner & require bespoke learning for your team,
               please{" "}
-              <Link href="/contact">
+              <Link href="/contact-us">
                 <a className="link">get in touch for a quote.</a>
               </Link>
             </p>
