@@ -17,14 +17,16 @@
       @include media-breakpoint-up(md) {
         content: "“a natural, concise way of learning to cut hair”";
         position: absolute;
-        font-size: 36px;
+        font-size: 30px;
         top: 50px;
         color: $c-lightest-green;
-        font-family: $c-font-heading;
+        font-family: $c-font-body;
+        text-transform: uppercase;
+        font-weight: bold;
       }
 
-      @include media-breakpoint-up(lg) {
-        font-size: 48px;
+      @include media-breakpoint-up(xl) {
+        font-size: 40px;
       }
     }
   }

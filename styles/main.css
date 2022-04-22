@@ -12523,16 +12523,18 @@ ul {
   .education__heading:before {
     content: "“a natural, concise way of learning to cut hair”";
     position: absolute;
-    font-size: 36px;
+    font-size: 30px;
     top: 50px;
     color: rgba(20, 73, 65, 0.05);
-    font-family: "Poppins", sans-serif;
+    font-family: "Roboto Mono", monospace;
+    text-transform: uppercase;
+    font-weight: bold;
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .education__heading:before {
-    font-size: 48px;
+    font-size: 40px;
   }
 }
 
