@@ -12811,18 +12811,6 @@ ul {
   margin-bottom: 30px;
 }
 
-@media (min-width: 576px) {
-  .footer__col li {
-    font-size: 12px;
-  }
-}
-
-@media (min-width: 992px) {
-  .footer__col li {
-    font-size: 16px;
-  }
-}
-
 .footer__col a {
   text-decoration: none;
 }
@@ -12871,7 +12859,7 @@ ul {
 
 @media (min-width: 768px) {
   .footer__social li {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 

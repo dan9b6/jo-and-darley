@@ -21,16 +21,6 @@
   &__col {
     margin-bottom: 30px;
 
-    li {
-      @include media-breakpoint-up(sm) {
-        font-size: 12px;
-      }
-
-      @include media-breakpoint-up(lg) {
-        font-size: 16px;
-      }
-    }
-
     a {
       text-decoration: none;
 
@@ -78,7 +68,7 @@
       margin-bottom: 10px;
 
       @include media-breakpoint-up(md) {
-        font-size: 12px;
+        font-size: 14px;
       }
     }
   }
