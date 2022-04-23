@@ -39,6 +39,7 @@ const Navigation = () => {
   }
 
   function openModal() {
+    closeNav();
     document.querySelector(".modal__overlay").classList.add("active");
   }
 

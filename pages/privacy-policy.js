@@ -47,7 +47,7 @@ const PrivacyPolicy = () => {
               <p className="mb-4">
                 This Privacy Policy describes how your personal information is
                 collected, used, and shared when you visit{" "}
-                <a href="www.jodarleyandco.com">www.jodarleyandco</a>.
+                <a href="/">www.jodarleyandco.com</a>.
               </p>
               <h2>PERSONAL INFORMATION WE COLLECT</h2>
               <p>
@@ -70,8 +70,8 @@ const PrivacyPolicy = () => {
                   computer and often include an anonymous unique identifier. For
                   more information about cookies, and how to disable cookies,
                   visit{" "}
-                  <a href="http://www.allaboutcookies.org">
-                    http://www.allaboutcookies.org
+                  <a href="http://www.allaboutcookies.org" target="_blank">
+                    www.allaboutcookies.org
                   </a>
                 </li>
                 <li>
