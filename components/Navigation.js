@@ -105,22 +105,42 @@ const Navigation = () => {
                     </Button>
                   </Col>
                   <Col xs="3" className="text-right">
-                    <FontAwesomeIcon
-                      className="nav-primary__social-icon"
-                      icon={faInstagram}
-                    />
-                    <FontAwesomeIcon
-                      className="nav-primary__social-icon"
-                      icon={faFacebook}
-                    />
-                    <FontAwesomeIcon
-                      className="nav-primary__social-icon"
-                      icon={faEnvelope}
-                    />
-                    <FontAwesomeIcon
-                      className="nav-primary__social-icon"
-                      icon={faPhone}
-                    />
+                    <Link href="https://www.instagram.com/jodarleyandco/">
+                      <a target="_blank" alt="Link to instagram">
+                        <FontAwesomeIcon
+                          className="nav-primary__social-icon text-right"
+                          icon={faInstagram}
+                        />
+                      </a>
+                    </Link>
+                    <Link href="https://www.facebook.com/jodarleyandco/">
+                      <a target="_blank" alt="Link to facebook">
+                        <FontAwesomeIcon
+                          className="nav-primary__social-icon"
+                          icon={faFacebook}
+                        />
+                      </a>
+                    </Link>
+                    <a
+                      href="mailto:hair@jodarleyandco.com"
+                      target="_blank"
+                      alt="Link to email"
+                    >
+                      <FontAwesomeIcon
+                        className="nav-primary__social-icon"
+                        icon={faEnvelope}
+                      />
+                    </a>
+                    <a
+                      href="tel:01202 690009"
+                      target="_blank"
+                      alt="Link to call"
+                    >
+                      <FontAwesomeIcon
+                        className="nav-primary__social-icon"
+                        icon={faPhone}
+                      />
+                    </a>
                   </Col>
                 </Row>
               </Container>
