@@ -74,11 +74,11 @@ const Pricing = () => {
                 </div>
                 <div className="pricing__table-data">
                   <p>Hair Up</p>
-                  <p>From £32 / From £42 / From £55</p>
+                  <p>From £32 / From £42 / From £52</p>
                 </div>
                 <div className="pricing__table-data">
                   <p>Kids 0-14 years</p>
-                  <p>£10 - £35 / £10 - £45 / No Kids</p>
+                  <p>£10 - £35 / £15 - £45 / No Kids</p>
                 </div>
                 <div className="pricing__table-data-title">
                   <h4>Highlights</h4>
