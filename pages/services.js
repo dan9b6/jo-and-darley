@@ -58,44 +58,44 @@ const Pricing = () => {
                 </div>
                 <div className="pricing__table-data">
                   <p>CUT &amp; FINISH</p>
-                  <p>£35 / £50 / £55</p>
+                  <p>£37 / £52 / £65</p>
                 </div>
                 <div className="pricing__table-data">
                   <p>Short / Clippered Cut</p>
-                  <p>£20 / £27 / £30</p>
+                  <p>£22 / £29 / £36</p>
                 </div>
                 <div className="pricing__table-data">
                   <p>Blow Dry - Short</p>
-                  <p>£20 / £27 / £30</p>
+                  <p>£22 / £29 / £36</p>
                 </div>
                 <div className="pricing__table-data">
                   <p>Blow Dry - Long</p>
-                  <p>£25 / £35 / £40</p>
+                  <p>£27 / £37 / £50</p>
                 </div>
                 <div className="pricing__table-data">
                   <p>Hair Up</p>
-                  <p>From £30 / From £40 / From £45</p>
+                  <p>From £32 / From £42 / From £55</p>
                 </div>
                 <div className="pricing__table-data">
                   <p>Kids 0-14 years</p>
-                  <p>£10 - £35 / £10 - £35 / No Kids</p>
+                  <p>£10 - £35 / £10 - £45 / No Kids</p>
                 </div>
                 <div className="pricing__table-data-title">
                   <h4>Highlights</h4>
                 </div>
                 <div className="pricing__table-data">
                   <p>T-SECTION</p>
-                  <p>FROM £50</p>
+                  <p>FROM £53</p>
                 </div>
                 <div className="pricing__table-data">
                   <p>HALF HEAD</p>
                   <p>SHORT / LONG</p>
-                  <p>FROM £60 / £70</p>
+                  <p>FROM £65 / £75</p>
                 </div>
                 <div className="pricing__table-data">
                   <p>FULL HEAD</p>
                   <p>SHORT / LONG</p>
-                  <p>FROM £90 / £100</p>
+                  <p>FROM £95 / £105</p>
                 </div>
               </Col>
               <Col md="4">
@@ -104,21 +104,21 @@ const Pricing = () => {
                 </div>
                 <div className="pricing__table-data">
                   <p>Roots</p>
-                  <p>£42</p>
+                  <p>£45</p>
                 </div>
                 <div className="pricing__table-data">
                   <p>Full Head</p>
-                  <p>from £52</p>
+                  <p>from £55</p>
                 </div>
                 <div className="pricing__table-data">
                   <p>Semi-permanent</p>
                   <p>Short / Long</p>
-                  <p>from £34 / £44</p>
+                  <p>from £36 / £47</p>
                 </div>
                 <div className="pricing__table-data">
                   <p>Colour Correction</p>
                   <p>Price on consultation only</p>
-                  <p>From £75 (Including treatment)</p>
+                  <p>From £80 (Including treatment)</p>
                 </div>
                 <div className="pricing__table-data-title">
                   <h4>Balayage</h4>
@@ -126,18 +126,18 @@ const Pricing = () => {
                 <div className="pricing__table-data">
                   <p>Express</p>
                   <p>Colour, Toner & Natural Dry</p>
-                  <p>from £130</p>
+                  <p>from £145</p>
                 </div>
                 <div className="pricing__table-data">
                   <p>Luxury</p>
                   <p>Colour, Toner, Cut & Finish</p>
-                  <p>from £170</p>
+                  <p>from £195</p>
                 </div>
                 <div className="pricing__table-data-title">
                   <h4>Bleach Roots</h4>
                 </div>
                 <div className="pricing__table-data">
-                  <p>FROM £63</p>
+                  <p>FROM £65</p>
                 </div>
               </Col>
               <Col md="4">
@@ -146,7 +146,7 @@ const Pricing = () => {
                 </div>
                 <div className="pricing__table-data">
                   <p className="fwn">Short / Long</p>
-                  <p>£20 / £30</p>
+                  <p>£22 / £32</p>
                 </div>
                 <div className="pricing__table-data-title">
                   <h4>Perming</h4>
@@ -155,14 +155,14 @@ const Pricing = () => {
                   <p className="fwn">Price on consultation only</p>
                   <p>(Cut & Finish Included)</p>
                   <p>Short / Long</p>
-                  <p>from £90 / £120</p>
+                  <p>from £95 / £125</p>
                 </div>
                 <div className="pricing__table-data-title">
                   <h4>BRAZILIAN BLOW DRY</h4>
                 </div>
                 <div className="pricing__table-data">
                   <p className="fwn">SHORT / LONG</p>
-                  <p>FROM £100 / £130</p>
+                  <p>FROM £105 / £135</p>
                 </div>
                 <div className="pricing__table-data-title">
                   <h4>OWAY ORGANIC TREATMENT</h4>
