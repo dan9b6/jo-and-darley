@@ -153,7 +153,6 @@ const Pricing = () => {
                 </div>
                 <div className="pricing__table-data">
                   <p className="fwn">Price on consultation only</p>
-                  <p>(Cut & Finish Included)</p>
                   <p>Short / Long</p>
                   <p>from £95 / £125</p>
                 </div>
