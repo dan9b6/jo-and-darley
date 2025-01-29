@@ -124,7 +124,7 @@ const Footer = () => {
           <Link href="/privacy-policy">
             <a>Privacy Policy</a>
           </Link>{" "}
-          - Copyright 2022 - <a href="mailto:danbh7296@gmail.com">Dan Burton</a>
+          - Copyright {new Date().getFullYear()} - Jo Darley & Co
         </p>
       </Container>
     </footer>
