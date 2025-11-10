@@ -1,10 +1,9 @@
-import React from "react";
-// import ContactForm from "./contact-form";
-import { useState } from "react";
+import React, { useState } from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const Modal = () => {
   function closeModal() {
@@ -16,20 +15,18 @@ const Modal = () => {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
-
-  const [valid, setValid] = useState(false);
+  const [captchaToken, setCaptchaToken] = useState(null);
 
   let validated = false;
 
-  const handleValidation = (e) => {
+  const handleValidation = () => {
     if (
-      firstName !== "" ||
-      lastName !== "" ||
-      email !== "" ||
-      phone !== "" ||
+      firstName !== "" &&
+      lastName !== "" &&
+      email !== "" &&
+      phone !== "" &&
       message !== ""
     ) {
-      setValid(validated);
       validated = true;
     }
   };
@@ -43,16 +40,30 @@ const Modal = () => {
       ".modal__overlay .contact-form__validation-message"
     );
 
+    if (!captchaToken) {
+      formValidationMessage?.classList.remove("hidden");
+      formValidationMessage &&
+        (formValidationMessage.innerHTML =
+          "<small class='mb-0 pb-0'>Please complete the reCAPTCHA *</small>");
+      return;
+    }
+
     if (validated == true) {
-      formValidationMessage.classList.add("hidden");
+      formValidationMessage?.classList.add("hidden");
+
+      const submitBtn = document.getElementById("modal-form-submit");
+      if (submitBtn) {
+        submitBtn.classList.add("loading");
+      }
 
       const res = await fetch("/api/SendGridApi", {
         body: JSON.stringify({
-          email: email,
-          firstName: firstName,
-          lastName: lastName,
-          phone: phone,
-          message: message,
+          email,
+          firstName,
+          lastName,
+          phone,
+          message,
+          recaptchaToken: captchaToken,
         }),
         headers: {
           "Content-Type": "application/json",
@@ -60,22 +71,32 @@ const Modal = () => {
         method: "POST",
       });
 
-      let submitBtn = document.getElementById("modal-form-submit");
-      submitBtn.classList.add("loading");
+      const data = await res.json();
+
       setTimeout(() => {
-        submitBtn.classList.add("success");
-        submitBtn.innerHTML = "Message Sent";
-        submitBtn.classList.remove("loading");
+        if (submitBtn) {
+          submitBtn.classList.add("success");
+          submitBtn.innerHTML = "Message Sent";
+          submitBtn.classList.remove("loading");
+        }
       }, 2000);
 
-      const { error } = await res.json();
-      if (error) {
-        console.log(error);
-        return;
+      if (!res.ok) {
+        console.log(data.error || "Error sending message");
+      } else {
+        // clear fields
+        setFirstName("");
+        setLastName("");
+        setEmail("");
+        setPhone("");
+        setMessage("");
+        setCaptchaToken(null);
       }
-      console.log(firstName, lastName, email, phone, message);
     } else {
-      formValidationMessage.classList.remove("hidden");
+      formValidationMessage?.classList.remove("hidden");
+      formValidationMessage &&
+        (formValidationMessage.innerHTML =
+          "<small class='mb-0 pb-0'>Please fill all fields *</small>");
     }
   };
 
@@ -92,6 +113,7 @@ const Modal = () => {
         </p>
         <form onSubmit={handleFormSubmission}>
           <Row>
+            {/* ...your existing inputs... */}
             <Col xs="12" md="6">
               <div className="contact-form__group">
                 <input
@@ -156,6 +178,17 @@ const Modal = () => {
                 ></textarea>
               </div>
             </Col>
+
+            {/* reCAPTCHA */}
+            <Col xs="12">
+              <div className="contact-form__group">
+                <ReCAPTCHA
+                  sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+                  onChange={(token) => setCaptchaToken(token)}
+                />
+              </div>
+            </Col>
+
             <Col xs="12">
               <div className="contact-form__group">
                 <button id="modal-form-submit" className="btn btn-primary">
