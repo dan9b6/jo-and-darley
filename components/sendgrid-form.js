@@ -1,7 +1,7 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const SendgridForm = () => {
   const [firstName, setFirstName] = useState("");
@@ -9,27 +9,27 @@ const SendgridForm = () => {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
-
-  const [valid, setValid] = useState(false);
+  const [captchaToken, setCaptchaToken] = useState(null);
 
   let validated = false;
 
-  const resetForm = (e) => {
-    let submitBtn = document.getElementById("contact-form-submit");
-    submitBtn.classList.remove("success");
-    submitBtn.innerHTML = "Submit";
+  const resetForm = () => {
+    const submitBtn = document.getElementById("contact-form-submit");
+    if (submitBtn) {
+      submitBtn.classList.remove("success");
+      submitBtn.innerHTML = "Submit";
+    }
   };
 
-  const handleValidation = (e) => {
+  const handleValidation = () => {
     if (
-      firstName !== "" ||
-      lastName !== "" ||
-      email !== "" ||
-      phone !== "" ||
+      firstName !== "" &&
+      lastName !== "" &&
+      email !== "" &&
+      phone !== "" &&
       message !== ""
     ) {
       validated = true;
-      setValid(validated);
     }
   };
 
@@ -42,41 +42,68 @@ const SendgridForm = () => {
       ".contact .contact-form__validation-message"
     );
 
-    if (validated == true) {
-      formValidationMessage.classList.add("hidden");
+    if (!captchaToken) {
+      formValidationMessage?.classList.remove("hidden");
+      formValidationMessage &&
+        (formValidationMessage.innerHTML =
+          "<small class='mb-0 pb-0'>Please complete the reCAPTCHA *</small>");
+      return;
+    }
+
+    if (validated === true) {
+      formValidationMessage?.classList.add("hidden");
+
+      const submitBtn = document.getElementById("contact-form-submit");
+      if (submitBtn) {
+        submitBtn.classList.add("loading");
+        submitBtn.innerHTML = "Sending...";
+      }
 
       const res = await fetch("/api/SendGridApi", {
-        body: JSON.stringify({
-          email: email,
-          firstName: firstName,
-          lastName: lastName,
-          phone: phone,
-          message: message,
-        }),
+        method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        method: "POST",
+        body: JSON.stringify({
+          email,
+          firstName,
+          lastName,
+          phone,
+          message,
+          recaptchaToken: captchaToken,
+        }),
       });
 
-      let submitBtn = document.getElementById("contact-form-submit");
-      submitBtn.classList.add("loading");
-      submitBtn.innerHTML = "Sending...";
+      const data = await res.json();
 
-      setTimeout(() => {
-        submitBtn.classList.add("success");
-        submitBtn.innerHTML = "Message Sent";
-        submitBtn.classList.remove("loading");
-      }, 2000);
+      if (res.ok) {
+        setTimeout(() => {
+          if (submitBtn) {
+            submitBtn.classList.add("success");
+            submitBtn.innerHTML = "Message Sent";
+            submitBtn.classList.remove("loading");
+          }
+        }, 2000);
 
-      const { error } = await res.json();
-      if (error) {
-        console.log(error);
-        return;
+        // clear form
+        setFirstName("");
+        setLastName("");
+        setEmail("");
+        setPhone("");
+        setMessage("");
+        setCaptchaToken(null);
+      } else {
+        console.log(data.error || "Error sending message");
+        if (submitBtn) {
+          submitBtn.classList.remove("loading");
+          submitBtn.innerHTML = "Submit";
+        }
       }
-      console.log(firstName, lastName, email, phone, message);
     } else {
-      formValidationMessage.classList.remove("hidden");
+      formValidationMessage?.classList.remove("hidden");
+      formValidationMessage &&
+        (formValidationMessage.innerHTML =
+          "<small class='mb-0 pb-0'>Please fill all fields *</small>");
     }
   };
 
@@ -152,6 +179,17 @@ const SendgridForm = () => {
             ></textarea>
           </div>
         </Col>
+
+        {/* reCAPTCHA */}
+        <Col xs="12">
+          <div className="contact-form__group">
+            <ReCAPTCHA
+              sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+              onChange={(token) => setCaptchaToken(token)}
+            />
+          </div>
+        </Col>
+
         <Col xs="12">
           <div className="contact-form__group">
             <button id="contact-form-submit" className="btn btn-primary">
