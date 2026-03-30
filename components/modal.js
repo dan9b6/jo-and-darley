@@ -4,6 +4,7 @@ import Col from "react-bootstrap/Col";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import ReCAPTCHA from "react-google-recaptcha";
+import Link from "next/link";
 
 const Modal = () => {
   function closeModal() {
@@ -37,7 +38,7 @@ const Modal = () => {
     handleValidation();
 
     const formValidationMessage = document.querySelector(
-      ".modal__overlay .contact-form__validation-message"
+      ".modal__overlay .contact-form__validation-message",
     );
 
     if (!captchaToken) {
@@ -113,7 +114,6 @@ const Modal = () => {
         </p>
         <form onSubmit={handleFormSubmission}>
           <Row>
-            {/* ...your existing inputs... */}
             <Col xs="12" md="6">
               <div className="contact-form__group">
                 <input
@@ -179,13 +179,24 @@ const Modal = () => {
               </div>
             </Col>
 
-            {/* reCAPTCHA */}
             <Col xs="12">
               <div className="contact-form__group">
                 <ReCAPTCHA
                   sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
                   onChange={(token) => setCaptchaToken(token)}
                 />
+              </div>
+            </Col>
+
+            <Col xs="12">
+              <div className="contact-form__group">
+                <small>
+                  By submitting this form, you agree to our{" "}
+                  <Link href="/policies">
+                    <a>Policies</a>
+                  </Link>
+                  .
+                </small>
               </div>
             </Col>
 

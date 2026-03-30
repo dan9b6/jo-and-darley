@@ -58,23 +58,23 @@ const Pricing = () => {
                 </div>
                 <div className="pricing__table-data">
                   <p>CUT &amp; FINISH</p>
-                  <p>£37 / £54 / £65</p>
+                  <p>£39 / £56 / £67</p>
                 </div>
                 <div className="pricing__table-data">
                   <p>Short / Clippered Cut</p>
-                  <p>£22 / £30 / £36</p>
+                  <p>£22 / £32 / £36</p>
                 </div>
                 <div className="pricing__table-data">
                   <p>Blow Dry - Short</p>
-                  <p>£22 / £29 / £36</p>
+                  <p>£25 / £31 / £38</p>
                 </div>
                 <div className="pricing__table-data">
                   <p>Blow Dry - Long</p>
-                  <p>£27 / £37 / £50</p>
+                  <p>£30 / £39 / £52</p>
                 </div>
                 <div className="pricing__table-data">
                   <p>Hair Up</p>
-                  <p>From £32 / From £42 / From £55</p>
+                  <p>From £34 / From £44 / From £57</p>
                 </div>
                 <div className="pricing__table-data">
                   <p>Kids 0-14 years</p>
@@ -85,17 +85,17 @@ const Pricing = () => {
                 </div>
                 <div className="pricing__table-data">
                   <p>T-SECTION</p>
-                  <p>FROM £55</p>
+                  <p>FROM £57</p>
                 </div>
                 <div className="pricing__table-data">
                   <p>HALF HEAD</p>
                   <p>SHORT / LONG</p>
-                  <p>FROM £67 / £77</p>
+                  <p>FROM £70 / £80</p>
                 </div>
                 <div className="pricing__table-data">
                   <p>FULL HEAD</p>
                   <p>SHORT / LONG</p>
-                  <p>FROM £95 / £105</p>
+                  <p>FROM £98 / £108</p>
                 </div>
               </Col>
               <Col md="4">
@@ -104,7 +104,7 @@ const Pricing = () => {
                 </div>
                 <div className="pricing__table-data">
                   <p>Roots</p>
-                  <p>£47</p>
+                  <p>£48</p>
                 </div>
                 <div className="pricing__table-data">
                   <p>Full Head</p>
@@ -118,7 +118,7 @@ const Pricing = () => {
                 <div className="pricing__table-data">
                   <p>Colour Correction</p>
                   <p>Price on consultation only</p>
-                  <p>From £80 (Including treatment)</p>
+                  <p>From £100 (Including treatment)</p>
                 </div>
                 <div className="pricing__table-data-title">
                   <h4>Balayage</h4>
@@ -126,18 +126,18 @@ const Pricing = () => {
                 <div className="pricing__table-data">
                   <p>Express</p>
                   <p>Colour, Toner & Natural Dry</p>
-                  <p>from £145</p>
+                  <p>from £155</p>
                 </div>
                 <div className="pricing__table-data">
                   <p>Luxury</p>
                   <p>Colour, Toner, Cut & Finish</p>
-                  <p>from £195</p>
+                  <p>from £205</p>
                 </div>
                 <div className="pricing__table-data-title">
                   <h4>Bleach Roots</h4>
                 </div>
                 <div className="pricing__table-data">
-                  <p>FROM £70</p>
+                  <p>FROM £75</p>
                 </div>
               </Col>
               <Col md="4">
@@ -146,7 +146,7 @@ const Pricing = () => {
                 </div>
                 <div className="pricing__table-data">
                   <p className="fwn">Short / Long</p>
-                  <p>£23 / £33</p>
+                  <p>£25 / £35</p>
                 </div>
                 <div className="pricing__table-data-title">
                   <h4>Perming</h4>
@@ -161,13 +161,13 @@ const Pricing = () => {
                 </div>
                 <div className="pricing__table-data">
                   <p className="fwn">SHORT / LONG</p>
-                  <p>FROM £110 / £140</p>
+                  <p>FROM £115 / £145</p>
                 </div>
                 <div className="pricing__table-data-title">
                   <h4>OWAY ORGANIC TREATMENT</h4>
                 </div>
                 <div className="pricing__table-data">
-                  <p>FROM £20</p>
+                  <p>FROM £22</p>
                 </div>
                 <div className="pricing__table-data pricing__table-end pt-4">
                   <p>

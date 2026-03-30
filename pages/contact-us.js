@@ -4,6 +4,7 @@ import Section from "../components/section";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Head from "next/head";
+import Link from "next/link";
 
 const ContactUs = () => {
   return (
@@ -40,21 +41,34 @@ const ContactUs = () => {
           content="https://www.jodarleyandco.com/images/cta/index/1st.jpg"
         />
       </Head>
+
       <main>
         <Banner title="Contact" bgImg="/images/banner/contact.jpg" />
+
         <Section bg="light-pink">
           <div className="contact">
             <Row>
               <Col xs="12" lg="9">
                 <div className="form">
                   <h2>Contact Us</h2>
-                  <p className="mb-4">
+
+                  <p className="mb-3">
                     To arrange a complimentary consultation, make a booking or
                     for any other enquiries, please get in touch…
                   </p>
+
+                  <p className="mb-4 small">
+                    Please take a moment to read our{" "}
+                    <Link href="/policies">
+                      <a>Policies</a>
+                    </Link>{" "}
+                    before booking.
+                  </p>
+
                   <SendGridForm />
                 </div>
               </Col>
+
               <Col xs="12" lg="3" className="subsection">
                 <Row>
                   <Col sm="6" lg="12" className="mb-md-5">
@@ -69,6 +83,7 @@ const ContactUs = () => {
                       <li>Sunday: CLOSED</li>
                     </ul>
                   </Col>
+
                   <Col sm="6" lg="12">
                     <h4>Location:</h4>
                     <ul>
