@@ -56,7 +56,7 @@ const Navigation = () => {
   return (
     <header className="header">
       <Container>
-        <Row className="header__content">
+        <div className="header__content">
           <Col xs="6" md="3">
             <div className="header__logo">
               <Link href="/" scroll={true}>
@@ -87,6 +87,11 @@ const Navigation = () => {
                 <li className="nav-primary__link">
                   <Link href="/contact-us" scroll={true}>
                     <a onClick={closeNav}>Contact</a>
+                  </Link>
+                </li>
+                <li className="nav-primary__link">
+                  <Link href="/policies" scroll={true}>
+                    <a onClick={closeNav}>Policies</a>
                   </Link>
                 </li>
                 <li className="d-none d-md-block">
@@ -156,7 +161,7 @@ const Navigation = () => {
               <span></span>
             </div>
           </Col>
-        </Row>
+        </div>
       </Container>
     </header>
   );

@@ -17,6 +17,7 @@
   &__content {
     justify-content: space-between;
     background-color: $c-dark-green;
+    display: flex;
 
     @include media-breakpoint-up(md) {
       align-items: center;
@@ -28,7 +29,7 @@
       img {
         height: 50px;
 
-        @include media-breakpoint-up(md) {
+        @include media-breakpoint-up(lg) {
           height: 75px;
         }
       }
